@@ -1,0 +1,40 @@
+.wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+  display: block !important;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.title-section {
+  font-family: $good;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  display: flex;
+  letter-spacing: 0.01em;
+  color: #222933;
+  padding-bottom: 64px;
+}
+section {
+  padding-top: 152px !important;
+}
+.bg-section {
+  background: url(../img/bg_experience.png) no-repeat;
+}
+.button {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: $evol;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #9c394e;
+  padding: 16px 32px;
+  border: 2px solid #103a64;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto;
+}

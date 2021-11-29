@@ -1,0 +1,79 @@
+.number {
+  position: absolute;
+  right: 0;
+}
+.slider-app {
+  margin-top: 64px;
+  padding-top: 24px;
+  position: relative;
+  margin-bottom: 80px;
+  border-top: 2px solid rgba(34, 41, 51, 0.2);
+  &__card {
+    position: relative;
+    padding: 0 12px;
+  }
+  &__img {
+    width: 510px;
+    height: 440px;
+  }
+  &__desc {
+    max-width: 250px;
+    position: absolute;
+    bottom: 78px;
+    left: 80px;
+    font-family: $evol;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: white;
+  }
+}
+.slider-arrows {
+  z-index: 10;
+  &__left {
+    position: absolute;
+    right: calc(100vw - 77%);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__right {
+    position: absolute;
+    left: calc(100vw - 77%);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &-slick {
+    z-index: 12;
+    position: absolute;
+  }
+  &__left-slick {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__right-slick {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.slick-dots {
+  padding-top: 64px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  button {
+    background: rgba(34, 41, 51, 0.2);
+    border: none;
+    height: 2px;
+    width: 60px;
+    margin: 0 10px;
+    outline: none;
+    color: transparent;
+  }
+  li[class="slick-active"] button {
+    background: #103a64;
+  }
+}

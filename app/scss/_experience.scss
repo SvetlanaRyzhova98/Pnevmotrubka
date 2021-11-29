@@ -1,0 +1,47 @@
+.experience {
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    border-top: 2px solid rgba(34, 41, 51, 0.2);
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover {
+      .experience__title {
+        color: #103a64;
+      }
+    }
+  }
+
+  &__card:not(:last-child) {
+    padding-right: 40px;
+  }
+  &__img {
+    width: 386px;
+    height: 260px;
+  }
+  &__title {
+    font-family: $evol;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #222933;
+    padding: 48px 0 24px;
+  }
+
+  &__desc {
+    font-family: $evol;
+    font-size: 18px;
+    line-height: 32px;
+    align-items: center;
+    letter-spacing: 0.05em;
+  }
+}

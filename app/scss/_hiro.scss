@@ -1,0 +1,70 @@
+.hiro {
+  padding-top: 0 !important;
+}
+h1.title {
+  font-size: 64px;
+  line-height: 88px;
+  font-family: "Good Timing Bold";
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #222933;
+  max-width: 750px;
+  padding: 96px 0 80px;
+  span {
+    font-size: 38px;
+    line-height: 56px;
+  }
+}
+.slider {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vh - 122px);
+  transition: all 1s;
+  background-size: cover;
+}
+.slider[data-slideId="0"] {
+  background-image: url(../img/slider0.jpg);
+}
+.slider[data-slideId="1"] {
+  background-image: url(../img/slider1.jpg);
+}
+.slider[data-slideId="2"] {
+  background-image: url(../img/slider2.png);
+}
+.slider[data-slideId="3"] {
+  background-image: url(../img/slider3.png);
+}
+.slider[data-slideId="4"] {
+  background-image: url(../img/slider4.png);
+}
+.primary-btn {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  font-family: "Evolventa";
+  letter-spacing: 0.05em;
+  color: white;
+  background: #222933;
+  padding: 16px 32px;
+  display: inline-block;
+  margin-bottom: 140px;
+}
+
+.pagination-slider {
+  max-width: 80px;
+}
+.line {
+  width: 40px;
+  height: 2px;
+  background-color: #222933;
+  padding: 2px;
+  cursor: pointer;
+}
+.line:not(:last-child) {
+  margin-bottom: 30px;
+}
+.line_active {
+  width: 80px;
+  height: 4px;
+  background-color: #9c394e;
+}

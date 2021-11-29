@@ -1,0 +1,79 @@
+.production {
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: $evol;
+    font-weight: normal;
+    position: relative;
+    padding-bottom: 64px;
+  }
+  &__text {
+    max-width: 815px;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+  }
+  &__link {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #103a64;
+    display: flex;
+    align-items: center;
+    img {
+      width: 18px;
+      height: 14px;
+      margin-left: 23px;
+    }
+  }
+}
+.product {
+  padding-top: 24px;
+  border-top: 4px solid #103a64;
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    border-top: 2px solid rgba(34, 41, 51, 0.2);
+  }
+  &__main {
+    position: relative;
+    padding-bottom: 24px;
+    figcaption {
+      position: absolute;
+      top: 48px;
+      left: 56px;
+      font-family: $good;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 48px;
+      letter-spacing: 0.03em;
+      color: #222933;
+      opacity: 0.99;
+      max-width: 311px;
+    }
+  }
+
+  &__card {
+    position: relative;
+    padding: 0 10px;
+    figcaption {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      font-family: $evol;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+      color: #222933;
+      opacity: 0.99;
+    }
+    &:hover {
+      font-weight: bold;
+      color: #103a64;
+      cursor: pointer;
+    }
+  }
+}
