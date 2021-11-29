@@ -68,3 +68,22 @@ h1.title {
   height: 4px;
   background-color: #9c394e;
 }
+
+@media all and (max-width: 1600px) {
+  .primary-btn {
+    margin-bottom: 60px;
+  }
+  .line:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  h1.title {
+    font-size: 54px;
+    line-height: 78px;
+    max-width: 750px;
+    padding: 50px 0 50px;
+    span {
+      font-size: 28px;
+      line-height: 46px;
+    }
+  }
+}
