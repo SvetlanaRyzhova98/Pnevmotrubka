@@ -33,7 +33,7 @@ function getSlideId() {
 setInterval(function () {
   const newSlideId = (getSlideId() + 1) % 5;
   setSlide(newSlideId);
-}, 3000);
+}, 6000);
 
 function initPagination() {
   const lines = document.querySelectorAll(".line");

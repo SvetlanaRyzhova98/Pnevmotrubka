@@ -70,6 +70,9 @@ h1.title {
 }
 
 @media all and (max-width: 1600px) {
+  .hiro .wrapper {
+    padding: 0 20px;
+  }
   .primary-btn {
     margin-bottom: 60px;
   }
