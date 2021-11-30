@@ -1,18 +1,24 @@
 .hiro {
   padding-top: 0 !important;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 h1.title {
-  font-size: 64px;
-  line-height: 88px;
+  font-size: 6.4rem;
+  line-height: 8.8rem;
   font-family: "Good Timing Bold";
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #222933;
+  color: $dark-blue;
   max-width: 750px;
   padding: 96px 0 80px;
   span {
-    font-size: 38px;
-    line-height: 56px;
+    font-size: 3.8rem;
+    line-height: 5.6rem;
   }
 }
 .slider {
@@ -38,13 +44,12 @@ h1.title {
   background-image: url(../img/slider4.png);
 }
 .primary-btn {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   text-align: center;
-  font-family: "Evolventa";
   letter-spacing: 0.05em;
   color: white;
-  background: #222933;
+  background: $dark-blue;
   padding: 16px 32px;
   display: inline-block;
   margin-bottom: 140px;
@@ -56,7 +61,7 @@ h1.title {
 .line {
   width: 40px;
   height: 2px;
-  background-color: #222933;
+  background-color: $dark-blue;
   padding: 2px;
   cursor: pointer;
 }
@@ -66,27 +71,5 @@ h1.title {
 .line_active {
   width: 80px;
   height: 4px;
-  background-color: #9c394e;
-}
-
-@media all and (max-width: 1600px) {
-  .hiro .wrapper {
-    padding: 0 20px;
-  }
-  .primary-btn {
-    margin-bottom: 60px;
-  }
-  .line:not(:last-child) {
-    margin-bottom: 20px;
-  }
-  h1.title {
-    font-size: 54px;
-    line-height: 78px;
-    max-width: 750px;
-    padding: 50px 0 50px;
-    span {
-      font-size: 28px;
-      line-height: 46px;
-    }
-  }
+  background-color: $red;
 }
