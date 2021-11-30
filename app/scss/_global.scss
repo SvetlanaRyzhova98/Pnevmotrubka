@@ -8,15 +8,19 @@ a {
   text-decoration: none;
   color: black;
 }
+h1 {
+  margin: 0;
+  padding: 0;
+}
 .title-section {
   font-family: $good;
   font-style: normal;
   font-weight: bold;
-  font-size: 45px;
-  line-height: 64px;
+  font-size: 4.5rem;
+  line-height: 6.4rem;
   display: flex;
   letter-spacing: 0.01em;
-  color: #222933;
+  color: $dark-blue;
   padding-bottom: 64px;
 }
 section {
@@ -26,14 +30,13 @@ section {
   background: url(../img/bg_experience.png) no-repeat;
 }
 .button {
-  font-size: 18px;
-  line-height: 24px;
-  font-family: $evol;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   text-align: center;
   letter-spacing: 0.05em;
-  color: #9c394e;
+  color: $red;
   padding: 16px 32px;
-  border: 2px solid #103a64;
+  border: 2px solid $blue;
   border-radius: 3px;
   display: block;
   margin: 0 auto;

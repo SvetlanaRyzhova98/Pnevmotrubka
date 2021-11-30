@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ГПХ</title>
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="css/reset.css" />
     <link rel="prefetch" href="img/slider0.jpg" />
     <link rel="prefetch" href="img/slider1.jpg" />
     <link rel="prefetch" href="img/slider2.png" />
     <link rel="prefetch" href="img/slider3.png" />
     <link rel="prefetch" href="img/slider4.png" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <header class="header">
@@ -41,12 +40,15 @@
               </div>
 
               <div class="dropdown__options">
-                <div class="dropdown__option dropdown__option_selected">
+                <div
+                  class="dropdown__option dropdown__option_selected"
+                  data-phone="8 (800) 775 46 82"
+                >
                   <img class="dropdown__icon" src="./img/ru.png" alt="Россия" />
                   <span class="descr"> Россия</span>
                 </div>
 
-                <div class="dropdown__option">
+                <div class="dropdown__option" data-phone="8 (880) 555 35 35">
                   <img
                     class="dropdown__icon"
                     src="./img/blr.png"
@@ -89,14 +91,20 @@
       <section class="hiro">
         <div class="slider" data-slideId="0">
           <div class="wrapper">
-            <h1 class="title">Пневматическая трубка <span>&</span> фитинги</h1>
-            <a href="#!" class="primary-btn">Подробнее</a>
-            <div class="pagination-slider">
-              <div class="line line_active" data-lineid="0"></div>
-              <div class="line" data-lineid="1"></div>
-              <div class="line" data-lineid="2"></div>
-              <div class="line" data-lineid="3"></div>
-              <div class="line" data-lineid="4"></div>
+            <div class="hiro__container">
+              <div>
+                <h1 class="title">
+                  Пневматическая трубка <span>&</span> фитинги
+                </h1>
+                <a href="#!" class="primary-btn">Подробнее</a>
+              </div>
+              <div class="pagination-slider">
+                <div class="line line_active" data-lineid="0"></div>
+                <div class="line" data-lineid="1"></div>
+                <div class="line" data-lineid="2"></div>
+                <div class="line" data-lineid="3"></div>
+                <div class="line" data-lineid="4"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -332,11 +340,11 @@
               <figure class="slider-app__card">
                 <img
                   class="slider-app__img"
-                  src="./img/slide-pharmacological.png"
-                  alt="Фармакологическое производство"
+                  src="./img/slider-packing.png"
+                  alt="Упаковочное производство"
                 />
                 <figcaption class="slider-app__desc">
-                  Фармакологическое производство
+                  Упаковочное производство
                 </figcaption>
               </figure>
             </div>
@@ -365,9 +373,9 @@
                 </li>
                 <li class="footer__item">
                   <p>Контакты</p>
-                  <a href="tel:88007754682">
-                    <img src="./img/icon-phone.svg" alt="phone" /> 8 (800) 775
-                    46 82</a
+                  <a class="phone-footer" href="tel:88007754682">
+                    <img src="./img/icon-phone.svg" alt="phone" />
+                    8 (800) 775 46 82</a
                   >
                   <a href="#!">
                     <img src="./img/icon-mail.svg" alt="mail" />

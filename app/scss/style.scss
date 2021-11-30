@@ -1,7 +1,8 @@
+@import "reset";
 @import "vars";
 @import "libs";
 @import "fonts";
-@import "media";
+
 @import "global";
 @import "header";
 @import "hiro";
@@ -9,9 +10,13 @@
 @import "production";
 @import "application";
 @import "footer";
+@import "media";
 
+html {
+  font-size: 10px;
+}
 body {
-  font-family: "Jost", sans-serif;
+  font-family: $evol, sans-serif;
 }
 
 * {

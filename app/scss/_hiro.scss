@@ -5,6 +5,10 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    height: 100%;
+  }
+  .wrapper {
+    height: 100%;
   }
 }
 h1.title {
@@ -57,6 +61,7 @@ h1.title {
 
 .pagination-slider {
   max-width: 80px;
+  padding-bottom: 96px;
 }
 .line {
   width: 40px;

@@ -1,11 +1,10 @@
 .header {
-  height: 122px;
   width: 100%;
   display: flex;
   flex-direction: column;
   &__top {
     position: relative;
-    border-bottom: 3px solid #80808040;
+    border-bottom: 3px solid $dark-red;
   }
   &__bottom {
     display: flex;
@@ -36,13 +35,13 @@
   display: flex;
   align-items: center;
   .phone {
-    font-family: "Good Times";
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 158%;
     letter-spacing: 0.05em;
-    color: #103a64;
-    font-family: "Good Times", arial;
+    color: $blue;
+    font-family: $good-tim;
     padding-left: 20px;
+    min-width: 261px;
   }
   .search {
     padding-right: 20px;
@@ -70,15 +69,14 @@
     padding-right: 50px;
   }
   &-link {
-    font-family: "Evolventa";
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 136%;
     letter-spacing: 0.05em;
-    color: #222933;
-  }
-  &-link:hover {
-    color: $red;
-    text-shadow: 0 0 0.5px $red, 0 0 0.5px $red;
+    color: $dark-blue;
+    &:hover {
+      color: $red;
+      text-shadow: 0 0 0.5px $red, 0 0 0.5px $red;
+    }
   }
 }
 
@@ -137,8 +135,7 @@
     z-index: 1;
     .descr {
       padding-left: 12px;
-      font-family: "Evolventa";
-      font-size: 18px;
+      font-size: 1.8rem;
     }
   }
 
@@ -165,8 +162,8 @@
     cursor: pointer;
     border-radius: 5px;
     .descr {
-      font-size: 18px;
-      line-height: 24px;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
       letter-spacing: 0.05em;
     }
     &:hover {

@@ -1,6 +1,6 @@
 .footer {
   margin-top: 144px;
-  background-color: #222933;
+  background-color: $dark-blue;
   &__menu {
     padding: 64px 0;
   }
@@ -15,8 +15,8 @@
     align-items: center;
     a {
       font-family: $evol;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
       letter-spacing: 0.05em;
       color: white;
       display: flex;
@@ -24,7 +24,7 @@
       img {
         margin-left: 10px;
       }
-      &:hover {
+      :hover {
         text-decoration: underline;
       }
     }
@@ -33,20 +33,18 @@
     display: flex;
     flex-direction: column;
     p {
-      font-family: $evol;
-      font-size: 18px;
-      line-height: 24px;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
       letter-spacing: 0.05em;
       text-transform: uppercase;
-      color: #9c394e;
+      color: $red;
       margin-bottom: 20px;
     }
     a {
       color: white;
-      font-size: 18px;
-      line-height: 24px;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
       letter-spacing: 0.05em;
-      font-family: $evol;
       display: flex;
       align-items: center;
       img {
@@ -67,21 +65,20 @@
     justify-content: start;
     span {
       font-family: $good;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: white;
       padding: 0 10px;
-      border-right: 0.75px solid #9c394e;
+      border-right: 0.75px solid $red;
     }
     a {
       color: white;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
       letter-spacing: 0.05em;
       text-transform: uppercase;
-      font-family: $evol;
       padding-left: 10px;
       &:hover {
         text-decoration: underline;

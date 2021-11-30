@@ -1,6 +1,8 @@
 const dropdowns = document.querySelectorAll(".dropdown");
 
 dropdowns.forEach((dropdown) => {
+  const phone = document.querySelector(".phone");
+  const phoneFooter = document.querySelector(".phone-footer");
   dropdown.addEventListener("click", (e) => {
     dropdown.classList.toggle("dropdown__options_visible");
   });
@@ -10,6 +12,8 @@ dropdowns.forEach((dropdown) => {
     .forEach((opt) => {
       opt.addEventListener("click", (e) => {
         dropdown.querySelector(".dropdown__selected").innerHTML = opt.innerHTML;
+        phone.innerHTML = e.currentTarget.dataset.phone;
+        phoneFooter.innerHTML = e.currentTarget.dataset.phone;
       });
     });
 });
