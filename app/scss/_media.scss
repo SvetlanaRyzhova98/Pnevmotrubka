@@ -119,4 +119,22 @@
   }
   .production {
   }
+  .experience__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .logo {
+    position: relative;
+    bottom: -6px;
+    img {
+      width: 200px;
+    }
+  }
+  .menu {
+    padding-bottom: 5px;
+  }
+  .header__wrapper {
+    padding: 0px 10px;
+  }
 }

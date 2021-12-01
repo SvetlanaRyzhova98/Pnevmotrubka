@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: flex-end;
     font-weight: normal;
+    flex-wrap: wrap;
     position: relative;
     padding-bottom: 64px;
   }
@@ -21,6 +22,7 @@
     color: $blue;
     display: flex;
     align-items: center;
+    margin-top: 15px;
     img {
       width: 18px;
       height: 14px;
