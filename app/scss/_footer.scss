@@ -88,7 +88,9 @@
   }
 }
 /*Footer mobile start--------------------------*/
-
+.footer-mobile {
+  display: none;
+}
 .footer-mobile {
   background-color: $gray-light;
   &__contact {
