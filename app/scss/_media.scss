@@ -134,6 +134,11 @@
   .menu {
     padding-bottom: 5px;
   }
+  .menu-mobile {
+    top: 34px;
+    height: calc(100vh - 34px);
+    width: 200px;
+  }
   .header__wrapper {
     padding: 0px 10px;
   }
