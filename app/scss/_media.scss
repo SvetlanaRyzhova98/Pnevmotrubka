@@ -140,6 +140,23 @@
       max-width: 210px;
     }
   }
+  .application {
+    .production__info {
+      align-items: flex-start;
+    }
+  }
+  .production__info {
+    flex-direction: column;
+  }
+  .fitting .product__card {
+    width: 160px !important;
+  }
+  .product__card figcaption {
+    bottom: 6px;
+    left: 24px;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
   .production {
     .product__cards {
       display: flex;
@@ -263,6 +280,7 @@
     width: 172px;
     bottom: 112px;
   }
+
   .footer {
     margin-top: 60px;
   }
@@ -312,5 +330,21 @@
   .nav-link {
     font-size: 1.6rem;
     line-height: 126%;
+  }
+  .number {
+    width: 145px;
+    bottom: 64px;
+  }
+  .product__card figcaption {
+    bottom: 10px;
+    left: 18px;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  .fitting .product__card {
+    width: 148px !important;
+  }
+  .production__info {
+    flex-direction: column;
   }
 }
