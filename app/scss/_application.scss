@@ -34,13 +34,13 @@
     position: absolute;
     right: calc(100vw - 77%);
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
   }
   &__right {
     position: absolute;
     left: calc(100vw - 77%);
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
   }
   &-slick {
     z-index: 12;
@@ -49,12 +49,12 @@
   &__left-slick {
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
   }
   &__right-slick {
     left: 0;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
   }
 }
 .slick-dots {

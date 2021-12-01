@@ -32,6 +32,7 @@
   &__item {
     display: flex;
     flex-direction: column;
+    max-width: 250px;
     p {
       font-size: 1.8rem;
       line-height: 2.4rem;
@@ -84,5 +85,130 @@
         text-decoration: underline;
       }
     }
+  }
+}
+/*Footer mobile start--------------------------*/
+
+.footer-mobile {
+  background-color: $gray-light;
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    margin-bottom: 27px;
+    border-top: 2px solid rgba(34, 41, 51, 0.2);
+    border-bottom: 2px solid rgba(34, 41, 51, 0.2);
+    padding: 16px 0;
+
+    p {
+      line-height: 20px;
+      text-transform: uppercase;
+      color: $dark-blue;
+      padding-bottom: 16px;
+    }
+    .phone-footer {
+      font-family: $good-tim;
+      font-size: 10px;
+      line-height: 24px;
+      color: $dark-blue;
+    }
+    a {
+      img {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+      }
+    }
+  }
+  .phone-footer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+  }
+  &__mail {
+    font-family: $evol;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    padding-bottom: 8px;
+  }
+  &__link {
+    font-size: 10px;
+    line-height: 15px;
+    width: fit-content;
+    color: $blue;
+    border-bottom: transparent 1px dashed;
+    &:hover {
+      border-bottom: $blue 1px dashed;
+    }
+  }
+  &__link-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    img {
+      opacity: 0.2;
+    }
+    &_up {
+      img {
+        margin-top: 47px;
+        margin-bottom: 8px;
+        opacity: 1;
+      }
+    }
+    &:hover {
+      a {
+        border-bottom: $blue 1px dashed;
+      }
+      img {
+        opacity: 1;
+      }
+    }
+  }
+  &__document {
+    img {
+      width: 16px;
+      height: 16px;
+      margin-left: 20px;
+      border-bottom: none;
+    }
+  }
+  &-bottom {
+    background-color: $dark-blue;
+    &__list {
+      gap: 40px;
+      display: flex;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+    p {
+      text-transform: uppercase;
+      color: $red;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.05em;
+      padding-top: 24px;
+      padding-bottom: 12px;
+    }
+    a {
+      font-size: 12px;
+      line-height: 20px;
+      color: white;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+.footer__copyrights_mobile {
+  padding-top: 32px;
+  padding-bottom: 24px;
+  background-color: $dark-blue;
+  span:last-child {
+    border: none;
   }
 }

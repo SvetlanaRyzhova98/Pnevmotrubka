@@ -1,4 +1,4 @@
-@media (max-width: 1600px) {
+@media (max-width: 1400px) {
   html {
     font-size: 8px !important;
   }
@@ -10,7 +10,6 @@
       justify-content: space-around;
     }
   }
-
   .primary-btn {
     margin-bottom: 60px;
   }
@@ -27,11 +26,94 @@
       line-height: 4.6rem;
     }
   }
+  .application {
+    .production__text {
+      max-width: 750px;
+    }
+  }
+  .number {
+    position: absolute;
+    right: 0;
+    width: 300px;
+  }
+  .slider-app__img {
+    width: 300px;
+    height: 259px;
+  }
+  .slider-app__desc {
+    max-width: 250px;
+    bottom: 30px;
+    left: 40px;
+  }
+  .slick-dots button {
+    width: 50px;
+  }
 }
+
 @media (max-width: 1250px) {
+  section {
+    padding-top: 50px !important;
+  }
+
   .experience {
     &__card {
       padding-bottom: 40px;
     }
+  }
+  .application {
+    .production__text {
+      max-width: 650px;
+    }
+  }
+  .number {
+    position: absolute;
+    right: 0;
+    width: 250px;
+  }
+}
+
+@media (max-width: 915px) {
+  .header__bottom,
+  .dropdown,
+  .phone {
+    display: none;
+  }
+  .menu-burger,
+  .menu-mobile {
+    display: block;
+  }
+
+  .fitting {
+    .product__card {
+      width: 215px !important;
+    }
+  }
+  .application {
+    .production__text {
+      max-width: 350px;
+    }
+  }
+  .number {
+    position: absolute;
+    right: 0;
+    width: 250px;
+  }
+}
+
+@media (max-width: 730px) {
+  .footer__menu {
+    display: none;
+  }
+  .slick-dots button {
+    width: 30px;
+  }
+}
+@media (max-width: 660px) {
+  .number {
+    position: absolute;
+    right: 0;
+    width: 180px;
+  }
+  .production {
   }
 }

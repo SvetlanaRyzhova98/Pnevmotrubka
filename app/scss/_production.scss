@@ -12,6 +12,7 @@
     font-size: 2rem;
     line-height: 3.2rem;
     letter-spacing: 0.01em;
+    flex: 2;
   }
   &__link {
     font-size: 2rem;
@@ -27,12 +28,13 @@
     }
   }
 }
+
 .product {
   padding-top: 24px;
   border-top: 4px solid $blue;
   &__cards {
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
     padding-top: 24px;
     border-top: 2px solid rgba(34, 41, 51, 0.2);
@@ -75,6 +77,14 @@
       font-weight: bold;
       color: $blue;
       cursor: pointer;
+    }
+  }
+}
+.production {
+  .product {
+    &__cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
 }

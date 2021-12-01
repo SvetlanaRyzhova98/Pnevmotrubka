@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
   &__top {
     position: relative;
     border-bottom: 3px solid $dark-red;
@@ -41,7 +42,7 @@
     color: $blue;
     font-family: $good-tim;
     padding-left: 20px;
-    min-width: 261px;
+    min-width: 213px;
   }
   .search {
     padding-right: 20px;
@@ -86,7 +87,6 @@
   height: 24px;
 }
 .dropdown {
-  max-width: 65px;
   position: relative;
   display: flex;
   align-items: center;
@@ -104,6 +104,7 @@
   }
 
   &__box {
+    max-width: 65px;
     cursor: pointer;
     user-select: none;
     display: flex;
@@ -190,3 +191,99 @@
   }
 }
 /*--------DROPDOWN END----------------*/
+.menu-burger {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-left: 20px;
+}
+
+.menu-burger span,
+.menu-burger:after,
+.menu-burger:before {
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  background: rgb(34, 41, 51);
+  margin: 0 auto;
+}
+.menu-burger {
+  display: none;
+  span {
+    top: 21px;
+  }
+  &:after,
+  &:before {
+    content: "";
+  }
+  &:after {
+    bottom: 8px;
+  }
+  &:before {
+    top: 5px;
+  }
+}
+.menu-burger.open-menu {
+  span {
+    opacity: 0;
+    transition: 0.1s;
+  }
+  &:before {
+    transform: rotate(45deg);
+    top: 13px;
+    transition: 0.3s;
+  }
+  &:after {
+    transform: rotate(-45deg);
+    bottom: 8px;
+    transition: 0.3s;
+  }
+}
+.menu-mobile {
+  display: none;
+  position: absolute;
+  top: 59px;
+  right: 0;
+  background-color: #eceeef;
+  width: 30%;
+  height: calc(100vh - 122px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  .nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 32px 0 0 20px;
+    &-list {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+    &-item:not(:last-child) {
+      padding-bottom: 24px;
+    }
+  }
+  .dropdown {
+    padding: 40px 0 16px 22px;
+    border-bottom: 2px solid rgba(34, 41, 51, 0.2);
+    margin: 0;
+    display: block;
+    &__box {
+      border: none;
+      justify-content: flex-start;
+    }
+    &__options {
+      position: absolute;
+      top: 82px;
+      left: 0;
+      padding: 20px 20px;
+      background-color: #eceeef;
+    }
+  }
+}
+.menu-mobile.open-menu {
+  opacity: 1;
+}

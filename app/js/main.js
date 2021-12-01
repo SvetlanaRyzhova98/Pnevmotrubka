@@ -18,6 +18,13 @@ dropdowns.forEach((dropdown) => {
     });
 });
 
+/*обработка клика бургер меню*/
+
+$(".menu-burger").on("click", function () {
+  $(".menu-burger").toggleClass("open-menu");
+  $(".menu-mobile").toggleClass("open-menu");
+});
+
 /*slider and pagination start*/
 const slider = document.querySelector(".slider");
 
@@ -63,19 +70,54 @@ $(function () {
     slidesToShow: 2,
     slidesToScroll: 1,
     prevArrow:
-      '<img class="slider-arrows  slider-arrows__left" src="img/arrow-left.png" alt="">',
+      '<img class="slider-arrows  slider-arrows__left" src="img/icon/arrow-left.png" alt="">',
     nextArrow:
-      '<img class="slider-arrows  slider-arrows__right" src="img/arrow-right.png" alt="">',
+      '<img class="slider-arrows  slider-arrows__right" src="img/icon/arrow-right.png" alt="">',
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+        },
+      },
+    ],
   });
   $(".slick").slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     variableWidth: true,
+
     nextArrow:
-      '<img class="slider-arrows-slick  slider-arrows__left-slick" src="img/arrow-left.png" alt="">',
+      '<img class="slider-arrows-slick  slider-arrows__left-slick" src="img/icon/arrow-left.png" alt="">',
     prevArrow:
-      '<img class="slider-arrows-slick  slider-arrows__right-slick" src="img/arrow-right.png" alt="">',
+      '<img class="slider-arrows-slick  slider-arrows__right-slick" src="img/icon/arrow-right.png" alt="">',
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          variableWidth: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
   // $(".slick").slick({
   //   slidesToShow: 4,
