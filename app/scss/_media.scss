@@ -226,3 +226,21 @@
     margin-top: 40px;
   }
 }
+
+@media (max-height: 500px) {
+  .hiro h1.title {
+    font-size: 27px;
+    line-height: 30px;
+    margin-top: 90px;
+    max-width: 638px;
+    padding: 20px 0 19px;
+    span {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+  .primary-btn {
+    padding: 9px 25px;
+    margin-bottom: 30px;
+  }
+}
