@@ -256,6 +256,8 @@
     margin-top: 40px;
   }
 }
+@media (max-width: 400px) {
+}
 /*-------медиазапросы по высоте-----------*/
 @media (max-height: 500px) {
   .hiro h1.title {
@@ -311,6 +313,16 @@
       width: 50px;
       height: 3px;
     }
+  }
+  .menu-mobile .dropdown {
+    padding: 9px 0 9px 17px;
+  }
+  .menu-mobile .nav {
+    padding: 10px 0 0 20px;
+  }
+  .number {
+    width: 172px;
+    bottom: 55px;
   }
 }
 @media (max-height: 350px) {
