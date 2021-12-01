@@ -30,8 +30,33 @@
     color: rgba(34, 41, 51, 0.4);
   }
 }
-.tube-bg {
+.tube {
+  padding: 0;
   background-color: $gray-light;
   max-height: 642px;
   width: 100vw;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(34, 41, 51, 0.2);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(34, 41, 51, 0.2);
+  }
+}
+.title-h3_catalog {
+  color: $blue;
+  padding-bottom: 32px;
+}
+.wrapper_tube {
+  display: flex;
 }

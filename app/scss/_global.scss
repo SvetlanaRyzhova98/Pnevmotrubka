@@ -2,7 +2,7 @@
   max-width: 1240px;
   margin: 0 auto;
   width: 100%;
-  display: block !important;
+  display: block;
 }
 a {
   text-decoration: none;
@@ -39,4 +39,12 @@ section {
   border-radius: 3px;
   display: block;
   margin: 0 auto;
+}
+.title-h3 {
+  font-family: $good;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.03em;
 }

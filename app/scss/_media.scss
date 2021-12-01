@@ -348,10 +348,6 @@
   .title-section {
     padding-bottom: 15px;
   }
-  .number {
-    width: 172px;
-    bottom: 112px;
-  }
 
   .footer {
     margin-top: 60px;
@@ -387,10 +383,6 @@
   .menu-mobile .nav {
     padding: 10px 0 0 20px;
   }
-  .number {
-    width: 172px;
-    bottom: 55px;
-  }
 }
 @media (max-height: 350px) {
   .hiro h1.title {
@@ -413,10 +405,7 @@
     font-size: 1.6rem;
     line-height: 126%;
   }
-  .number {
-    width: 145px;
-    bottom: 64px;
-  }
+
   .product__card figcaption {
     bottom: 10px;
     left: 18px;
@@ -428,5 +417,6 @@
   }
   .production__info {
     flex-direction: column;
+    align-items: start;
   }
 }
