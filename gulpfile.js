@@ -64,13 +64,9 @@ gulp.task("browser-sync", function () {
 
 gulp.task("export", function () {
   let buildHtml = gulp.src("app/**/*.html").pipe(gulp.dest("dist"));
-
   let BuildCss = gulp.src("app/css/**/*.css").pipe(gulp.dest("dist/css"));
-
   let BuildJs = gulp.src("app/js/**/*.js").pipe(gulp.dest("dist/js"));
-
   let BuildFonts = gulp.src("app/fonts/**/*.*").pipe(gulp.dest("dist/fonts"));
-
   let BuildImg = gulp.src("app/img/**/*.*").pipe(gulp.dest("dist/img"));
 });
 
