@@ -82,7 +82,12 @@
   .menu-mobile {
     display: block;
   }
-
+  .production__link {
+    margin-left: 10px;
+  }
+  .footer-mobile-bottom__list {
+    padding-bottom: 10px;
+  }
   .fitting {
     .product__card {
       width: 215px !important;
@@ -187,6 +192,11 @@
   .experience__card {
     padding-bottom: 0px;
     padding-top: 8px;
+    margin: 0 auto;
+    max-width: 600px;
+    .experience__img {
+      width: 100%;
+    }
   }
   .experience__card:not(:nth-child(1)) {
     border-top: 2px solid rgba(34, 41, 51, 0.2);
@@ -226,7 +236,7 @@
     margin-top: 40px;
   }
 }
-
+/*-------медиазапросы по высоте-----------*/
 @media (max-height: 500px) {
   .hiro h1.title {
     font-size: 27px;
@@ -264,5 +274,43 @@
   }
   .production__text {
     max-width: 660px;
+  }
+}
+@media (max-height: 400px) {
+  .line:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .primary-btn {
+    margin-bottom: 20px;
+  }
+  .line {
+    width: 30px;
+    padding: 1px;
+    &_active {
+      width: 50px;
+      height: 3px;
+    }
+  }
+}
+@media (max-height: 350px) {
+  .hiro h1.title {
+    font-size: 24px;
+    line-height: 1;
+    margin-top: 90px;
+    max-width: 638px;
+    padding: 20px 0 8px;
+  }
+  .line:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .menu-mobile .dropdown {
+    padding: 9px 0 9px 17px;
+  }
+  .menu-mobile .nav {
+    padding: 10px 0 0 20px;
+  }
+  .nav-link {
+    font-size: 1.6rem;
+    line-height: 126%;
   }
 }
