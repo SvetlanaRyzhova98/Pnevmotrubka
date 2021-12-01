@@ -261,6 +261,50 @@
     width: 108px;
     bottom: 101px;
   }
+  .menu .search {
+    padding-right: 7px;
+    border-right: 0.75px solid rgba(34, 41, 51, 0.2);
+    .search-btn {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .menu-burger {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-left: 20px;
+  }
+  .menu {
+    padding-bottom: 0px;
+  }
+  .logo {
+    position: relative;
+    bottom: -3px;
+  }
+  .menu-mobile {
+    top: 28px;
+    height: calc(100vh - 121px);
+    width: 200px;
+  }
+}
+@media (max-width: 330px) {
+  .logo {
+    display: none;
+  }
+  .menu {
+    padding: 6px 0px;
+  }
+
+  .hiro h1.title {
+    font-size: 19px;
+    line-height: 33px;
+    margin-top: 15px;
+    max-width: calc(100vw - 40px);
+    padding: 20px 0 21px;
+  }
 }
 /*-------медиазапросы по высоте-----------*/
 @media (max-height: 500px) {
