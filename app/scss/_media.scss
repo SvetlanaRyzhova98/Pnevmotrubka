@@ -243,4 +243,7 @@
     padding: 9px 25px;
     margin-bottom: 30px;
   }
+  .menu-mobile .nav-item:not(:last-child) {
+    padding-bottom: 15px;
+  }
 }
