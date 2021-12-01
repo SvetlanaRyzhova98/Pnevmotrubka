@@ -103,6 +103,9 @@
     right: 0;
     width: 225px;
   }
+  .dropdown__options {
+    min-width: 165px;
+  }
 }
 
 @media (max-width: 730px) {
@@ -122,7 +125,6 @@
     line-height: 45px;
     max-width: calc(100vw - 46px);
   }
-
   .wrapper {
     padding: 0 23px;
   }
