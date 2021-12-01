@@ -1,0 +1,37 @@
+.hiro-catalog {
+  padding: 0;
+}
+.title-section_catalog {
+  padding: 0;
+}
+.hiro-bg {
+  position: relative;
+  height: 256px;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  &_catalog {
+    background-image: url(../img/catalog/catalog_bg.jpg);
+  }
+}
+.bread-crumbs {
+  padding: 64px 0 59px;
+  display: flex;
+  align-items: center;
+  a,
+  span {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: 0.05em;
+    color: rgba(34, 41, 51, 0.4);
+  }
+}
+.tube-bg {
+  background-color: $gray-light;
+  max-height: 642px;
+  width: 100vw;
+}

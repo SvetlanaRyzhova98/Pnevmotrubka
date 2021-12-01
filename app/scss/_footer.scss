@@ -95,14 +95,27 @@
   background-color: $gray-light;
   &__contact {
     display: flex;
+    position: relative;
     flex-direction: column;
     letter-spacing: 0.05em;
     font-size: 12px;
-    margin-bottom: 27px;
-    border-top: 2px solid rgba(34, 41, 51, 0.2);
-    border-bottom: 2px solid rgba(34, 41, 51, 0.2);
     padding: 16px 0;
-
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      height: 2px;
+      width: 100%;
+      background-color: rgba(34, 41, 51, 0.2);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      height: 2px;
+      width: 100%;
+      background-color: rgba(34, 41, 51, 0.2);
+    }
     p {
       line-height: 20px;
       text-transform: uppercase;
@@ -170,6 +183,8 @@
     }
   }
   &__document {
+    padding-top: 32px;
+    background: white;
     img {
       width: 16px;
       height: 16px;

@@ -52,7 +52,7 @@
 
 @media (max-width: 1250px) {
   section {
-    padding-top: 50px !important;
+    padding-top: 50px;
   }
 
   .experience {
@@ -166,8 +166,6 @@
       .product__card {
         width: 160px !important;
       }
-      .product__card {
-      }
     }
 
     .slider-arrows {
@@ -238,13 +236,14 @@
   }
   .number {
     width: 128px;
-    bottom: 87px;
+    bottom: 89px;
   }
   .slider-app {
     margin-top: 13px;
   }
   .production__text {
     min-width: 200px;
+    padding-top: 15px;
   }
   .production__info {
     padding-bottom: 22px;
@@ -253,13 +252,16 @@
     font-size: 7px !important;
   }
   .footer {
-    margin-top: 40px;
+    margin-top: 48px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .number {
     width: 108px;
-    bottom: 101px;
+    bottom: 120px;
+  }
+  .application .production__text {
+    max-width: 241px;
   }
   .menu .search {
     padding-right: 7px;
@@ -287,10 +289,27 @@
   .menu-mobile {
     top: 28px;
     height: calc(100vh - 121px);
-    width: 200px;
+    width: 100%;
+  }
+  .slider-arrows__left {
+    right: 10px;
+  }
+  .slider-arrows__right {
+    left: 10px;
   }
 }
-@media (max-width: 330px) {
+@media (max-width: 340px) {
+  .number {
+  }
+  .title-section {
+    line-height: 25px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    max-width: 233px;
+  }
+  .menu-mobile {
+    top: 37px;
+  }
   .logo {
     display: none;
   }
