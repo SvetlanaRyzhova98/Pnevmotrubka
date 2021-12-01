@@ -4,9 +4,10 @@
   "description": "start gulp",
   "main": "index.js",
   "scripts": {
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Vadim Prokopchuk",
+  "author": "Ryzhova",
   "license": "ISC",
   "devDependencies": {
     "animate.css": "^4.1.1",
