@@ -4,39 +4,7 @@
   width: 100%;
   display: block;
 }
-a {
-  text-decoration: none;
-  color: black;
-}
-.link-medium {
-  font-family: $evol;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  letter-spacing: 0.05em;
-  color: $dark-blue;
-}
-h1 {
-  margin: 0;
-  padding: 0;
-}
-.text-medium {
-  font-family: $evol;
-  font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.01em;
-  color: #222933;
-}
-.title-section {
-  font-family: $good;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 4.5rem;
-  line-height: 6.4rem;
-  display: flex;
-  letter-spacing: 0.01em;
-  color: $dark-blue;
-  padding-bottom: 64px;
-}
+
 section {
   padding-top: 152px;
 }
@@ -54,6 +22,33 @@ section {
   display: block;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.link-medium {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.05em;
+  color: $dark-blue;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.title-section {
+  font-family: $good;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4.5rem;
+  line-height: 6.4rem;
+  display: flex;
+  letter-spacing: 0.01em;
+  color: $dark-blue;
+  padding-bottom: 64px;
+}
 .title-h3 {
   font-family: $good;
   font-style: normal;
@@ -61,4 +56,22 @@ section {
   font-size: 32px;
   line-height: 48px;
   letter-spacing: 0.03em;
+}
+.title-h4 {
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.05em;
+  color: $dark-blue;
+}
+.text-medium {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.01em;
+  color: $dark-blue;
+}
+.text-average {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.05em;
 }

@@ -119,15 +119,7 @@ $(function () {
       },
     ],
   });
-  // $(".slick").slick({
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   infinite: true,
-  //   prevArrow:
-  //     '<img class="slider-arrows  slider-arrows__left" src="img/arrow-left.png" alt="">',
-  //   nextArrow:
-  //     '<img class="slider-arrows  slider-arrows__right" src="img/arrow-right.png" alt="">',
-  // });
+
   $(".slick-mobile").slick({
     prevArrow:
       '<img class="slider-arrows  slider-arrows__right" src="img/icon/arrow-right.png" alt="">',
@@ -146,5 +138,15 @@ $(function () {
         settings: "unslick",
       },
     ],
+  });
+  $(".popular__cards").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    variableWidth: true,
+    nextArrow:
+      '<img class="slider-arrows-slick  slider-arrows__left-slick" src="img/icon/arrow-left.png" alt="">',
+    prevArrow:
+      '<img class="slider-arrows-slick  slider-arrows__right-slick" src="img/icon/arrow-right.png" alt="">',
   });
 });

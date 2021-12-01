@@ -33,7 +33,7 @@
 .tube {
   padding: 0;
   background-color: $gray-light;
-
+  margin-bottom: 115px;
   width: 100vw;
   position: relative;
   &-img {
@@ -85,7 +85,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     a {
       margin: 16px 0;
       border-bottom: 1px dotted transparent;
@@ -111,5 +110,30 @@
   details[open] summary:after {
     background: url(../img/catalog/icon/other-icon.svg) no-repeat;
     background-position: center, center;
+  }
+}
+.popular {
+  padding: 0;
+  &__cards {
+    display: flex;
+    margin-top: 48px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -24px;
+      height: 2px;
+      width: 100%;
+      background-color: rgba(34, 41, 51, 0.2);
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 12px;
+    max-width: 290px;
+  }
+  &__img {
+    margin-bottom: 24px;
   }
 }
