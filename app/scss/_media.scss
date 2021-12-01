@@ -202,9 +202,9 @@
   }
   .title-section {
     line-height: 25px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
     font-size: 23px;
-    max-width: 200px;
+    max-width: 246px;
   }
   .number {
     width: 128px;
@@ -221,5 +221,8 @@
   }
   html {
     font-size: 7px !important;
+  }
+  .footer {
+    margin-top: 40px;
   }
 }
