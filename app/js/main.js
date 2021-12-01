@@ -128,4 +128,23 @@ $(function () {
   //   nextArrow:
   //     '<img class="slider-arrows  slider-arrows__right" src="img/arrow-right.png" alt="">',
   // });
+  $(".slick-mobile").slick({
+    prevArrow:
+      '<img class="slider-arrows  slider-arrows__right" src="img/icon/arrow-right.png" alt="">',
+
+    nextArrow:
+      '<img class="slider-arrows  slider-arrows__left" src="img/icon/arrow-left.png" alt="">',
+
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 2,
+    variableWidth: true,
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 660,
+        settings: "unslick",
+      },
+    ],
+  });
 });

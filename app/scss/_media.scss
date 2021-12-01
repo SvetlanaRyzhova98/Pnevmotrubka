@@ -112,17 +112,62 @@
   }
 }
 @media (max-width: 660px) {
-  .number {
-    position: absolute;
-    right: 0;
-    width: 180px;
+  h1.title {
+    font-size: 25px;
+    line-height: 45px;
+    max-width: calc(100vw - 46px);
+  }
+
+  .wrapper {
+    padding: 0 23px;
+  }
+  .product__img {
+    width: 100%;
+    min-height: 148px;
+  }
+  .product__main {
+    figcaption {
+      top: 16px;
+      left: 16px;
+      font-size: 16px;
+      line-height: 24px;
+      opacity: 1;
+      max-width: 210px;
+    }
   }
   .production {
+    .product__cards {
+      display: flex;
+      .product__card {
+        width: 160px !important;
+      }
+      .product__card {
+      }
+    }
+
+    .slider-arrows {
+      &__left {
+        position: absolute;
+        right: 23px;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+      &__right {
+        position: absolute;
+        left: 23px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  .experience__desc {
+    letter-spacing: 0;
   }
   .experience__cards {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
   }
   .logo {
     position: relative;
@@ -136,10 +181,45 @@
   }
   .menu-mobile {
     top: 34px;
-    height: calc(100vh - 34px);
+    height: calc(100vh - 120px);
     width: 200px;
+  }
+  .experience__card {
+    padding-bottom: 0px;
+    padding-top: 8px;
+  }
+  .experience__card:not(:nth-child(1)) {
+    border-top: 2px solid rgba(34, 41, 51, 0.2);
+  }
+  .experience__title {
+    padding: 24px 0 12px;
   }
   .header__wrapper {
     padding: 0px 10px;
+  }
+  section {
+    padding-top: 40px !important;
+  }
+  .title-section {
+    line-height: 25px;
+    padding-bottom: 30px;
+    font-size: 23px;
+    max-width: 200px;
+  }
+  .number {
+    width: 128px;
+    bottom: 87px;
+  }
+  .slider-app {
+    margin-top: 13px;
+  }
+  .production__text {
+    min-width: 200px;
+  }
+  .production__info {
+    padding-bottom: 22px;
+  }
+  html {
+    font-size: 7px !important;
   }
 }
