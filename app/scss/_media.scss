@@ -147,6 +147,9 @@
   }
   .production__info {
     flex-direction: column;
+    .production__link {
+      margin-left: 0px;
+    }
   }
   .fitting .product__card {
     width: 160px !important;
