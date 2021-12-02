@@ -250,7 +250,7 @@
   background-color: #eceeef;
   width: 30%;
   height: calc(100vh - 122px);
-  opacity: 0;
+  transform: translateX(-100%);
   transition: all 0.3s ease;
   .nav {
     display: flex;
@@ -287,5 +287,5 @@
   }
 }
 .menu-mobile.open-menu {
-  opacity: 1;
+  transform: translateX(0);
 }

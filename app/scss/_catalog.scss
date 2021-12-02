@@ -17,7 +17,7 @@
   }
 }
 .bread-crumbs {
-  padding: 64px 0 59px;
+  margin: 64px 0 59px;
   display: flex;
   align-items: center;
   a,
@@ -57,7 +57,7 @@
   }
 }
 .title-h3_blue {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   max-width: 315px;
   &:hover {
     color: $blue;
