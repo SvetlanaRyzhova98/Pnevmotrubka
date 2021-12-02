@@ -142,6 +142,10 @@
   &__img {
     margin-bottom: 24px;
   }
+  .slider-arrows__left-slick,
+  .slider-arrows__right-slick {
+    transform: translateY(-100%);
+  }
 }
 .fittings {
 }
