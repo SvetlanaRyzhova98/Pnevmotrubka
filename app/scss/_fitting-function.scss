@@ -1,4 +1,44 @@
-.accordion {
+.tube_fitting {
+  .wrapper_internal {
+    padding: 65px 0;
+  }
   .accordion_fitting {
+    .accordion__title {
+      border: 0;
+      justify-content: flex-start;
+      border-bottom: 2px solid rgba(34, 41, 51, 0.2);
+    }
+
+    .accordion__item {
+      width: 100%;
+      &:last-child {
+        .accordion__title {
+          border-bottom: 0;
+        }
+      }
+      &:hover .accordion__title {
+        color: $blue;
+        border-bottom: 2px solid $blue;
+        text-shadow: 0 0 0.5px $blue, 0 0 0.5px $blue;
+      }
+    }
+    summary:after {
+      display: none;
+    }
+    summary::before {
+      background: url(../img/fitting/icon/accordion-right.svg) no-repeat;
+      float: left;
+      margin-right: 23px;
+      height: 20px;
+      width: 20px;
+      content: " ";
+      background-position: center, center;
+    }
+
+    details[open] summary::before {
+      background: url(../img/catalog/icon/other-icon.svg) no-repeat;
+      background-position: center, center;
+      margin-right: 23px;
+    }
   }
 }
