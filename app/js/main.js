@@ -65,6 +65,7 @@ $(function () {
     infinite: true,
     focusOnSelect: true,
     variableWidth: true,
+    centerMode: true,
     dots: true,
     dotsClass: "slick-dots",
     slidesToShow: 2,
@@ -89,6 +90,7 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     variableWidth: true,
+    centerMode: true,
 
     nextArrow:
       '<img class="slider-arrows-slick  slider-arrows__left-slick" src="img/icon/arrow-left.png" alt="">',
@@ -131,6 +133,7 @@ $(function () {
     slidesToScroll: 1,
     slidesToShow: 2,
     variableWidth: true,
+    centerMode: true,
     mobileFirst: true,
     responsive: [
       {
@@ -142,6 +145,7 @@ $(function () {
   $(".popular__cards").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    centerMode: true,
     infinite: true,
     variableWidth: true,
     nextArrow:
