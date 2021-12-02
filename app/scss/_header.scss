@@ -246,15 +246,15 @@
   display: none;
   position: absolute;
   top: 59px;
-  border-radius: 0 0 0 40px;
+  border-radius: 0 0 0 20px;
   right: 0;
   background: url(../img/slider2.png);
   width: 154px;
   height: auto;
   transform: translateX(100%);
   transition: all 0.3s ease;
-  border-left: 1px solid rgba(34, 41, 51, 0.2);
-  border-bottom: 1px solid rgba(34, 41, 51, 0.2);
+  border-left: 1px solid rgb(206, 209, 211);
+  border-bottom: 1px solid rgb(206, 209, 211);
   .nav {
     display: flex;
     flex-direction: column;
