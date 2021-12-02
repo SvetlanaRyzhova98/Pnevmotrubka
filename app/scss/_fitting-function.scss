@@ -49,6 +49,7 @@
     margin: 48px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     p {
       max-width: 580px;
       width: 100%;
@@ -61,7 +62,7 @@
   &-list {
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    flex-wrap: wrap;
     ol {
       list-style-type: decimal-leading-zero;
       counter-reset: li;
