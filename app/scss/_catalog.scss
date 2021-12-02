@@ -37,7 +37,7 @@
   width: 100vw;
   position: relative;
   &-img {
-    width: 630px;
+    // width: 630px;
   }
   &::before {
     content: "";
@@ -57,18 +57,23 @@
   }
 }
 .title-h3_blue {
-  color: $blue;
   padding-bottom: 32px;
   max-width: 315px;
+  &:hover {
+    color: $blue;
+  }
 }
 .wrapper_accordion {
   display: flex;
   align-items: flex-start;
   .wrapper_internal {
-    padding: 91px 0 0 104px;
+    padding: 65px 0 0 104px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    &_fitting {
+      padding: 65px 104px 0 0;
+    }
   }
 }
 .accordion {
@@ -114,6 +119,7 @@
 }
 .popular {
   padding: 0;
+  margin-bottom: 96px;
   &__cards {
     display: flex;
     margin-top: 48px;
@@ -136,4 +142,6 @@
   &__img {
     margin-bottom: 24px;
   }
+}
+.fittings {
 }
