@@ -42,3 +42,35 @@
     }
   }
 }
+.info {
+  padding: 0;
+  margin-bottom: 96px;
+  &-top {
+    margin: 48px 0;
+    display: flex;
+    justify-content: space-between;
+    p {
+      max-width: 580px;
+      width: 100%;
+    }
+  }
+  .text-average_info {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    ol {
+      list-style-type: decimal-leading-zero;
+      counter-reset: li;
+    }
+    &__item {
+      max-width: 530px;
+      width: 100%;
+      margin: 32px 0;
+      margin-left: 39px;
+    }
+  }
+}
