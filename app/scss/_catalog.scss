@@ -64,20 +64,28 @@
   }
 }
 .wrapper_accordion {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 500px;
   align-items: flex-start;
   .wrapper_internal {
-    padding: 65px 0 0 104px;
+    padding: 45px 0;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     &_fitting {
-      padding: 65px 104px 0 0;
+      padding: 45px 0;
     }
   }
 }
+.tube_fittings {
+  .wrapper_accordion {
+    grid-template-columns: 500px auto;
+  }
+}
 .accordion {
-  min-width: 500px;
+  max-width: 500px;
+  min-width: 360px;
+  width: 100%;
   &__title {
     display: flex;
     align-items: center;
@@ -142,10 +150,11 @@
   &__img {
     margin-bottom: 24px;
   }
+  &__descr {
+    text-align: center;
+  }
   .slider-arrows__left-slick,
   .slider-arrows__right-slick {
     transform: translateY(-100%);
   }
-}
-.fittings {
 }
