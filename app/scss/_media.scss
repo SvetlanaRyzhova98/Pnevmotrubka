@@ -148,6 +148,9 @@
       }
     }
   }
+  .title-h4 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 730px) {
@@ -167,6 +170,7 @@
     line-height: 45px;
     max-width: calc(100vw - 46px);
   }
+
   .wrapper {
     padding: 0 23px;
   }
