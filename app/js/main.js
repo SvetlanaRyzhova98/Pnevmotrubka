@@ -169,6 +169,14 @@ $(function () {
     $(searchClose).removeClass("search-close_visible");
     event.stopPropagation();
   });
+  $(".search-close").on("click", function (event) {
+    let searchBlock = ".search-btn";
+    let searchClose = ".search-close";
+    // if ($(event.target).closest(searchBlock).length) return;
+    $(searchBlock).removeClass("_search-focus");
+    $(searchClose).removeClass("search-close_visible");
+    event.stopPropagation();
+  });
 });
 /*------------------scroll top----------*/
 $(".footer-mobile__link-item_up").on("click", function () {
