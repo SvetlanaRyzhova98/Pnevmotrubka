@@ -122,6 +122,9 @@
   .dropdown__options {
     min-width: 165px;
   }
+  .search-btn input[type="search"] {
+    height: 59px;
+  }
   /*------------catalog------------*/
   .tube .wrapper_accordion {
     grid-template-columns: 400px;

@@ -9,136 +9,77 @@
   </head>
   <body>
     <header class="header">
-        <div class="header__top">
-          <div class="header__wrapper header__wrapper_top">
-            <a href="./index.html" class="logo">
-              <img src="./img/Logo_Pnevmotrubka.svg" alt="logo" />
-            </a>
-            <div class="menu">
-              <div class="search">
-                <button class="search-btn" type="submit">
-                  <img src="./img/icon/search.svg" alt="search" />
-                </button>
+      <div class="header__top">
+        <div class="header__wrapper header__wrapper_top">
+          <a href="./index.html" class="logo">
+            <img src="./img/Logo_Pnevmotrubka.svg" alt="logo" />
+          </a>
+          <div class="menu">
+            <div class="search">
+              <div class="search-btn">
+                <form action="/">
+                  <input name="s" type="search" placeholder="Что будем искать?" />
+                  <input class="search-btn__fake-submit" name="submit" type="submit" value="Поиск" /> 
+                  <button class="search-close"></button>     
+                </form>
               </div>
-  
-              <div class="dropdown">
-                <div class="dropdown__box">
-                  <div class="dropdown__selected dropdown__option">
-                    <img
-                      class="dropdown__icon"
-                      src="./img/icon/ru.png"
-                      alt="Россия"
-                    />
-                    <span class="descr"> Россия</span>
-                  </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__box">
+                <div class="dropdown__selected dropdown__option">
                   <img
-                    class="dropdown__arrow"
-                    src="./img/icon/arrow-down.svg"
-                    alt="arrow"
+                    class="dropdown__icon"
+                    src="./img/icon/ru.png"
+                    alt="Россия"
                   />
+                  <span class="descr"> Россия</span>
                 </div>
-  
-                <div class="dropdown__options">
-                  <div
-                    class="dropdown__option dropdown__option_selected"
-                    data-phone="8 (800) 775 46 82"
-                  >
-                    <img
-                      class="dropdown__icon"
-                      src="./img/icon/ru.png"
-                      alt="Россия"
-                    />
-                    <span class="descr"> Россия</span>
-                  </div>
-  
-                  <div class="dropdown__option" data-phone="8 (880) 555 35 35">
-                    <img
-                      class="dropdown__icon"
-                      src="./img/icon/blr.png"
-                      alt="Белоруссия"
-                    />
-                    <span class="descr">Белоруссия</span>
-                  </div>
+                <img
+                  class="dropdown__arrow"
+                  src="./img/icon/arrow-down.svg"
+                  alt="arrow"
+                />
+              </div>
+
+              <div class="dropdown__options">
+                <div
+                  class="dropdown__option dropdown__option_selected"
+                  data-phone="8 (800) 775 46 82"
+                >
+                  <img
+                    class="dropdown__icon"
+                    src="./img/icon/ru.png"
+                    alt="Россия"
+                  />
+                  <span class="descr"> Россия</span>
+                </div>
+
+                <div class="dropdown__option" data-phone="8 (880) 555 35 35">
+                  <img
+                    class="dropdown__icon"
+                    src="./img/icon/blr.png"
+                    alt="Белоруссия"
+                  />
+                  <span class="descr">Белоруссия</span>
                 </div>
               </div>
-  
-              <div class="phone">8 (800) 775 46 82</div>
-  
-              <div class="menu-burger">
-                <span></span>
-              </div>
+            </div>
+
+            <div class="phone">8 (800) 775 46 82</div>
+
+            <div class="menu-burger">
+              <span></span>
             </div>
           </div>
         </div>
-        <div class="header__bottom">
-          <div class="header__wrapper header__wrapper_bottom">
-            <nav class="nav">
-              <ul class="nav-list">
-                <li class="nav-item">
-                  <a href="#!" class="nav-link">Каталог</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#!" class="nav-link">Применение</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#!" class="nav-link">Документация</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#!" class="nav-link">Контакты</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#!" class="nav-link">Hовости</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-  
-        <div class="menu-mobile">
-          <div class="dropdown dropdown_mobile">
-            <div class="dropdown__box">
-              <div class="dropdown__selected dropdown__option">
-                <img
-                  class="dropdown__icon"
-                  src="./img/icon/ru.png"
-                  alt="Россия"
-                />
-                <span class="descr"> Россия</span>
-              </div>
-              <img
-                class="dropdown__arrow"
-                src="./img/icon/arrow-down.svg"
-                alt="arrow"
-              />
-            </div>
-  
-            <div class="dropdown__options">
-              <div
-                class="dropdown__option dropdown__option_selected"
-                data-phone="8 (800) 775 46 82"
-              >
-                <img
-                  class="dropdown__icon"
-                  src="./img/icon/ru.png"
-                  alt="Россия"
-                />
-                <span class="descr"> Россия</span>
-              </div>
-  
-              <div class="dropdown__option" data-phone="8 (880) 555 35 35">
-                <img
-                  class="dropdown__icon"
-                  src="./img/icon/blr.png"
-                  alt="Белоруссия"
-                />
-                <span class="descr">Белоруссия</span>
-              </div>
-            </div>
-          </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__wrapper header__wrapper_bottom">
           <nav class="nav">
             <ul class="nav-list">
               <li class="nav-item">
-                <a href="#!" class="nav-link">Каталог</a>
+                <a href="./catalog.html" class="nav-link">Каталог</a>
               </li>
               <li class="nav-item">
                 <a href="#!" class="nav-link">Применение</a>
@@ -150,11 +91,74 @@
                 <a href="#!" class="nav-link">Контакты</a>
               </li>
               <li class="nav-item">
-                <a href="#!" class="nav-link">Hовости</a>
+                <a href="./error404.html" class="nav-link">Hовости</a>
               </li>
             </ul>
           </nav>
         </div>
+      </div>
+
+      <div class="menu-mobile">
+        <div class="dropdown dropdown_mobile">
+          <div class="dropdown__box">
+            <div class="dropdown__selected dropdown__option">
+              <img
+                class="dropdown__icon"
+                src="./img/icon/ru.png"
+                alt="Россия"
+              />
+              <span class="descr"> Россия</span>
+            </div>
+            <img
+              class="dropdown__arrow"
+              src="./img/icon/arrow-down.svg"
+              alt="arrow"
+            />
+          </div>
+
+          <div class="dropdown__options">
+            <div
+              class="dropdown__option dropdown__option_selected"
+              data-phone="8 (800) 775 46 82"
+            >
+              <img
+                class="dropdown__icon"
+                src="./img/icon/ru.png"
+                alt="Россия"
+              />
+              <span class="descr"> Россия</span>
+            </div>
+
+            <div class="dropdown__option" data-phone="8 (880) 555 35 35">
+              <img
+                class="dropdown__icon"
+                src="./img/icon/blr.png"
+                alt="Белоруссия"
+              />
+              <span class="descr">Белоруссия</span>
+            </div>
+          </div>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="./catalog.html" class="nav-link">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Применение</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Документация</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a href="./error404.html" class="nav-link">Hовости</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
         <section class="error">

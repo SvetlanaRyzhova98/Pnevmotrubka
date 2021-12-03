@@ -154,3 +154,17 @@ $(function () {
       '<img class="slider-arrows-slick  slider-arrows__right-slick" src="img/icon/arrow-right.png" alt="">',
   });
 });
+/*---------------------search--start------------------------*/
+$(function () {
+  $(".search-btn__fake-submit").on("click", function (event) {
+    event.preventDefault();
+    $(".search-btn").addClass("_search-focus");
+    $(".search-close").addClass("search-close_visible");
+  });
+  $(document).on("click", function (event) {
+    let searchBlock = ".search-btn";
+    if ($(event.target).closest(searchBlock).length) return;
+    $(searchBlock).removeClass("_search-focus");
+    event.stopPropagation();
+  });
+});
