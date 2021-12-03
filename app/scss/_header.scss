@@ -341,8 +341,6 @@
 }
 /*-----------------------*/
 
-.search-btn {
-}
 .search-btn input {
   display: inline-block;
   outline: none !important;
@@ -374,7 +372,7 @@
   width: 100%;
   position: absolute;
   top: 0;
-  padding-left: 47px;
+  padding: 0 47px;
   font-size: 18px;
   opacity: 1;
   color: #103a64;
