@@ -306,6 +306,9 @@
   .footer {
     margin-top: 48px;
   }
+  .search-btn input[type="search"] {
+    height: 40px;
+  }
 }
 @media (max-width: 450px) {
   section {
