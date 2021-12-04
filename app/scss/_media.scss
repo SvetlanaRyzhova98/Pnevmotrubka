@@ -104,6 +104,9 @@
   .menu-mobile {
     display: block;
   }
+  .menu-mobile {
+    top: 49px;
+  }
   .production__link {
     margin-left: 10px;
   }
@@ -352,6 +355,13 @@
   }
   section.search-results {
     margin: 40px 0 0 0 !important;
+  }
+  .filters__card-desc span {
+    margin: 16px 0 10px;
+  }
+  .filters__card {
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 450px) {
