@@ -5,6 +5,9 @@
   .wrapper {
     padding: 0 25px;
   }
+  .header__wrapper {
+    padding: 0 35px;
+  }
   .hiro {
     &__container {
       justify-content: space-around;
@@ -47,6 +50,9 @@
   }
   .slick-dots button {
     width: 50px;
+  }
+  .filters__cards {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
   /*------------catalog------------*/
 }
@@ -157,6 +163,20 @@
   .popular__cards .popular__card {
     max-width: 215px;
   }
+  /*-----------------*/
+  .filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    position: relative;
+    .filters__field {
+      .accordion {
+        max-width: 500px;
+        min-width: 175px;
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media (max-width: 730px) {
@@ -248,16 +268,14 @@
   }
   .logo {
     position: relative;
-    bottom: -6px;
+    bottom: -11px;
     img {
       width: 200px;
     }
   }
-  .menu {
-    padding-bottom: 5px;
-  }
+
   .menu-mobile {
-    top: 34px;
+    top: 45px;
   }
   .experience__card {
     padding-bottom: 0px;
@@ -307,8 +325,33 @@
     margin-top: 48px;
   }
   .search-btn input[type="search"] {
-    height: 40px;
+    height: 45px;
     font-size: 16px;
+  }
+  .wrapper .search-results__title {
+    margin-bottom: 25px;
+  }
+  .filters__title {
+    margin: 25px 0;
+    line-height: 1;
+    font-size: 12px;
+  }
+
+  .filters__cards {
+    grid-template-columns: 1fr;
+  }
+  .menu {
+    padding: 9px 0;
+  }
+  .filters .filters__field .accordion {
+    min-width: 170px;
+    width: 100%;
+  }
+  .filters__item {
+    padding: 3px 30px 3px 7px;
+  }
+  section.search-results {
+    margin: 40px 0 0 0 !important;
   }
 }
 @media (max-width: 450px) {
@@ -351,6 +394,21 @@
       }
     }
   }
+  .accordion__item .accordion__title {
+    padding: 15px 0;
+    font-size: 12px;
+  }
+  .accordion .accordion__title:after {
+    height: 10px;
+    width: 10px;
+    background-size: contain;
+  }
+  .filters {
+    gap: 20px;
+  }
+  .filters__field-cards {
+    min-width: 0;
+  }
 }
 @media (max-width: 420px) {
   .number {
@@ -361,7 +419,7 @@
     max-width: 241px;
   }
   .menu .search {
-    padding-right: 7px;
+    padding-right: 15px;
     border-right: 0.75px solid rgba(34, 41, 51, 0.2);
     .search-btn {
       img {
@@ -374,17 +432,15 @@
     width: 20px;
     height: 20px;
     display: block;
-    margin-left: 20px;
+    margin-left: 15px;
   }
-  .menu {
-    padding-bottom: 0px;
-  }
+
   .logo {
     position: relative;
-    bottom: -3px;
+    bottom: -11px;
   }
   .menu-mobile {
-    top: 28px;
+    top: 45px;
     width: 100%;
     border-radius: 0;
   }
@@ -393,6 +449,15 @@
   }
   .slider-arrows__right {
     left: 10px;
+  }
+  .filters .filters__field .accordion {
+    min-width: 139px;
+    width: 100%;
+  }
+  .filters__title {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 11px;
   }
 }
 @media (max-width: 340px) {
@@ -403,13 +468,17 @@
     max-width: 233px;
   }
   .menu-mobile {
-    top: 37px;
+    top: 45px;
+  }
+  .search-btn input[type="search"] {
+    height: 43px;
+    font-size: 16px;
   }
   .logo {
     display: none;
   }
   .menu {
-    padding: 6px 0px;
+    padding: 9px 0px;
   }
 
   .hiro h1.title {

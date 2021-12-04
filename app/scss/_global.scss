@@ -76,3 +76,95 @@ h1 {
   line-height: 2.4rem;
   letter-spacing: 0.05em;
 }
+.text-normal {
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.05em;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 380px auto;
+  gap: 40px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 4px;
+    width: 100%;
+    background-color: $blue;
+  }
+  &__title {
+    text-transform: uppercase;
+    color: $blue;
+    margin: 32px 0;
+  }
+  &__field-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  &__reset {
+    border: 0;
+    background: transparent;
+    margin-top: 32px;
+    color: $dark-blue;
+    border-bottom: 1px dashed $dark-blue;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 400px));
+    gap: 20px;
+    min-width: 0;
+  }
+  &__selected {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 26px 0 30px;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: fit-content;
+    border: 0.75px solid #222933;
+    border-radius: 3px;
+    padding: 3px 52px 3px 12px;
+    position: relative;
+    max-width: 250px;
+    min-width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &__item-close {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 20px;
+    transform: translateY(-50%);
+    height: 20px;
+    border: 0;
+    background: url(../img/icon/close-black.svg) no-repeat;
+    background-position: center center;
+  }
+  &__card {
+    width: 100%;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+    }
+  }
+  &__card-desc {
+    span {
+      font-weight: bold;
+      display: block;
+      margin: 24px 0 16px;
+    }
+  }
+}
