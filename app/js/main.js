@@ -24,6 +24,7 @@ $(".menu-burger").on("click", function () {
   $(".menu-burger").toggleClass("open-menu");
   $(".menu-mobile").toggleClass("open-menu");
 });
+/*--------------*/
 
 /*slider and pagination start*/
 const slider = document.querySelector(".slider");
@@ -172,7 +173,6 @@ $(function () {
   $(".search-close").on("click", function (event) {
     let searchBlock = ".search-btn";
     let searchClose = ".search-close";
-    // if ($(event.target).closest(searchBlock).length) return;
     $(searchBlock).removeClass("_search-focus");
     $(searchClose).removeClass("search-close_visible");
     event.stopPropagation();
