@@ -67,7 +67,7 @@
     width: 100%;
   }
   &-item:not(:last-child) {
-    padding-right: 50px;
+    margin-right: 50px;
   }
   &-link {
     font-size: 1.8rem;
@@ -129,7 +129,7 @@
     position: absolute;
     top: 38px;
     left: -20px;
-    padding: 20px 20px;
+    margin: 20px 20px;
     background-color: #fff;
     min-width: 364px;
     transform: scale(0);
@@ -268,7 +268,8 @@
       flex-direction: column;
     }
     &-item {
-      padding-bottom: 24px;
+      margin: 0;
+      margin-bottom: 24px;
     }
   }
   .dropdown {
@@ -284,7 +285,7 @@
       position: absolute;
       top: 65px;
       left: 0;
-      padding: 20px 20px;
+      margin: 20px 20px;
       background: url(../img/slider2.png);
     }
   }

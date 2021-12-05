@@ -1,5 +1,5 @@
 .hiro {
-  padding-top: 0 !important;
+  margin-top: 0 !important;
   &__container {
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ h1.title {
   text-transform: uppercase;
   color: $dark-blue;
   max-width: 750px;
-  padding: 96px 0 80px;
+  margin: 96px 0 80px;
   span {
     font-size: 3.8rem;
     line-height: 5.6rem;
@@ -61,7 +61,7 @@ h1.title {
 
 .pagination-slider {
   max-width: 80px;
-  padding-bottom: 96px;
+  margin-bottom: 96px;
 }
 .line {
   width: 40px;

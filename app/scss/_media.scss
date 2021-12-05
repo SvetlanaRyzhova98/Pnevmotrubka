@@ -13,6 +13,9 @@
       justify-content: space-around;
     }
   }
+  .search-btn input[type="search"] {
+    height: 49px;
+  }
   .primary-btn {
     margin-bottom: 60px;
   }
@@ -23,7 +26,8 @@
     font-size: 5.4rem;
     line-height: 7.8rem;
     max-width: 750px;
-    padding: 50px 0 50px;
+    margin: 50px 0 50px;
+    padding: 0;
     span {
       font-size: 2.8rem;
       line-height: 4.6rem;
@@ -59,7 +63,7 @@
 
 @media (max-width: 1250px) {
   section {
-    padding-top: 50px;
+    margin-top: 50px;
   }
 
   .experience {
@@ -100,9 +104,18 @@
   .phone {
     display: none;
   }
+  h1.title {
+    margin: 50px 0 50px;
+  }
+  .primary-btn {
+    margin-bottom: 30px;
+  }
   .menu-burger,
   .menu-mobile {
     display: block;
+  }
+  .pagination-slider {
+    margin-bottom: 20px;
   }
   .menu-mobile {
     top: 49px;
@@ -299,7 +312,7 @@
     padding: 0px 10px;
   }
   section {
-    padding-top: 40px;
+    margin-top: 40px;
   }
   .title-section {
     line-height: 25px;
@@ -366,7 +379,7 @@
 }
 @media (max-width: 450px) {
   section {
-    padding-top: 30px;
+    margin-top: 30px;
   }
   .title-h3 {
     font-size: 25px;
@@ -515,7 +528,7 @@
     line-height: 33px;
     margin-top: 15px;
     max-width: calc(100vw - 40px);
-    padding: 20px 0 21px;
+    margin: 20px 0 21px;
   }
 }
 /*-------медиазапросы по высоте-----------*/
@@ -525,7 +538,7 @@
     line-height: 30px;
     margin-top: 90px;
     max-width: 638px;
-    padding: 20px 0 19px;
+    margin: 20px 0 19px;
     span {
       font-size: 15px;
       line-height: 25px;
@@ -583,7 +596,7 @@
     line-height: 1;
     margin-top: 90px;
     max-width: 638px;
-    padding: 20px 0 8px;
+    margin: 20px 0 8px;
   }
   .line:not(:last-child) {
     margin-bottom: 10px;
