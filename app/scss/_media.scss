@@ -419,6 +419,24 @@
   .filters__field-cards {
     min-width: 0;
   }
+  .filters-pagination .pagination-counter {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #222933;
+    margin: 0px 15px;
+  }
+  .filters-pagination {
+    .pagination-left {
+      height: 17px;
+      width: 17px;
+      background-size: contain;
+    }
+    .pagination-right {
+      height: 17px;
+      width: 17px;
+      background-size: contain;
+    }
+  }
 }
 @media (max-width: 420px) {
   .number {
