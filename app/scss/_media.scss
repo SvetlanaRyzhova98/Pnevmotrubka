@@ -584,7 +584,7 @@
     margin-bottom: 30px;
   }
   .menu-mobile .nav-item:not(:last-child) {
-    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
   .title-section {
     padding-bottom: 15px;
@@ -639,8 +639,12 @@
   .menu-mobile .dropdown {
     padding: 9px 0 9px 17px;
   }
+  .menu-mobile .dropdown__options {
+    top: 45px;
+  }
+
   .menu-mobile .nav {
-    padding: 10px 0 0 20px;
+    padding: 20px 0 0 20px;
   }
   .nav-link {
     font-size: 1.6rem;
