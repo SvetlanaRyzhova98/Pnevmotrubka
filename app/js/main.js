@@ -3,6 +3,7 @@ const dropdowns = document.querySelectorAll(".dropdown");
 dropdowns.forEach((dropdown) => {
   const phone = document.querySelector(".phone");
   const phoneFooter = document.querySelector(".phone-footer");
+  const phoneFooterMob = document.querySelector(".phone-footer_mobile");
   dropdown.addEventListener("click", (e) => {
     dropdown.classList.toggle("dropdown__options_visible");
   });
@@ -14,6 +15,7 @@ dropdowns.forEach((dropdown) => {
         dropdown.querySelector(".dropdown__selected").innerHTML = opt.innerHTML;
         phone.innerHTML = e.currentTarget.dataset.phone;
         phoneFooter.innerHTML = e.currentTarget.dataset.phone;
+        phoneFooterMob.innerHTML = e.currentTarget.dataset.phone;
       });
     });
 });
