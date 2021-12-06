@@ -161,6 +161,8 @@ h1 {
     }
   }
   &__card-desc {
+    width: 100%;
+    word-break: break-all;
     span {
       font-weight: bold;
       display: block;
