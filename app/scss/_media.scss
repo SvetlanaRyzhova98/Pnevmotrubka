@@ -58,7 +58,10 @@
   .filters__cards {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
-  /*------------catalog------------*/
+  /*------------fitting------------*/
+  section.filter-fitting .filters__cards {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -528,6 +531,10 @@
     margin: 20px 0;
     line-height: 1.5;
     font-size: 11px;
+  }
+  /*----------------fitting*/
+  section.filter-fitting .filters__cards {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)) !important;
   }
 }
 @media (max-width: 340px) {

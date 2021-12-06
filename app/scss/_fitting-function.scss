@@ -44,7 +44,7 @@
 }
 .info {
   padding: 0;
-  margin-bottom: 96px;
+  margin: 0;
   &-top {
     margin: 48px 0;
     display: flex;
@@ -77,4 +77,13 @@
 }
 section.tube.tube_fitting {
   margin-bottom: 70px;
+}
+section.filter-fitting {
+  margin-top: 96px;
+  .filters__cards {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 257px));
+  }
+  .filters__item {
+    max-width: 290px;
+  }
 }
