@@ -59,7 +59,7 @@
     width: 50px;
   }
   .filters__cards {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
   /*------------fitting------------*/
   section.filter-fitting .filters__cards {
@@ -233,6 +233,11 @@
     }
     .info-list__item {
       max-width: none;
+    }
+  }
+  .filter-fitting {
+    .footer-mobile__link-up {
+      display: none;
     }
   }
 }

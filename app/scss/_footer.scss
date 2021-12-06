@@ -166,6 +166,9 @@
       margin-bottom: 8px;
       opacity: 1;
     }
+    &:hover {
+      border-bottom: none;
+    }
   }
   &__link-item {
     display: flex;

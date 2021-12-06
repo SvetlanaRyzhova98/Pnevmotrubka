@@ -453,6 +453,7 @@
   .nav {
     .nav-link_hover:hover .hover-catalog {
       display: block;
+      z-index: 13;
     }
   }
 }
