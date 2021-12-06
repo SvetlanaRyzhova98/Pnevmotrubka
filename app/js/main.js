@@ -184,7 +184,7 @@ $(function () {
   });
 });
 /*------------------scroll top----------*/
-$(".footer-mobile__link-item_up").on("click", function () {
+$(".footer-mobile__link_up").on("click", function () {
   $([document.documentElement, document.body]).animate(
     {
       scrollTop: $(".header").offset().top,
