@@ -5,6 +5,9 @@
   .wrapper {
     padding: 0 25px;
   }
+  section {
+    margin-top: 100px;
+  }
   .header__wrapper {
     padding: 0 35px;
   }
@@ -136,7 +139,7 @@
     margin-bottom: 20px;
   }
   .menu-mobile {
-    top: 49px;
+    top: 48px;
   }
   .production__link {
     margin-left: 10px;
@@ -618,12 +621,6 @@
       height: 3px;
     }
   }
-  .menu-mobile .dropdown {
-    padding: 9px 0 9px 17px;
-  }
-  .menu-mobile .nav {
-    padding: 10px 0 0 20px;
-  }
 }
 @media (max-height: 350px) {
   .hiro h1.title {
@@ -663,5 +660,8 @@
   .production__info {
     flex-direction: column;
     align-items: start;
+  }
+  .menu-mobile .hover-catalog_mobile {
+    top: 46px;
   }
 }
