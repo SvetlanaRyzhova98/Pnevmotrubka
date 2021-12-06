@@ -249,7 +249,7 @@
   border-radius: 0 0 0 20px;
   right: 0;
   background: url(../img/slider2.png);
-  width: 154px;
+  width: 190px;
   height: auto;
   transform: translateX(100%);
   transition: all 0.3s ease;
@@ -261,7 +261,8 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    padding: 32px 0 0 20px;
+    position: relative;
+    padding: 30px 0 0 20px;
     &-list {
       display: flex;
       width: 100%;
@@ -270,6 +271,10 @@
     &-item {
       margin: 0;
       margin-bottom: 24px;
+      a:hover {
+        color: $blue;
+        text-shadow: 0 0 0.5px $blue, 0 0 0.5px $blue;
+      }
     }
   }
   .dropdown {
@@ -372,7 +377,6 @@
 
 /*-------------------hover-catalog-----------------------------------*/
 .hover-catalog {
-  background: #fff;
   position: absolute;
   width: 100%;
   top: 100px;
@@ -452,6 +456,55 @@
     }
   }
 }
+/*-----------hover-catalog-mobile*/
+
+.menu-mobile {
+  .hover-catalog_mobile {
+    position: absolute;
+    display: none;
+    left: -1px;
+    background: url(../img/slider2.png);
+    width: 100%;
+    top: 60px;
+    border-left: 1px solid #ced1d3;
+    border-bottom: 1px solid #ced1d3;
+    .hover-catalog__title::before {
+      display: none;
+    }
+  }
+  .hover-catalog__field {
+    .hover-catalog__box {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        width: 128px;
+        height: 2px;
+        left: 0;
+        background: $blue;
+      }
+    }
+  }
+  .hover-catalog__field {
+    margin: 34px 0;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .hover-catalog__field:last-child .hover-catalog__box {
+    margin-left: 0px;
+    &::before {
+      display: none;
+    }
+  }
+
+  .open-catalog {
+    display: block;
+    border-top: 2px solid $blue;
+  }
+}
+
 @media (max-width: 1400px) {
   .hover-catalog {
     background: #fff;

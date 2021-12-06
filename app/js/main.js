@@ -22,11 +22,14 @@ dropdowns.forEach((dropdown) => {
 
 /*обработка клика бургер меню*/
 
+$(".nav-link_click").on("click", function () {
+  $(".hover-catalog_mobile").toggleClass("open-catalog");
+});
+/*--------------*/
 $(".menu-burger").on("click", function () {
   $(".menu-burger").toggleClass("open-menu");
   $(".menu-mobile").toggleClass("open-menu");
 });
-/*--------------*/
 
 /*slider and pagination start*/
 const slider = document.querySelector(".slider");
