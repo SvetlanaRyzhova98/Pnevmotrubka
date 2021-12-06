@@ -62,19 +62,19 @@
   &-list {
     display: flex;
     justify-content: space-between;
-    ol {
-      list-style-type: decimal-leading-zero;
-      counter-reset: li;
-    }
+    list-style-type: decimal-leading-zero;
+    counter-reset: li;
+    flex-wrap: wrap;
     &__item {
       max-width: 530px;
       min-width: 140px;
       width: 100%;
-      margin: 32px 0;
-      margin-left: 39px;
-    }
-    &__box:last-child {
-      margin-left: 30px;
+      margin-top: 32px;
+      // margin-left: 39px;
+      &::marker {
+        font-size: 12px;
+        font-weight: bold;
+      }
     }
   }
 }
