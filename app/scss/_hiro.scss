@@ -31,6 +31,7 @@ h1.title {
   height: calc(100vh - 122px);
   transition: all 1s;
   background-size: cover;
+  background-position: center center;
 }
 .slider[data-slideId="0"] {
   background-image: url(../img/slider0.jpg);
