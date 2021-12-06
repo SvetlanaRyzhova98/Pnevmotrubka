@@ -3,6 +3,7 @@ const dropdowns = document.querySelectorAll(".dropdown");
 dropdowns.forEach((dropdown) => {
   const phone = document.querySelector(".phone");
   const phoneFooter = document.querySelector(".phone-footer");
+  const phoneFooterMob = document.querySelector(".phone-footer_mobile");
   dropdown.addEventListener("click", (e) => {
     dropdown.classList.toggle("dropdown__options_visible");
   });
@@ -14,17 +15,21 @@ dropdowns.forEach((dropdown) => {
         dropdown.querySelector(".dropdown__selected").innerHTML = opt.innerHTML;
         phone.innerHTML = e.currentTarget.dataset.phone;
         phoneFooter.innerHTML = e.currentTarget.dataset.phone;
+        phoneFooterMob.innerHTML = e.currentTarget.dataset.phone;
       });
     });
 });
 
 /*обработка клика бургер меню*/
 
+$(".nav-link_click").on("click", function () {
+  $(".hover-catalog_mobile").toggleClass("open-catalog");
+});
+/*--------------*/
 $(".menu-burger").on("click", function () {
   $(".menu-burger").toggleClass("open-menu");
   $(".menu-mobile").toggleClass("open-menu");
 });
-/*--------------*/
 
 /*slider and pagination start*/
 const slider = document.querySelector(".slider");

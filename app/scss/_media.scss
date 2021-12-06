@@ -537,7 +537,7 @@
   }
   /*----------------fitting*/
   section.filter-fitting .filters__cards {
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)) !important;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)) !important;
   }
 }
 @media (max-width: 340px) {
