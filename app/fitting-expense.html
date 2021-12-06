@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фитинги с регулировкой расхода</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="header__wrapper header__wrapper_top">
+          <a href="./index.html" class="logo">
+            <img src="./img/Logo_Pnevmotrubka.svg" alt="logo" />
+          </a>
+          <div class="menu">
+            <div class="search">
+              <div class="search-btn">
+                <form action="/" onsubmit="return false;">
+                  <input name="s" type="search" placeholder="Что будем искать?" />
+                  <input class="search-btn__fake-submit" name="submit" type="submit" value="Поиск" /> 
+                  <button type="button" class="search-close"></button>     
+                </form>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__box">
+                <div class="dropdown__selected dropdown__option">
+                  <img
+                    class="dropdown__icon"
+                    src="./img/icon/ru.png"
+                    alt="Россия"
+                  />
+                  <span class="descr"> Россия</span>
+                </div>
+                <img
+                  class="dropdown__arrow"
+                  src="./img/icon/arrow-down.svg"
+                  alt="arrow"
+                />
+              </div>
+
+              <div class="dropdown__options">
+                <div
+                  class="dropdown__option dropdown__option_selected"
+                  data-phone="8 (800) 775 46 82"
+                >
+                  <img
+                    class="dropdown__icon"
+                    src="./img/icon/ru.png"
+                    alt="Россия"
+                  />
+                  <span class="descr"> Россия</span>
+                </div>
+
+                <div class="dropdown__option" data-phone="8 (880) 555 35 35">
+                  <img
+                    class="dropdown__icon"
+                    src="./img/icon/blr.png"
+                    alt="Белоруссия"
+                  />
+                  <span class="descr">Белоруссия</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="phone">8 (800) 775 46 82</div>
+
+            <div class="menu-burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__wrapper header__wrapper_bottom">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item nav-link_hover">
+                <a href="./catalog.html" class="nav-link ">Каталог</a>
+                
+                <div class="hover-catalog">
+                  <div class="wrapper wrapper_hover-catalog">
+                      <div class="hover-catalog__field">
+                        <div class="hover-catalog__box">
+                          <a href="#!" class="hover-catalog__title  text-average">
+                            Пневматическая трубка </a>
+                          <ul class="hover-catalog__list">
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Полиуретан</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Полиамид</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Фторопласт</a>
+                            </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Полиэтилен</a></li>
+                          </ul>
+                        </div>
+                        <img src="./img/poliamid.png" alt="tube">
+                      </div>
+          
+                      <div class="hover-catalog__field">
+                        <div class="hover-catalog__box">
+                          <a href="#!" class="hover-catalog__title">
+                            Фитинги </a>
+                          <ul class="hover-catalog__list">
+                            <li class="hover-catalog__list-item text-average">
+                              <a href="./fitting-function.html">Функциональные</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Соединители</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Резьбовые переходники</a>
+                            </li>
+                            <li class="hover-catalog__list-item text-average">
+                              <a href="#!">Для систем туманообразования</a></li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Для транспорта</a></li>
+                          </ul>
+                        </div>
+                        <img src="./img/threaded-adapters.png" alt="tube">
+                      </div>
+                  </div>
+                </div>
+
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link">Применение</a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link">Документация</a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a href="./error404.html" class="nav-link">Hовости</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      
+
+      <div class="menu-mobile">
+        <div class="dropdown dropdown_mobile">
+          <div class="dropdown__box">
+            <div class="dropdown__selected dropdown__option">
+              <img
+                class="dropdown__icon"
+                src="./img/icon/ru.png"
+                alt="Россия"
+              />
+              <span class="descr"> Россия</span>
+            </div>
+            <img
+              class="dropdown__arrow"
+              src="./img/icon/arrow-down.svg"
+              alt="arrow"
+            />
+          </div>
+
+          <div class="dropdown__options">
+            <div
+              class="dropdown__option dropdown__option_selected"
+              data-phone="8 (800) 775 46 82"
+            >
+              <img
+                class="dropdown__icon"
+                src="./img/icon/ru.png"
+                alt="Россия"
+              />
+              <span class="descr"> Россия</span>
+            </div>
+
+            <div class="dropdown__option" data-phone="8 (880) 555 35 35">
+              <img
+                class="dropdown__icon"
+                src="./img/icon/blr.png"
+                alt="Белоруссия"
+              />
+              <span class="descr">Белоруссия</span>
+            </div>
+          </div>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#!" class="nav-link nav-link_click">Каталог
+                <div class=" hover-catalog_mobile">
+                  <div class="wrapper wrapper_hover-catalog">
+                      <div class="hover-catalog__field">
+                        <div class="hover-catalog__box">
+                          <a href="#!" class="hover-catalog__title  text-average">
+                            Пневматическая трубка </a>
+                          <ul class="hover-catalog__list">
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Полиуретан</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Полиамид</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Фторопласт</a>
+                            </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Полиэтилен</a></li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+          
+                      <div class="hover-catalog__field">
+                        <div class="hover-catalog__box">
+                          <a href="#!" class="hover-catalog__title">
+                            Фитинги </a>
+                          <ul class="hover-catalog__list">
+                            <li class="hover-catalog__list-item text-average">
+                              <a href="./fitting-function.html">Функциональные</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Соединители</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Резьбовые переходники</a>
+                            </li>
+                            <li class="hover-catalog__list-item text-average">
+                              <a href="#!">Для систем туманообразования</a></li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Для транспорта</a></li>
+                          </ul>
+                        </div>
+                       
+                      </div>
+                  </div>
+                </div>
+            </a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Применение</a>
+            </li>
+            <li class="nav-item">
+              <a href="error404.html" class="nav-link">Документация</a>
+            </li>
+            <li class="nav-item">
+              <a href="error404.html" class="nav-link">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a href="./error404.html" class="nav-link">Hовости</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+      <main>
+        <section class="hiro-catalog"> 
+            <div class="hiro-bg hiro-bg_expense">
+                <div class="wrapper">
+                    <h1 class="title-section title-section_expense">Фитинги с регулировкой расхода</h1>
+                </div>
+            </div>
+            <div class="wrapper">
+            <div class="bread-crumbs"> 
+               <a href="./index.html">Главная </a> <span> — </span><a href="./catalog.html">Каталог </a><span> — </span><a href="№!">Фитинги </a> <span> — </span><a href="./fitting-function.html"> Функциональные фитинги </a><span> — </span><a href="./fitting-expense.html"> Фитинги с регулировкой расхода </a>
+            </div>
+            </div>
+        </section>
+
+        <section class="info-subcategory">
+            <div class="wrapper wrapper_subcategory">
+              <img src="./img/fitting/fitting-exp.png" alt="fitting">
+              <p class="info-text text-medium">
+                  Фитинги с возможностью регулирования расхода применяются для изменения скорости хода пневмоцилиндров и других пневматических исполнительных механизмов. Такие фитинги имеют сужение, к которому с помощью микрометрического винта подводится регулирующий элемент. Таким образом, вращением винта изменяется размер проходного сечения фитинга и, следовательно, расход через него.
+              </p>
+            </div>
+        </section>
+
+        <section class="accordion-subcategory">
+            <div class="accordion ">
+                <div class="wrapper">
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                            Все серии</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="№!">KYNAR PVDF HD 4000 жесткая трубка </a>
+                            <a class="link-medium" href="#!">Серия P F A</a>
+                        </p> 
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                            Описание</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="#!">Серия F E P</a>
+                            <a class="link-medium" href="#!">Серия P F A</a>
+                        </p> 
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                            Состав</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="№!">KYNAR PVDF HD 4000 жесткая трубка </a>
+                            <a class="link-medium" href="#!">Серия P F A</a>
+                        </p> 
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                            Габариты</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="№!">KYNAR PVDF HD 4000 жесткая трубка </a>
+                            <a class="link-medium" href="#!">KYNARFLEX  2800 гибкая  трубка</a> 
+                        </p> 
+                    </details>
+                
+                <details class="accordion__item">
+                    <summary class="accordion__title text-medium">
+                        Документация и ПО</summary>
+                    <p class="accordion__body">
+                        <a class="link-medium" href="№!">KYNAR PVDF HD 4000 жесткая трубка </a>
+                        <a class="link-medium" href="#!">KYNARFLEX  2800 гибкая  трубка</a> 
+                    </p> 
+                </details>
+            </div>
+            </div>
+      </section>
+      
+      <section class="filter-fitting">
+        <div class="wrapper wrapper_filter">
+          <div class="filters">
+            <div class="filters__field">
+                <div class="filters__title text-average">Фильтры по параметрам</div>
+                <div class="accordion ">
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                          Категория</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="№!">KYNAR </a>
+                            
+                        </p> 
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                         Материал</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="№!">KYN </a>
+                            
+                        </p> 
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                          Материал уплотнений</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="#!">Серия PA</a>
+                        </p> 
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                            Серия</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="#!">Серия FP</a>
+                        </p> 
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                          Вакуум</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="#!">Серия P F A</a>
+                        </p> 
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                            Форма</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="#!">Серия P F A</a>
+                        </p> 
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                            Тип соединения</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="#!">Серия P F A</a>
+                        </p> 
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                            Вариант соединения</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="#!">Серия P F A</a>
+                        </p> 
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                          Тип резьбы</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="#!">Серия P F A</a>
+                        </p> 
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                            Размер резьбы</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="#!">Серия P F A</a>
+                        </p> 
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                            Присоединение, диаметр</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="#!">Серия P F A</a>
+                        </p> 
+                    </details>
+                    <details class="accordion__item">
+                        <summary class="accordion__title text-medium">
+                            Давлениеб бар</summary>
+                        <p class="accordion__body">
+                            <a class="link-medium" href="#!">Серия P F A</a>
+                        </p> 
+                    </details>
+                    
+                </div>
+                <button class="filters__reset text-average">Сбросить фильтры</button>
+            </div>
+            <div class="filters__field-cards">
+                <ul class="filters__selected">
+                    <li class="filters__item link-medium">
+                        Функциональные фитинги
+                        <button class="filters__item-close"></button>
+                    </li>
+                    <li class="filters__item link-medium">
+                        Фитинги с регулировкой расхода
+                        <button class="filters__item-close"></button>
+                    </li>
+                </ul>
+                <div class="filters__cards">
+                    <a href="#!">
+                        <figure class="filters__card">
+                          <img
+                            class="filters__card-img"
+                            src="./img/fitting/fitting-regular.png"
+                            alt="Полиуретан"
+                          />
+                          <figcaption class="filters__card-desc link-medium">
+                              <span class="text-average">MV 11, MV 14 Фитинг-глушитель выхлопа с регулировкой расхода</span>
+                              Устанавливаются на выхлопных портах распределительных клапанов или пневматических коллекторов
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure class="filters__card">
+                          <img
+                            class="filters__card-img"
+                            src="./img/fitting/photo-none.png"
+                            alt="Полиуретан"
+                          />
+                          <figcaption class="filters__card-desc link-medium">
+                              <span class="text-average">MV 11, MV 14 Фитинг -глушитель выхлопа с регулировкой расхода</span>
+                              Устанавливаются на выхлопных портах распределительных клапанов или пневматических коллекторов
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure class="filters__card">
+                          <img
+                            class="filters__card-img"
+                            src="./img/fitting/fitting-regular.png"
+                            alt="Полиуретан"
+                          />
+                          <figcaption class="filters__card-desc link-medium">
+                              <span class="text-average">MV 11, MV 14 Фитинг -глушитель выхлопа с регулировкой расхода</span>
+                              Устанавливаются на выхлопных портах распределительных клапанов или пневматических коллекторов
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure class="filters__card">
+                          <img
+                            class="filters__card-img"
+                            src="./img/fitting/fitting3.jpg"
+                            alt="Полиуретан"
+                          />
+                          <figcaption class="filters__card-desc link-medium">
+                              <span class="text-average">MV 11, MV 14 Фитинг -глушитель выхлопа с регулировкой расхода</span>
+                              Устанавливаются на выхлопных портах распределительных клапанов или пневматических коллекторов
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure class="filters__card">
+                          <img
+                            class="filters__card-img"
+                            src="./img/fitting/fitting-regular.png"
+                            alt="Полиуретан"
+                          />
+                          <figcaption class="filters__card-desc link-medium">
+                              <span class="text-average">MV 11, MV 14 Фитинг-глушитель выхлопа с регулировкой расхода</span>
+                              Устанавливаются на выхлопных портах распределительных клапанов или пневматических коллекторов
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure class="filters__card">
+                          <img
+                            class="filters__card-img"
+                            src="./img/fitting/fitting3.jpg"
+                            alt="Полиуретан"
+                          />
+                          <figcaption class="filters__card-desc link-medium">
+                              <span class="text-average">MV 11, MV 14 Фитинг -глушитель выхлопа с регулировкой расхода</span>
+                              Устанавливаются на выхлопных портах распределительных клапанов или пневматических коллекторов
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure class="filters__card">
+                          <img
+                            class="filters__card-img"
+                            src="./img/fitting/fitting-regular.png"
+                            alt="Полиуретан"
+                          />
+                          <figcaption class="filters__card-desc link-medium">
+                              <span class="text-average">MV 11, MV 14 Фитинг -глушитель выхлопа с регулировкой расхода</span>
+                              Устанавливаются на выхлопных портах распределительных клапанов или пневматических коллекторов
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure class="filters__card">
+                          <img
+                            class="filters__card-img"
+                            src="./img/fitting/fitting3.jpg"
+                            alt="Полиуретан"
+                          />
+                          <figcaption class="filters__card-desc link-medium">
+                              <span class="text-average">MV 11, MV 14 Фитинг -глушитель выхлопа с регулировкой расхода</span>
+                              Устанавливаются на выхлопных портах распределительных клапанов или пневматических коллекторов
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure class="filters__card">
+                          <img
+                            class="filters__card-img"
+                            src="./img/fitting/fitting-regular.png"
+                            alt="Полиуретан"
+                          />
+                          <figcaption class="filters__card-desc link-medium">
+                              <span class="text-average">MV 11, MV 14 Фитинг -глушитель выхлопа с регулировкой расхода</span>
+                              Устанавливаются на выхлопных портах распределительных клапанов или пневматических коллекторов
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="filters-pagination">
+            <button class="pagination-left"></button>
+            <div class="pagination-counter">1 / 12</div>
+            <button class="pagination-right"></button>
+        </div>
+        <div class="footer-mobile__link-up">
+          <a class="footer-mobile__link footer-mobile__link_up"
+            href="#!"
+            class="link-scroll-up">              
+          <img src="./img/icon/arrow_up.svg" alt="icon" /></a>
+        </div>
+        </div>
+      </section> 
+    </main>
+    <footer class="footer">
+      <div class="footer__menu">
+        <div class="wrapper">
+        <ul class="footer__nav">
+          <li class="footer__item">
+            <p>Главная</p>
+            <a href="#!">Применение</a>
+            <a href="#!">Документация</a>
+            <a href="#!">Новости</a>
+          </li>
+          <li class="footer__item">
+            <p>Каталог</p>
+            <a href="#!">Фитинги</a>
+            <a href="#!"
+              >Пневматическая <br />
+              трубка</a
+            >
+          </li>
+          <li class="footer__item">
+            <p>Ссылки</p>
+            <a href="https://kipservis.ru/"
+              >Корпоративный <br />
+              сайт</a
+            >
+            <a href="#!"
+              >Пользовательское <br />
+              Соглашение</a
+            >
+          </li>
+          <li class="footer__item">
+            <p>Контакты</p>
+            <a class="phone-footer" href="tel:88007754682">
+              <img src="./img/icon/icon-phone.svg" alt="phone" />
+              8 (800) 775 46 82</a
+            >
+            <a href="#!">
+              <img src="./img/icon/icon-mail.svg" alt="mail" />
+              order@kipservis.ru</a
+            >
+            <a href="#!">
+              <img src="./img/icon/icon-map.png" alt="map" /> г.
+              Краснодар</a
+            >
+          </li>
+        </ul>
+        <div class="footer__info">
+          <div class="footer__copyrights">
+            <img src="./img/icon/icon-quote.svg" alt="quote" />
+            <span>2021</span>
+            <span>Pnevmotrubka.ru</span>
+            <a href="#!">Политика конфиденциальности</a>
+          </div>
+          <a href="#!" class="link">
+            Все филиалы <img src="./img/icon/arrow-left.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+      <div class="footer-mobile">
+        <div class="footer-mobile__contact">
+          <div class="wrapper">
+            <p>Вы можете связаться с нами</p>
+            <a class="phone-footer phone-footer_mobile" href="tel:88007754682">
+              <img src="./img/icon/icon-phone.svg" alt="phone" />
+              8 (800) 775 46 82</a
+            >
+            <a class="footer-mobile__mail" href="#!">
+              <img src="./img/icon/icon-mail.svg" alt="mail" />
+              order@kipservis.ru</a
+            >
+            <a class="footer-mobile__link" href="#!" class="link">
+              Все филиалы
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-mobile__document">
+          <div class="wrapper">
+            <div class="footer-mobile__link-item">
+              <a class="footer-mobile__link" href="#!"
+                >Политика конфиденциальности </a
+              ><img src="./img/icon/arrow-left.svg" alt="icon" />
+            </div>
+            <div class="footer-mobile__link-item">
+              <a class="footer-mobile__link" href="#!"
+                >Пользовательское Соглашение </a
+              ><img src="./img/icon/arrow-left.svg" alt="icon" />
+            </div>
+            <div class="footer-mobile__link-item">
+              <a class="footer-mobile__link" href="https://kipservis.ru/"
+                >Корпоративный сайт </a
+              ><img src="./img/icon/arrow-left.svg" alt="icon" />
+            </div>
+            <div class="footer-mobile__link-up">
+              <a class="footer-mobile__link footer-mobile__link_up"
+                href="#!"
+                class="link-scroll-up">              
+              <img src="./img/icon/arrow_up.svg" alt="icon" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-mobile-bottom">
+          <div class="wrapper">
+            <p>Главная</p>
+            <div class="footer-mobile-bottom__list">
+              <div>
+                <a href="./catalog.html">Каталог</a>
+                <a href="#!">Применение</a>
+              </div>
+              <div>
+                <a href="#!">Документация</a> <a href="#!">Новости</a>
+              </div>
+            </div>
+          </div>
+        
+        <div class="footer__copyrights footer__copyrights_mobile">
+          <div class="wrapper">
+          <img src="./img/icon/icon-quote.svg" alt="quote" />
+          <span>2021</span>
+          <span>Pnevmotrubka.ru</span>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

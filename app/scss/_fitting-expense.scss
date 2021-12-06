@@ -1,0 +1,56 @@
+.hiro-bg_expense {
+  background: url(../img/fitting/bg-expense.png);
+  background-position: center center;
+}
+.title-section_expense {
+  color: white;
+  max-width: 606px;
+  padding: 0;
+}
+.accordion-subcategory {
+  .accordion {
+    max-width: 100%;
+    background: $gray-light;
+  }
+  .accordion__title {
+    border: 0;
+    font-weight: bold;
+  }
+  .accordion__item:last-child .accordion__title {
+    border-bottom: 0;
+  }
+  .accordion__item:not(:first-child) {
+    .accordion__title {
+      border-top: 2px solid white;
+    }
+  }
+}
+.info-subcategory {
+  margin-top: 85px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    width: 100%;
+    height: 2px;
+    background: rgba(34, 41, 51, 0.2);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    width: 100%;
+    height: 2px;
+    background: rgba(34, 41, 51, 0.2);
+  }
+}
+.wrapper_subcategory {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 40px;
+  img {
+    width: 100%;
+  }
+}
