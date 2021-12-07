@@ -19,3 +19,54 @@
     height: 100%;
   }
 }
+/*-----------*/
+.accordion__body_range-thread {
+  display: block;
+  margin: 0;
+  p {
+    max-width: 259px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ui-widget.ui-widget-content {
+    max-width: 260px !important;
+    margin-bottom: 38px;
+    margin-top: 38px;
+  }
+
+  .ui-slider-range.ui-corner-all.ui-widget-header {
+    background: $blue !important;
+  }
+  input {
+    border: 0;
+    width: 104px;
+    background: #eceeef;
+    padding: 5px 3px;
+    text-align: center;
+    font-size: 16px;
+    font-family: $evol;
+  }
+  .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 24px;
+    height: 28px;
+    cursor: default;
+    -ms-touch-action: none;
+    touch-action: none;
+  }
+  .ui-slider-horizontal .ui-slider-handle {
+    top: -12px;
+  }
+  .ui-slider-handle.ui-corner-all.ui-state-default:last-child {
+    background: $gray-light url(../img/fitting/icon/mdi-light_chevron-right.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .ui-slider-handle.ui-corner-all.ui-state-default {
+    background: $gray-light url(../img/fitting/icon/mdi-light_chevron-left.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}

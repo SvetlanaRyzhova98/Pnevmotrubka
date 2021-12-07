@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Фитинги с регулировкой расхода</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -396,23 +397,38 @@
                     <details class="accordion__item">
                         <summary class="accordion__title text-medium">
                             Размер резьбы</summary>
-                        <p class="accordion__body">
-                            <a class="link-medium" href="#!">Серия P F A</a>
-                        </p> 
+                        <div class="accordion__body accordion__body_range-thread">
+                          <p>
+                            <input type="text" id="range-thread-start" readonly>
+                            <span> — </span>
+                            <input type="text" id="range-thread-end" readonly>
+                          </p>
+                          <div id="slider-range"></div>
+                        </div> 
                     </details>
                     <details class="accordion__item">
                         <summary class="accordion__title text-medium">
                             Присоединение, диаметр</summary>
-                        <p class="accordion__body">
-                            <a class="link-medium" href="#!">Серия P F A</a>
-                        </p> 
+                            <div class="accordion__body accordion__body_range-thread">
+                              <p>
+                                <input type="text" id="range-diam-start" readonly>
+                                <span> — </span>
+                                <input type="text" id="range-diam-end" readonly>
+                              </p>
+                              <div id="slider-range-diam"></div>
+                            </div> 
                     </details>
                     <details class="accordion__item">
                         <summary class="accordion__title text-medium">
-                            Давлениеб бар</summary>
-                        <p class="accordion__body">
-                            <a class="link-medium" href="#!">Серия P F A</a>
-                        </p> 
+                            Давление, бар</summary>
+                            <div class="accordion__body accordion__body_range-thread">
+                              <p>
+                                <input type="text" id="range-bar-start" readonly>
+                                <span> — </span>
+                                <input type="text" id="range-bar-end" readonly>
+                              </p>
+                              <div id="slider-range-bar"></div>
+                            </div> 
                     </details>
                     
                 </div>
@@ -689,6 +705,8 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
   </body>

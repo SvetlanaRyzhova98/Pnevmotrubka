@@ -95,6 +95,9 @@
       border-bottom: 2px solid rgba(34, 41, 51, 0.2);
     }
   }
+  &__item[open] .accordion__title {
+    border-bottom: 2px solid transparent;
+  }
   &__title {
     display: flex;
     align-items: center;
