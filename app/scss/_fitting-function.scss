@@ -12,7 +12,11 @@
       justify-content: flex-start;
       border-bottom: 2px solid rgba(34, 41, 51, 0.2);
     }
-
+    .accordion__body {
+      margin-left: 48px;
+      margin-bottom: 8px;
+      margin-top: 8px;
+    }
     .accordion__item {
       width: 100%;
       &:last-child {
