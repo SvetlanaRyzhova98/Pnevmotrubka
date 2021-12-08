@@ -19,7 +19,7 @@
     height: 100%;
   }
 }
-/*-----------*/
+/*----СТИЛИ ДЛЯ НАСТРОЕК ФИЛЬТРАЦИИ-------*/
 .accordion__body_range-thread {
   display: block;
   margin: 0;
@@ -33,6 +33,10 @@
     max-width: 260px !important;
     margin-bottom: 38px;
     margin-top: 38px;
+    min-width: 100px;
+    width: 100%;
+    border: transparent;
+    background: $gray-light;
   }
 
   .ui-slider-range.ui-corner-all.ui-widget-header {
@@ -40,7 +44,8 @@
   }
   input {
     border: 0;
-    width: 104px;
+    max-width: 104px;
+    min-width: 30px;
     background: #eceeef;
     padding: 5px 3px;
     text-align: center;
@@ -63,10 +68,47 @@
     background: $gray-light url(../img/fitting/icon/mdi-light_chevron-right.png);
     background-position: center center;
     background-repeat: no-repeat;
+    box-shadow: 2px 3px 7px #80808069;
+    border: 0;
   }
   .ui-slider-handle.ui-corner-all.ui-state-default {
     background: $gray-light url(../img/fitting/icon/mdi-light_chevron-left.png);
     background-position: center center;
     background-repeat: no-repeat;
+    box-shadow: 2px 3px 7px #80808069;
+    border: 0;
   }
+}
+/*-------ЧЕКБОКСЫ-----*/
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  margin-bottom: 26px;
+  font-size: 18px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.custom-checkbox:checked + label::before {
+  border-color: #222933;
+  background-color: #fff;
+  background-image: url(../img/icon/checkbox-checked.svg);
 }

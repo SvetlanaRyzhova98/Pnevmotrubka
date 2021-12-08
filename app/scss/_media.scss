@@ -420,6 +420,13 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
+  /*----------filters-setting-----------*/
+  .accordion__body.accordion__body_range-thread input {
+    max-width: 65px;
+  }
+  .accordion__body.accordion__body_range-thread p {
+    justify-content: space-around;
+  }
 }
 @media (max-width: 450px) {
   section {
@@ -497,6 +504,15 @@
   div.wrapper_subcategory {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+  /*----------filters-setting-----------*/
+  .accordion__body.accordion__body_range-thread input {
+    max-width: 40px;
+    padding: 9px 3px;
+    font-size: 12px;
+  }
+  .accordion__body.accordion__body_range-thread p {
+    justify-content: space-around;
   }
 }
 

@@ -96,6 +96,7 @@
     }
   }
   &__item[open] .accordion__title {
+    // border: 2px solid transparent !important;
     border-bottom: 2px solid transparent;
   }
   &__title {
