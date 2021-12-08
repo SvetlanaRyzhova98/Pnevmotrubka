@@ -11,6 +11,9 @@ section {
 .bg-section {
   background: url(../img/bg_experience.png) no-repeat;
 }
+summary {
+  cursor: pointer;
+}
 .button {
   font-size: 1.8rem;
   text-align: center;
