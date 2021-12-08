@@ -173,3 +173,21 @@ h1 {
     margin-bottom: 20px;
   }
 }
+/*для  доп страницы с ссылками*/
+.link-section {
+  margin: 50px 0;
+}
+.wrapper_link-section {
+  display: flex;
+  flex-direction: column;
+}
+.control {
+  color: #a5a095;
+  margin: 5px 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: $good;
+}
+.control.active {
+  color: $blue;
+}
