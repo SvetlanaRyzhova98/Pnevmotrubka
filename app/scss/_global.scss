@@ -263,6 +263,9 @@ h1 {
   }
   tr {
     border-bottom: 2px solid #eceeef;
+    &:hover {
+      background: $gray-light;
+    }
   }
   .th {
     &-series {
@@ -291,6 +294,7 @@ h1 {
     display: table-row;
   }
 }
+/*-----ccылка под таблицей-------*/
 .accordion a.show-more {
   color: $blue;
   display: inline-flex;
@@ -307,5 +311,37 @@ h1 {
   color: transparent;
   img {
     transform: rotate(180deg);
+  }
+}
+/*-----------состав - раздел аккордиона---*/
+.wrapper_structure {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  .structure-title {
+    text-transform: uppercase;
+    margin-bottom: 48px;
+  }
+  ol {
+    list-style-type: decimal;
+  }
+  .structure-box {
+    display: flex;
+    margin-bottom: 96px;
+    img {
+      margin-right: 120px;
+    }
+  }
+  .structure-list {
+    li {
+      margin-bottom: 25px;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .scheme-desc {
+    font-style: italic;
+    max-width: 300px;
+    margin-bottom: 32px;
   }
 }
