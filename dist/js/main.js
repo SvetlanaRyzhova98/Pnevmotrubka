@@ -20,15 +20,19 @@ dropdowns.forEach((dropdown) => {
     });
 });
 
-/*обработка клика бургер меню*/
-
+/*--------открытие каталога в мобил версии------*/
 $(".nav-link_click").on("click", function () {
   $(".hover-catalog_mobile").toggleClass("open-catalog");
 });
-/*--------------*/
+/*обработка клика бургер меню*/
 $(".menu-burger").on("click", function () {
   $(".menu-burger").toggleClass("open-menu");
   $(".menu-mobile").toggleClass("open-menu");
+});
+/*открытие полной таблицы*/
+$(".show-more").on("click", function () {
+  $(".tr-invisible").toggleClass("visible");
+  $(".show-more").toggleClass("active");
 });
 
 /*slider and pagination start*/
