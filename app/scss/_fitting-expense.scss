@@ -7,27 +7,7 @@
   max-width: 606px;
   padding: 0;
 }
-.accordion-subcategory {
-  .accordion {
-    max-width: 100%;
-    background: $gray-light;
-  }
-  .accordion__title {
-    border: 0;
-    font-weight: bold;
-  }
-  .accordion__item:last-child .accordion__title {
-    border-bottom: 0;
-  }
-  .accordion__item:not(:first-child) {
-    .accordion__title {
-      border-top: 2px solid white;
-    }
-  }
-  .accordion__body {
-    margin-left: 0;
-  }
-}
+
 .info-subcategory {
   margin-top: 85px;
   position: relative;

@@ -194,3 +194,118 @@ h1 {
 .control.active {
   color: $blue;
 }
+/*-------аккордион с наполнением*/
+.accordion-subcategory {
+  .accordion {
+    max-width: 100%;
+  }
+  .accordion__title {
+    border: 0;
+    font-weight: bold;
+    background: $gray-light;
+  }
+  .accordion__item:last-child .accordion__title {
+    border-bottom: 0;
+  }
+  .accordion__item:not(:first-child) {
+    .accordion__title {
+      border-top: 2px solid white;
+    }
+  }
+  .accordion__body {
+    margin-left: 0;
+    background: #fff;
+  }
+  .accordion summary:after {
+    display: none;
+  }
+  .wrapper_summary {
+    position: relative;
+  }
+  .wrapper_summary:after {
+    background: url(../img/catalog/icon/some-icon.svg) no-repeat;
+    right: 20px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    content: " ";
+    background-position: center, center;
+  }
+
+  details[open] .wrapper_summary:after {
+    background: url(../img/catalog/icon/other-icon.svg) no-repeat;
+    background-position: center, center;
+  }
+}
+/*-------таблица все серии----*/
+.series {
+  width: 100%;
+  margin: 65px auto 32px auto;
+  color: black;
+  thead {
+    background-color: $gray-light;
+  }
+  th {
+    vertical-align: middle;
+    text-align: center;
+    font-style: italic;
+    padding: 12px 0;
+  }
+  td {
+    vertical-align: middle;
+    text-align: center;
+    margin: 11px 0;
+    min-height: 46px;
+    padding: 11px 0;
+  }
+  td.td-name {
+    text-align: start;
+  }
+  tr {
+    border-bottom: 2px solid #eceeef;
+  }
+  .th {
+    &-series {
+      width: 189px;
+    }
+    &-name {
+      width: 420px;
+    }
+    &-work-bar {
+      width: 138px;
+    }
+    &-optimal-bar {
+      width: 148px;
+    }
+    &-optimal-temp {
+      width: 148px;
+    }
+    &-material {
+      width: 197px;
+    }
+  }
+  tr.tr-invisible {
+    display: none;
+  }
+  tr.tr-invisible.visible {
+    display: table-row;
+  }
+}
+.accordion a.show-more {
+  color: $blue;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 65px;
+  &:hover {
+    border: 0;
+  }
+  img {
+    margin-left: 22px;
+  }
+}
+.accordion a.show-more.active {
+  color: transparent;
+  img {
+    transform: rotate(180deg);
+  }
+}
