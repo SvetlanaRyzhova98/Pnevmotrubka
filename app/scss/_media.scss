@@ -514,6 +514,12 @@
   .accordion__body.accordion__body_range-thread p {
     justify-content: space-around;
   }
+  div.hiro-bg_fitting {
+    height: 250px;
+  }
+  .tube.tube-fitting_section {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 420px) {
