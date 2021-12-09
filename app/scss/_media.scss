@@ -65,6 +65,32 @@
   section.filter-fitting .filters__cards {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
   }
+  /*------accordion---------*/
+  .desc-sheme {
+    margin-bottom: 20px;
+  }
+  .desc-sheme_one {
+    margin-top: 30px;
+  }
+  .desc-sheme img {
+    margin-right: 30px;
+    width: 100%;
+    max-width: 110px;
+  }
+  .desc-info {
+    margin: 35px 0 35px;
+  }
+  .desc-sheme-big {
+    margin: 40px 0 46px;
+    p {
+      margin-bottom: 30px;
+    }
+  }
+  /*--------filter-------------*/
+  .custom-checkbox + label {
+    margin-bottom: 26px;
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -213,8 +239,17 @@
     }
   }
   div.bread-crumbs {
-    margin: 30px 0 30px;
+    margin: 20px 0 40px;
     flex-wrap: wrap;
+  }
+  .bread-crumbs.bread-crumbs_expense {
+    margin: 20px 0 20px;
+  }
+  section.info-subcategory {
+    margin-top: 45px;
+  }
+  div.hiro-bg {
+    height: 200px;
   }
 }
 
@@ -249,6 +284,9 @@
     font-size: 25px;
     line-height: 45px;
     max-width: calc(100vw - 46px);
+  }
+  div.hiro-bg {
+    height: 130px;
   }
 
   .wrapper {
@@ -494,11 +532,17 @@
   }
   .title-h3 {
     font-size: 25px;
-    line-height: 40px;
+    line-height: 30px;
   }
   .title-h4 {
     text-align: center;
     line-height: 1;
+  }
+  .menu-mobile .dropdown__options {
+    width: 100%;
+  }
+  .wrapper_info .info-top {
+    margin: 30px 0;
   }
   /*--------catalog--------*/
   .tube .wrapper_accordion {
@@ -531,6 +575,7 @@
   .accordion__item .accordion__title {
     padding: 15px 0;
     font-size: 12px;
+    padding-right: 10px;
   }
   .accordion .accordion__title:after {
     height: 10px;
@@ -601,6 +646,16 @@
     .structure-title {
       text-align: center;
     }
+  }
+  input.custom-checkbox + label {
+    margin-bottom: 10px;
+    font-size: 12px;
+    &::before {
+      margin-right: 10px;
+    }
+  }
+  div.hiro-bg {
+    height: 150px;
   }
 }
 

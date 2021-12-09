@@ -209,3 +209,7 @@ $(function () {
   $("#range-bar-end").val($("#slider-range-bar").slider("values", 1));
   $("#range-bar-start").val($("#slider-range-bar").slider("values", 0));
 });
+
+$(function () {
+  jQuery(".scrollbar-inner").scrollbar();
+});

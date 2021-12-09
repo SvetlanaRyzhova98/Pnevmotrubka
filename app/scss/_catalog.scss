@@ -25,8 +25,8 @@
   a,
   span {
     font-style: italic;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     margin: 0 2px;
     letter-spacing: 0.05em;
     color: rgba(34, 41, 51, 0.4);
@@ -88,7 +88,7 @@
 }
 .accordion {
   max-width: 500px;
-  min-width: 360px;
+  min-width: 320px;
   width: 100%;
   &__item:last-child {
     .accordion__title {
