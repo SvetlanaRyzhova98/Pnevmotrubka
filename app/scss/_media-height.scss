@@ -1,0 +1,96 @@
+/*-------медиазапросы по высоте-----------*/
+@media (max-height: 500px) {
+  .hiro h1.title {
+    font-size: 27px;
+    line-height: 30px;
+    margin-top: 90px;
+    max-width: 638px;
+    margin: 20px 0 19px;
+    span {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+  .primary-btn {
+    padding: 9px 25px;
+    margin-bottom: 30px;
+  }
+  .menu-mobile .nav-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .title-section {
+    padding-bottom: 15px;
+  }
+
+  .footer {
+    margin-top: 60px;
+  }
+  .slider-app {
+    margin-top: 0px;
+    padding-top: 24px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .production__text {
+    max-width: 660px;
+  }
+}
+@media (max-height: 400px) {
+  .line:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .primary-btn {
+    margin-bottom: 20px;
+  }
+  .line {
+    width: 30px;
+    padding: 1px;
+    &_active {
+      width: 50px;
+      height: 3px;
+    }
+  }
+}
+@media (max-height: 350px) {
+  .hiro h1.title {
+    font-size: 24px;
+    line-height: 1;
+    margin-top: 90px;
+    max-width: 638px;
+    margin: 20px 0 8px;
+  }
+  .line:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .menu-mobile .dropdown {
+    padding: 9px 0 9px 17px;
+  }
+  .menu-mobile .dropdown__options {
+    top: 45px;
+  }
+
+  .menu-mobile .nav {
+    padding: 20px 0 0 20px;
+  }
+  .nav-link {
+    font-size: 1.6rem;
+    line-height: 126%;
+  }
+
+  .product__card figcaption {
+    bottom: 10px;
+    left: 18px;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  .fitting .product__card {
+    width: 148px !important;
+  }
+  .production__info {
+    flex-direction: column;
+    align-items: start;
+  }
+  .menu-mobile .hover-catalog_mobile {
+    top: 46px;
+  }
+}

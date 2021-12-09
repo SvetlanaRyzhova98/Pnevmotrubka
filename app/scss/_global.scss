@@ -195,6 +195,9 @@ h1 {
   color: $blue;
 }
 /*-------аккордион с наполнением*/
+section.accordion-subcategory {
+  margin-top: 50px;
+}
 .accordion-subcategory {
   .accordion {
     max-width: 100%;
@@ -343,5 +346,146 @@ h1 {
     font-style: italic;
     max-width: 300px;
     margin-bottom: 32px;
+  }
+}
+/*------описание -- радел аккордиона фиттингов---*/
+.uppercase {
+  text-transform: uppercase;
+}
+.wrapper_accordion-desc {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.05em;
+  margin-top: 52px;
+}
+.desc-termin {
+  margin-bottom: 20px;
+}
+.desc-info {
+  margin: 64px 0 48px;
+}
+.desc-sheme {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 48px;
+
+  img {
+    margin-right: 60px;
+    width: 100%;
+    max-width: 166px;
+  }
+}
+.desc-sheme_one {
+  margin-top: 64px;
+}
+.desc-list {
+  li:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  li {
+    padding-left: 60px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      background-color: $blue;
+      top: 50%;
+      left: 0;
+    }
+  }
+}
+.desc-sheme-big {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0 96px;
+  p {
+    font-style: italic;
+    margin-bottom: 64px;
+  }
+  img {
+    width: 100%;
+    max-width: 820px;
+  }
+}
+/*---------аккордион документация/*/
+.wrapper_accordion-doc {
+  margin-top: 65px;
+}
+.link-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  .link-medium {
+    line-height: 1;
+    padding: 0;
+    border-bottom: 1px dashed transparent;
+    img {
+      margin-left: 47px;
+    }
+    &:hover {
+      color: $blue;
+      border-bottom: 1px dashed $blue;
+    }
+  }
+  .link-img {
+    position: relative;
+    margin-right: 70px;
+    color: #c7c9cb;
+    &::after {
+      content: "";
+      position: absolute;
+      right: -54px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 34px;
+      height: 34px;
+      background: url(../img/icon/pdf.svg);
+      background-position: center center;
+    }
+  }
+}
+ol.links-list {
+  list-style-type: decimal;
+  li::marker {
+    font-size: 16px;
+  }
+}
+/*----------блок габаритов аккордон--*/
+.size-title {
+  margin: 64px 0 48px;
+}
+.size-box {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 43px;
+  justify-content: space-between;
+  margin-bottom: 64px;
+  img {
+    max-width: 377px;
+    width: 100%;
+    flex: 1;
+  }
+  table {
+    flex: 2;
+    margin: 0;
+  }
+}
+.series_size {
+  .th-series {
+    width: 202px;
+  }
+  .th-d,
+  .th-d2,
+  .th-l1,
+  .th-l2,
+  .th-l4,
+  .th-ch {
+    width: 52px;
   }
 }
