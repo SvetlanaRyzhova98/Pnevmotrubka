@@ -332,6 +332,9 @@ section.accordion-subcategory {
     margin-bottom: 96px;
     img {
       margin-right: 120px;
+      max-width: 276px;
+      max-height: 264px;
+      width: 100%;
     }
   }
   .structure-list {
@@ -452,7 +455,7 @@ section.accordion-subcategory {
 ol.links-list {
   list-style-type: decimal;
   li::marker {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 /*----------блок габаритов аккордон--*/
@@ -469,6 +472,7 @@ ol.links-list {
   img {
     max-width: 377px;
     width: 100%;
+    max-height: 362px;
     flex: 1;
   }
   table {

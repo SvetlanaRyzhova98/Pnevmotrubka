@@ -437,6 +437,56 @@
   .tube.tube-fitting_section {
     margin-bottom: 70px;
   }
+  /*-------аккордион-*/
+  .desc-sheme {
+    margin-bottom: 25px;
+    img {
+      margin-right: 30px;
+      width: 100%;
+      max-width: 100px;
+      flex: 1;
+    }
+  }
+  .desc-info {
+    margin: 35px 0 35px;
+  }
+  .desc-sheme_one {
+    margin-top: 40px;
+  }
+  .desc-sheme-big {
+    margin: 40px 0 46px;
+  }
+  .wrapper_structure .structure-box {
+    display: flex;
+    margin-bottom: 60px;
+    img {
+      margin-right: 50px;
+      height: fit-content;
+      width: 50%;
+    }
+  }
+  .size-title {
+    margin: 34px 0 38px;
+  }
+  .size-box {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 23px;
+    margin-bottom: 34px;
+  }
+  .link-box .link-img {
+    margin-right: 32px;
+  }
+  .link-box .link-img::after {
+    right: -30px;
+    width: 21px;
+    height: 21px;
+
+    background: url(../img/icon/pdf.svg);
+    background-position: center center;
+    background-size: cover;
+  }
 }
 @media (max-width: 450px) {
   section {
@@ -530,6 +580,28 @@
   .tube.tube-fitting_section {
     margin-bottom: 0;
   }
+  /*--------аккордион------------*/
+  .wrapper_structure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .structure-list {
+      padding-left: 27px;
+    }
+    .structure-box {
+      img {
+        margin-right: 0px;
+        margin-bottom: 30px;
+        width: 50%;
+      }
+      margin-bottom: 30px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .structure-title {
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 420px) {
@@ -584,6 +656,16 @@
   /*----------------fitting*/
   section.filter-fitting .filters__cards {
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)) !important;
+  }
+  .series td.td-name {
+    text-align: start;
+    padding: 11px 5px;
+  }
+  .series.link-medium {
+    font-size: 10px;
+  }
+  .series_size .th-series {
+    width: 95px;
   }
 }
 @media (max-width: 340px) {
