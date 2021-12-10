@@ -53,6 +53,14 @@ h1 {
   padding-bottom: 64px;
   mix-blend-mode: hard-light;
 }
+.title-h2 {
+  font-family: $good;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: 0.03em;
+}
 .title-h3 {
   font-family: $good;
   font-style: normal;
@@ -298,7 +306,7 @@ section.accordion-subcategory {
   }
 }
 /*-----ccылка под таблицей-------*/
-.accordion a.show-more {
+a.show-more {
   color: $blue;
   display: inline-flex;
   align-items: center;
@@ -310,7 +318,7 @@ section.accordion-subcategory {
     margin-left: 22px;
   }
 }
-.accordion a.show-more.active {
+a.show-more.active {
   color: transparent;
   img {
     transform: rotate(180deg);
