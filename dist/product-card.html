@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка товара</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="header__wrapper header__wrapper_top">
+          <a href="./index.html" class="logo">
+            <img src="./img/Logo_Pnevmotrubka.svg" alt="logo" />
+          </a>
+          <div class="menu">
+            <div class="search">
+              <div class="search-btn">
+                <form action="/" onsubmit="return false;">
+                  <input name="s" type="search" placeholder="Что будем искать?" />
+                  <input class="search-btn__fake-submit" name="submit" type="submit" value="Поиск" /> 
+                  <button type="button" class="search-close"></button>     
+                </form>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown__box">
+                <div class="dropdown__selected dropdown__option">
+                  <img
+                    class="dropdown__icon"
+                    src="./img/icon/ru.png"
+                    alt="Россия"
+                  />
+                  <span class="descr"> Россия</span>
+                </div>
+                <img
+                  class="dropdown__arrow"
+                  src="./img/icon/arrow-down.svg"
+                  alt="arrow"
+                />
+              </div>
+
+              <div class="dropdown__options">
+                <div
+                  class="dropdown__option dropdown__option_selected"
+                  data-phone="8 (800) 775 46 82"
+                >
+                  <img
+                    class="dropdown__icon"
+                    src="./img/icon/ru.png"
+                    alt="Россия"
+                  />
+                  <span class="descr"> Россия</span>
+                </div>
+
+                <div class="dropdown__option" data-phone="8 (880) 555 35 35">
+                  <img
+                    class="dropdown__icon"
+                    src="./img/icon/blr.png"
+                    alt="Белоруссия"
+                  />
+                  <span class="descr">Белоруссия</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="phone">8 (800) 775 46 82</div>
+
+            <div class="menu-burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__wrapper header__wrapper_bottom">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item nav-link_hover">
+                <a href="./catalog.html" class="nav-link ">Каталог</a>
+                
+                <div class="hover-catalog">
+                  <div class="wrapper wrapper_hover-catalog">
+                      <div class="hover-catalog__field">
+                        <div class="hover-catalog__box">
+                          <a href="#!" class="hover-catalog__title  text-average">
+                            Пневматическая трубка </a>
+                          <ul class="hover-catalog__list">
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Полиуретан</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Полиамид</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Фторопласт</a>
+                            </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Полиэтилен</a></li>
+                          </ul>
+                        </div>
+                        <img src="./img/poliamid.png" alt="tube">
+                      </div>
+          
+                      <div class="hover-catalog__field">
+                        <div class="hover-catalog__box">
+                          <a href="#!" class="hover-catalog__title">
+                            Фитинги </a>
+                          <ul class="hover-catalog__list">
+                            <li class="hover-catalog__list-item text-average">
+                              <a href="./fitting-function.html">Функциональные</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Соединители</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Резьбовые переходники</a>
+                            </li>
+                            <li class="hover-catalog__list-item text-average">
+                              <a href="#!">Для систем туманообразования</a></li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Для транспорта</a></li>
+                          </ul>
+                        </div>
+                        <img src="./img/threaded-adapters.png" alt="tube">
+                      </div>
+                  </div>
+                </div>
+
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link">Применение</a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link">Документация</a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a href="./error404.html" class="nav-link">Hовости</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      
+
+      <div class="menu-mobile">
+        <div class="dropdown dropdown_mobile">
+          <div class="dropdown__box">
+            <div class="dropdown__selected dropdown__option">
+              <img
+                class="dropdown__icon"
+                src="./img/icon/ru.png"
+                alt="Россия"
+              />
+              <span class="descr"> Россия</span>
+            </div>
+            <img
+              class="dropdown__arrow"
+              src="./img/icon/arrow-down.svg"
+              alt="arrow"
+            />
+          </div>
+
+          <div class="dropdown__options">
+            <div
+              class="dropdown__option dropdown__option_selected"
+              data-phone="8 (800) 775 46 82"
+            >
+              <img
+                class="dropdown__icon"
+                src="./img/icon/ru.png"
+                alt="Россия"
+              />
+              <span class="descr"> Россия</span>
+            </div>
+
+            <div class="dropdown__option" data-phone="8 (880) 555 35 35">
+              <img
+                class="dropdown__icon"
+                src="./img/icon/blr.png"
+                alt="Белоруссия"
+              />
+              <span class="descr">Белоруссия</span>
+            </div>
+          </div>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#!" class="nav-link nav-link_click">Каталог
+                <div class=" hover-catalog_mobile">
+                  <div class="wrapper wrapper_hover-catalog">
+                      <div class="hover-catalog__field">
+                        <div class="hover-catalog__box">
+                          <a href="#!" class="hover-catalog__title  text-average">
+                            Пневматическая трубка </a>
+                          <ul class="hover-catalog__list">
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Полиуретан</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Полиамид</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Фторопласт</a>
+                            </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Полиэтилен</a></li>
+                          </ul>
+                        </div>
+                        
+                      </div>
+          
+                      <div class="hover-catalog__field">
+                        <div class="hover-catalog__box">
+                          <a href="#!" class="hover-catalog__title">
+                            Фитинги </a>
+                          <ul class="hover-catalog__list">
+                            <li class="hover-catalog__list-item text-average">
+                              <a href="./fitting-function.html">Функциональные</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Соединители</a> </li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Резьбовые переходники</a>
+                            </li>
+                            <li class="hover-catalog__list-item text-average">
+                              <a href="#!">Для систем туманообразования</a></li>
+                            <li class="hover-catalog__list-item  text-average">
+                              <a href="#!">Для транспорта</a></li>
+                          </ul>
+                        </div>
+                       
+                      </div>
+                  </div>
+                </div>
+            </a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Применение</a>
+            </li>
+            <li class="nav-item">
+              <a href="error404.html" class="nav-link">Документация</a>
+            </li>
+            <li class="nav-item">
+              <a href="error404.html" class="nav-link">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a href="./error404.html" class="nav-link">Hовости</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+      <main>
+        <section class="hiro-catalog"> 
+            
+            <div class="wrapper">
+            <div class="bread-crumbs bread-crumbs_expense"> 
+               <a href="./index.html">Главная </a> <span> — </span><a href="./catalog.html">Каталог </a><span> — </span><a href="./fitting.html">Фитинги </a> <span> — </span><a href="./fitting-function.html"> Функциональные фитинги </a><span> — </span><a href="./fitting-expense.html"> Фитинги с регулировкой расхода </a><span> — </span><a href="#!"> Фитинг регулятор расхода MV 38</a>
+            </div>
+            </div>
+        </section>
+        <section class="product-card">
+            <div class="wrapper wrapper_product">
+                <div class="product-box product-box_cards">
+                    <div class="slider-box slider-box_nav">
+                        <div class="slider-nav">
+                            <div><img src="./img/fitting/card/1.jpg" alt="fitting"></div>
+                            <div><img src="./img/fitting/card/2.jpg" alt="fitting"></div> 
+                            <div><img src="./img/fitting/card/3.jpg" alt="fitting"></div>
+                            <div><img src="./img/fitting/card/4.jpg" alt="fitting"></div>
+                            <div><img src="./img/fitting/card/5.jpg" alt="fitting"></div>
+                        </div>
+                    </div>
+                    <div class="slider-box">
+                        <div class="slider-for">
+                            <div><img class="slider-img"  src="./img/fitting/card/fitting3-v.jpg" alt=""></div>
+                            <div><img class="slider-img"  src="./img/fitting/card/2.jpg" alt=""></div>
+                            <div><img class="slider-img"  src="./img/fitting/card/3.jpg" alt=""></div>
+                            <div><img class="slider-img"  src="./img/fitting/card/4.jpg" alt=""></div>
+                            <div><img class="slider-img"  src="./img/fitting/card/fitting3.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-box product-box_info">
+                    <h2 class="title-h2">Фитинг регулятор<br>
+                        расхода</h2>
+                    <div class="product-property text-medium">
+                        <p>Свойство: <span>MV 38</span></p>
+                        <p>Диаметр трубки: <span>4..10 мм</span></p>
+                        <p>Размер резьбы: <span>M5x0,8; G1/8 ... G 3/8</span></p>
+                    </div>
+                    <div class="accordion ">
+                        <details class="accordion__item">
+                            <summary class="accordion__title text-medium">
+                              Документация и ПО</summary>
+                            <p class="accordion__body">
+                                <a class="link-medium" href="№!"></a>
+                                
+                            </p> 
+                        </details>
+                        <details class="accordion__item">
+                            <summary class="accordion__title text-medium">
+                              Другие категории</summary>
+                            <p class="accordion__body">
+                                <a class="link-medium" href="№!"></a>
+                            </p> 
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs" class="tabs text-medium">
+                <div class="tabs-bg">
+                    <ul class="tabs-nav">
+                        <li><a href="#tab-1">подробное описание</a></li>
+                        <li><a href="#tab-2">технические характеристики</a></li>
+                        <li><a href="#tab-3">состав</a></li>
+                        <li><a href="#tab-4">Габариты</a></li>
+                        <li><a href="#tab-5">Вся продукция серии</a></li>
+                    </ul>
+                </div>	
+                <div class="tabs-items">
+                    <div class="tabs-item" id="tab-1">
+                        <div class="text-average desc-title">Описание пневматических дросселей (фитингов с регулировкой расхода)</div>
+                        <p>Фитинги MV 38 предоставляют возможность регулировки количества воздуха, проходящего через них. 
+                            Поэтому они называются дросселями или фитингами с регулировкой расхода.
+                            Пневматические дроссели MV 38 /С являются однонаправленными и предназначены для установки 
+                            на пневмоцилиндры. Регулирование расхода осуществляется по направлению резьба → трубка, 
+                            что соответствует выхлопу воздуха из цилиндра. Расход воздуха на входе в пневмоцилиндр (направление трубка → резьба) максимален. Такая конструкция пневмодросселей MV 38 /C позволяет независимо регулировать скорость прямого и обратного хода штока пневмоцилиндра в случае установки двух фитингов.</p>
+                    </div>
+                    <div class="tabs-item" id="tab-2">
+                            <div class="text-average desc-title">Технические характеристики фитингов с регулировкой расхода MV 38 /C</div>
+                        <ul class="desc-list">
+                            <li>Области применения: пневматические системы с фильтрованным воздухом</li>
+                            <li>Рабочее давление: до 10 бар</li>
+                            <li>Рабочая температура: -20…+70 °C</li>
+                            <li>Расход воздуха: в соответствии с диаграммами ниже</li>
+                        </ul>
+                        <div class="desc-sheme-big">
+                            <p>Графики зависимости расхода от количества оборотов регулировочного винта фитинга MV 38</p>
+                          <img src="./img/fitting/graf.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="tabs-item" id="tab-3">
+                        <div class="wrapper wrapper_structure">
+                            <div class="text-average structure-title">Состав и схематичное обозначение пневмодросселей MV 38 /C</div>
+                            <div class="structure-box">
+                            <img src="./img/fitting/structure-fitt.jpg" alt="structure"/>
+                             <ol class="structure-list text-average">
+                               <li>Корпус (Никелированная латунь)</li>
+                               <li>Регулирующий орган (Никелированная латунь)</li>
+                               <li>Регулировочный винт (Никелированная латунь)</li>
+                               <li>Седло (Никелированная латунь)</li>
+                               <li>Уплотнительное кольцо (NBR)</li>
+                               <li>Цанговый зажим</li>
+                             </ol>
+                            </div> 
+                            <p class="link-medium scheme-desc"> Условно-графическое обозначение дросселя MV 38 /C</p>  
+                            <img class="scheme-img" src="./img/fitting/structure-scheme.png" alt="scheme"> 
+                          </div>
+                    </div>		
+                    <div class="tabs-item" id="tab-4">
+                        <div class="wrapper wrapper_size">
+                            <div class="text-average size-title">Габаритные размеры регулятора расхода MV 38</div>
+                            <div class="text-average size-desc">Пластиковый корпус, трубная цилиндрическая резьба</div>
+                            <div class="size-box">
+                              <img src="./img/fitting/size.jpg" alt="size">
+                              <table class="series link-medium series_size">
+                                <thead>
+                                  <tr>
+                                    <th class="th-series">Серия/&shy;код</th>
+                                    <th  class="th-d">D</th>
+                                    <th  class="th-d1">D1</th>
+                                    <th class="th-d2">D2</th>
+                                    <th class="th-l1" >L1</th>
+                                    <th class="th-l2">L2</th>
+                                    <th class="th-l3">L3max</th>
+                                    <th class="th-l4" >L4</th>
+                                    <th class="th-ch">CH</th>
+                                    <th class="th-weight">Вес, г</th>
+                                  </tr>
+                                </thead>
+                                <tr>
+                                  <td>MV 38 06 18	</td>
+                                  <td >6</td>
+                                  <td>G1/8</td>
+                                  <td>12</td>
+                                  <td>5</td>
+                                  <td>15,5</td>
+                                  <td>32</td>
+                                  <td>22</td>
+                                  <td>9</td>
+                                  <td>16</td>
+                                </tr>
+                                <tr>
+                                  <td>MV 38 06 18	</td>
+                                  <td >6</td>
+                                  <td>G1/8</td>
+                                  <td>12</td>
+                                  <td>5</td>
+                                  <td>15,5</td>
+                                  <td>32</td>
+                                  <td>22</td>
+                                  <td>9</td>
+                                  <td>16</td>
+                                </tr>
+                                <tr>
+                                  <td>MV 38 06 18	</td>
+                                  <td >6</td>
+                                  <td>G1/8</td>
+                                  <td>12</td>
+                                  <td>5</td>
+                                  <td>15,5</td>
+                                  <td>32</td>
+                                  <td>22</td>
+                                  <td>9</td>
+                                  <td>16</td>
+                                </tr>
+                                <tr>
+                                  <td>MV 38 06 18	</td>
+                                  <td >6</td>
+                                  <td>G1/8</td>
+                                  <td>12</td>
+                                  <td>5</td>
+                                  <td>15,5</td>
+                                  <td>32</td>
+                                  <td>22</td>
+                                  <td>9</td>
+                                  <td>16</td>
+                                </tr>
+                                <tr>
+                                  <td>MV 38 06 18	</td>
+                                  <td >6</td>
+                                  <td>G1/8</td>
+                                  <td>12</td>
+                                  <td>5</td>
+                                  <td>15,5</td>
+                                  <td>32</td>
+                                  <td>22</td>
+                                  <td>9</td>
+                                  <td>16</td>
+                                </tr>
+                                <tr>
+                                  <td>MV 38 06 18	</td>
+                                  <td >6</td>
+                                  <td>G1/8</td>
+                                  <td>12</td>
+                                  <td>5</td>
+                                  <td>15,5</td>
+                                  <td>32</td>
+                                  <td>22</td>
+                                  <td>9</td>
+                                  <td>16</td>
+                                </tr>
+                                <tr>
+                                  <td>MV 38 06 18	</td>
+                                  <td >6</td>
+                                  <td>G1/8</td>
+                                  <td>12</td>
+                                  <td>5</td>
+                                  <td>15,5</td>
+                                  <td>32</td>
+                                  <td>22</td>
+                                  <td>9</td>
+                                  <td>16</td>
+                                </tr>
+                                <tr>
+                                  <td>MV 38 06 18	</td>
+                                  <td >6</td>
+                                  <td>G1/8</td>
+                                  <td>12</td>
+                                  <td>5</td>
+                                  <td>15,5</td>
+                                  <td>32</td>
+                                  <td>22</td>
+                                  <td>9</td>
+                                  <td>16</td>
+                                </tr>
+                                
+                              </table>
+                            </div>
+                          </div>
+                    </div>		
+                    <div class="tabs-item" id="tab-5">
+                        <table class="series link-medium">
+                            <thead>
+                              <tr>
+                                <th class="th-series">Се&shy;рия</th>
+                                <th class="th-name">Наи&shy;мено&shy;вание</th>
+                                <th class="th-work-bar">Рабо&shy;чее <br> дав&shy;ление <br> (бар)</th>
+                                <th class="th-optimal-temp" >Рабочая <br> темпе&shy;ратура <br> (°C)</th>
+                                <th class="th-thread-ext" >Наружняя <br> резь&shy;ба <br></th>
+                                <th class="th-thread-int" >Внут&shy;ренняя <br> резь&shy;ба <br></th>
+                                <th class="th-thread-seal" >Уплот&shy;нение <br> резь&shy;бы <br></th>
+                                <th class="th-material">Мате&shy;риал</th>
+                              </tr>
+                            </thead>
+                            <tr>
+                              <td>MV 38 08 38 /C</td>
+                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                              <td>10..20 </td>
+                              <td>-20…+70</td>
+                              <td>6мм x G 1/4"</td>
+                              <td> — </td>
+                              <td>NBR</td>
+                              <td>ни&shy;кел. ла&shy;тунь.</td>
+                            </tr>
+                            <tr>
+                              <td>MV 38 08 38 /C</td>
+                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                              <td>10..20 </td>
+                              <td>-20…+70</td>
+                              <td>6мм x G 1/4"</td>
+                              <td> — </td>
+                              <td>NBR</td>
+                              <td>ни&shy;кел. ла&shy;тунь.</td>
+                            </tr>
+                            <tr>
+                              <td>MV 38 08 38 /C</td>
+                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                              <td>10..20 </td>
+                              <td>-20…+70</td>
+                              <td>6мм x G 1/4"</td>
+                              <td> — </td>
+                              <td>NBR</td>
+                              <td>ни&shy;кел. ла&shy;тунь.</td>
+                            </tr>
+                            <tr>
+                              <td>MV 38 08 38 /C</td>
+                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                              <td>10..20 </td>
+                              <td>-20…+70</td>
+                              <td>6мм x G 1/4"</td>
+                              <td> — </td>
+                              <td>NBR</td>
+                              <td>ни&shy;кел. ла&shy;тунь.</td>
+                            </tr>
+                            <tr>
+                              <td>MV 38 08 38 /C</td>
+                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                              <td>10..20 </td>
+                              <td>-20…+70</td>
+                              <td>6мм x G 1/4"</td>
+                              <td> — </td>
+                              <td>NBR</td>
+                              <td>ни&shy;кел. ла&shy;тунь.</td>
+                            </tr>
+                            <tr>
+                              <td>MV 38 08 38 /C</td>
+                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                              <td>10..20 </td>
+                              <td>-20…+70</td>
+                              <td>6мм x G 1/4"</td>
+                              <td> — </td>
+                              <td>NBR</td>
+                              <td>ни&shy;кел. ла&shy;тунь.</td>
+                            </tr>
+                            <tr>
+                              <td>MV 38 08 38 /C</td>
+                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                              <td>10..20 </td>
+                              <td>-20…+70</td>
+                              <td>6мм x G 1/4"</td>
+                              <td> — </td>
+                              <td>NBR</td>
+                              <td>ни&shy;кел. ла&shy;тунь.</td>
+                            </tr>
+                            <tr>
+                              <td>MV 38 08 38 /C</td>
+                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                              <td>10..20 </td>
+                              <td>-20…+70</td>
+                              <td>6мм x G 1/4"</td>
+                              <td> — </td>
+                              <td>NBR</td>
+                              <td>ни&shy;кел. ла&shy;тунь.</td>
+                            </tr>
+                            <tr>
+                              <td>MV 38 08 38 /C</td>
+                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                              <td>10..20 </td>
+                              <td>-20…+70</td>
+                              <td>6мм x G 1/4"</td>
+                              <td> — </td>
+                              <td>NBR</td>
+                              <td>ни&shy;кел. ла&shy;тунь.</td>
+                            </tr>
+                            <!-- скрытые -->
+                            <tr class="tr-invisible">
+                                <td>MV 38 08 38 /C</td>
+                                <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                                <td>10..20 </td>
+                                <td>-20…+70</td>
+                                <td>6мм x G 1/4"</td>
+                                <td> — </td>
+                                <td>NBR</td>
+                                <td>ни&shy;кел. ла&shy;тунь.</td>
+                            </tr>
+                            <tr class="tr-invisible">
+                                <td>MV 38 08 38 /C</td>
+                                <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                                <td>10..20 </td>
+                                <td>-20…+70</td>
+                                <td>6мм x G 1/4"</td>
+                                <td> — </td>
+                                <td>NBR</td>
+                                <td>ни&shy;кел. ла&shy;тунь.</td>
+                            </tr>
+                            <tr class="tr-invisible">
+                                <td>MV 38 08 38 /C</td>
+                                <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                                <td>10..20 </td>
+                                <td>-20…+70</td>
+                                <td>6мм x G 1/4"</td>
+                                <td> — </td>
+                                <td>NBR</td>
+                                <td>ни&shy;кел. ла&shy;тунь.</td>
+                            </tr>
+                            <tr class="tr-invisible">
+                                <td>MV 38 08 38 /C</td>
+                                <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                                <td>10..20 </td>
+                                <td>-20…+70</td>
+                                <td>6мм x G 1/4"</td>
+                                <td> — </td>
+                                <td>NBR</td>
+                                <td>ни&shy;кел. ла&shy;тунь.</td>
+                            </tr>
+                            
+                            
+                          </table>
+                          <a class="show-more text-average" href="#!">Показать еще
+                            <img src="./img/icon/showmore-down.svg" alt="down">
+                          </a>
+                    </div>		
+                </div>
+            </div>
+        </section>
+        <section class="popular">
+            <div class="wrapper">
+                <h4 class="title-h4">Рекомендуемая продукция</h4>
+                <div class="popular__cards">
+                    
+                    <div class="popular__card">
+                        <img class="popular__img" src="./img/catalog/catalog_slide1.jpg" alt="tube">
+                        <div class="popular__descr text-average">
+                            RA 26 Фитинг крестообразный с внутренней резьбой
+                        </div>
+                    </div>
+                    <div class="popular__card">
+                        <img class="popular__img" src="./img/catalog/catalog_slide2.jpg" alt="tube">
+                        <div class="popular__descr text-average">
+                            MA Пневматический фитинг
+                        </div>
+                    </div>
+                    <div class="popular__card">
+                        <img class="popular__img" src="./img/catalog/catalog_slide3.jpg" alt="tube">
+                        <div class="popular__descr text-average">
+                            MV 38 Фитинг регулятор расхода
+                        </div>
+                    </div>
+                    <div class="popular__card">
+                        <img class="popular__img" src="./img/catalog/catalog_slide4.jpg" alt="tube">
+                        <div class="popular__descr text-average">
+                            MV 11, MV 14 фитинг-глушитель выхлопа с регулировкой расхода
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__menu">
+        <div class="wrapper">
+        <ul class="footer__nav">
+          <li class="footer__item">
+            <p>Главная</p>
+            <a href="#!">Применение</a>
+            <a href="#!">Документация</a>
+            <a href="#!">Новости</a>
+          </li>
+          <li class="footer__item">
+            <p>Каталог</p>
+            <a href="#!">Фитинги</a>
+            <a href="#!"
+              >Пневматическая <br />
+              трубка</a
+            >
+          </li>
+          <li class="footer__item">
+            <p>Ссылки</p>
+            <a href="https://kipservis.ru/"
+              >Корпоративный <br />
+              сайт</a
+            >
+            <a href="#!"
+              >Пользовательское <br />
+              Соглашение</a
+            >
+          </li>
+          <li class="footer__item">
+            <p>Контакты</p>
+            <a class="phone-footer" href="tel:88007754682">
+              <img src="./img/icon/icon-phone.svg" alt="phone" />
+              8 (800) 775 46 82</a
+            >
+            <a href="#!">
+              <img src="./img/icon/icon-mail.svg" alt="mail" />
+              order@kipservis.ru</a
+            >
+            <a href="#!">
+              <img src="./img/icon/icon-map.png" alt="map" /> г.
+              Краснодар</a
+            >
+          </li>
+        </ul>
+        <div class="footer__info">
+          <div class="footer__copyrights">
+            <img src="./img/icon/icon-quote.svg" alt="quote" />
+            <span>2021</span>
+            <span>Pnevmotrubka.ru</span>
+            <a href="#!">Политика конфиденциальности</a>
+          </div>
+          <a href="#!" class="link">
+            Все филиалы <img src="./img/icon/arrow-left.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+      <div class="footer-mobile">
+        <div class="footer-mobile__contact">
+          <div class="wrapper">
+            <p>Вы можете связаться с нами</p>
+            <a class="phone-footer phone-footer_mobile" href="tel:88007754682">
+              <img src="./img/icon/icon-phone.svg" alt="phone" />
+              8 (800) 775 46 82</a
+            >
+            <a class="footer-mobile__mail" href="#!">
+              <img src="./img/icon/icon-mail.svg" alt="mail" />
+              order@kipservis.ru</a
+            >
+            <a class="footer-mobile__link" href="#!" class="link">
+              Все филиалы
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-mobile__document">
+          <div class="wrapper">
+            <div class="footer-mobile__link-item">
+              <a class="footer-mobile__link" href="#!"
+                >Политика конфиденциальности </a
+              ><img src="./img/icon/arrow-left.svg" alt="icon" />
+            </div>
+            <div class="footer-mobile__link-item">
+              <a class="footer-mobile__link" href="#!"
+                >Пользовательское Соглашение </a
+              ><img src="./img/icon/arrow-left.svg" alt="icon" />
+            </div>
+            <div class="footer-mobile__link-item">
+              <a class="footer-mobile__link" href="https://kipservis.ru/"
+                >Корпоративный сайт </a
+              ><img src="./img/icon/arrow-left.svg" alt="icon" />
+            </div>
+            <div class="footer-mobile__link-up">
+              <a class="footer-mobile__link footer-mobile__link_up"
+                href="#!"
+                class="link-scroll-up">              
+              <img src="./img/icon/arrow_up.svg" alt="icon" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-mobile-bottom">
+          <div class="wrapper">
+            <p>Главная</p>
+            <div class="footer-mobile-bottom__list">
+              <div>
+                <a href="./catalog.html">Каталог</a>
+                <a href="#!">Применение</a>
+              </div>
+              <div>
+                <a href="#!">Документация</a> <a href="#!">Новости</a>
+              </div>
+            </div>
+          </div>
+        
+        <div class="footer__copyrights footer__copyrights_mobile">
+          <div class="wrapper">
+          <img src="./img/icon/icon-quote.svg" alt="quote" />
+          <span>2021</span>
+          <span>Pnevmotrubka.ru</span>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/card.js"></script>
+  </body>
+</html>
