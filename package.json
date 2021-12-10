@@ -22,6 +22,9 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
+    "jquery": "^3.4.1",
+    "jquery-ui-dist": "^1.12.1",
+    "jquery-ui-touch-punch": "^0.2.3",
     "jquery.scrollbar": "^0.2.11",
     "slick-carousel": "^1.8.1"
   }

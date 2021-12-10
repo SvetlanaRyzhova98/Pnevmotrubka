@@ -31,6 +31,7 @@ gulp.task("css", function () {
       "node_modules/normalize.css/normalize.css",
       "node_modules/slick-carousel/slick/slick.css",
       "node_modules/jquery.scrollbar/jquery.scrollbar.css",
+      "node_modules/jquery-ui-dist/jquery-ui.css",
       "node_modules/animate.css/animate.css",
     ])
     .pipe(concat("_libs.scss"))
@@ -49,8 +50,11 @@ gulp.task("script", function () {
 gulp.task("js", function () {
   return gulp
     .src([
+      "node_modules/jquery/dist/jquery.min.js",
       "node_modules/slick-carousel/slick/slick.js",
       "node_modules/jquery.scrollbar/jquery.scrollbar.min.js",
+      "node_modules/jquery-ui-dist/jquery-ui.min.js",
+      "node_modules/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js",
     ])
     .pipe(concat("libs.min.js"))
     .pipe(uglify())
