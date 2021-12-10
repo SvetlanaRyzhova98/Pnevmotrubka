@@ -1,9 +1,10 @@
 section.product-card {
-  margin-top: 0;
+  margin-top: 40px;
 }
 .wrapper_product {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   gap: 80px;
   &::before {
@@ -31,6 +32,11 @@ section.product-card {
   .slider-for.slick-initialized.slick-slider {
     max-width: 506px;
     max-height: 700px;
+    width: 100%;
+  }
+  .slick-slide.slick-current.slick-active {
+    max-width: 506px;
+    width: 100% !important;
   }
   .product-property {
     margin-top: 64px;
@@ -49,7 +55,7 @@ section.product-card {
     }
   }
   .accordion {
-    margin-top: 250px;
+    margin-top: 215px;
   }
   .slider-nav {
     display: flex;
@@ -62,11 +68,11 @@ section.product-card {
   }
   .slider-for {
     .slider-img {
-      width: 505px;
-      height: 700px;
+      max-width: 505px;
+      max-height: 700px;
+      width: 100%;
     }
     .slider-arrows__left {
-      left: 452px;
       right: 0;
       transform: translateY(-50%);
     }
@@ -109,11 +115,12 @@ section.product-card {
 }
 .tabs-nav a {
   display: block;
-  padding: 10px 20px;
+  padding: 10px 5px;
   text-transform: uppercase;
   font-size: 1.8rem;
   text-decoration: none;
   text-align: center;
+  height: 100% !important;
 }
 .tabs-nav li:first-child a {
   border-radius: 5px 0 0 0;
@@ -134,8 +141,18 @@ section.product-card {
 }
 .tabs-item {
 }
+
 /*--------контент табов------*/
 .desc-title {
   text-transform: uppercase;
   margin-bottom: 48px;
+}
+.th-thread-ext {
+  width: 106px;
+}
+.th-thread-int {
+  width: 106px;
+}
+.th-thread-seal {
+  width: 110px;
 }
