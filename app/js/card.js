@@ -47,3 +47,7 @@ $(function () {
     window.scrollTo(0, $("#".window.location.hash).offset().top);
   }
 });
+//-----------горизонтальная прокрутка таблицы
+$(function () {
+  jQuery(".scrollbar-inner_tb").scrollbar();
+});

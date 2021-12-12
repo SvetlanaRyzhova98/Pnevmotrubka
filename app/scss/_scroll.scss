@@ -90,15 +90,15 @@
 }
 
 .scrollbar-inner > .scroll-element.scroll-x {
-  bottom: 2px;
-  height: 8px;
+  bottom: 0px;
+  height: 4px;
   left: 0;
   width: 100%;
 }
 
 .scrollbar-inner > .scroll-element.scroll-y {
   height: 100%;
-  right: 2px;
+  right: 0px;
   top: 0;
   width: 4px;
 }

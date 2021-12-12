@@ -121,7 +121,7 @@ section.product-card {
   max-width: 1240px;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(5, minmax(80px, auto));
+  grid-template-columns: repeat(5, minmax(40px, auto));
 }
 .tabs-nav li {
   display: block;
@@ -157,7 +157,9 @@ section.product-card {
   max-width: 1240px;
   margin-top: 64px;
 }
-.tabs-item {
+.scrollbar-inner_tb {
+  min-width: 200px;
+  padding: 20px;
 }
 
 /*--------контент табов------*/
@@ -173,4 +175,12 @@ section.product-card {
 }
 .th-thread-seal {
   width: 110px;
+}
+.tabs-item#tab-5 {
+  .series {
+    margin: 0;
+  }
+}
+.table-box {
+  padding: 0 20px 20px 0;
 }
