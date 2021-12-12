@@ -95,6 +95,13 @@
   .series_size .th-series {
     width: 120px;
   }
+  div.wrapper_product {
+    grid-template-columns: minmax(286px, auto) minmax(215px, 506px);
+    gap: 40px;
+  }
+  div.wrapper_product .product-box_cards {
+    gap: 30px;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -532,6 +539,20 @@
     background: url(../img/icon/pdf.svg);
     background-position: center center;
     background-size: cover;
+  }
+  div.wrapper_product {
+    grid-template-columns: minmax(215px, 506px);
+    gap: 40px;
+    justify-content: center;
+  }
+  .wrapper_product .accordion {
+    margin-top: 50px;
+  }
+  .tabs-nav a {
+    display: block;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    font-size: 10px;
   }
 }
 @media (max-width: 450px) {

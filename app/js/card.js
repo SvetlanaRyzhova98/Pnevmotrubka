@@ -2,6 +2,7 @@ $(".slider-for").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
+  respondTo: "slider",
   prevArrow:
     '<img class="slider-arrows  slider-arrows__left" src="img/icon/arrow-left.png" alt="">',
   nextArrow:

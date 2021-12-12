@@ -10,7 +10,7 @@
 @import "production";
 @import "application";
 @import "footer";
-@import "media";
+
 @import "media-height";
 @import "scroll";
 @import "catalog";
@@ -20,6 +20,7 @@
 @import "fitting-expense";
 @import "fitting";
 @import "product-card";
+@import "media";
 
 html {
   font-size: 10px;

@@ -4,8 +4,8 @@ section.product-card {
 .wrapper_product {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
+  grid-template-columns: minmax(286px, 650px) minmax(215px, 506px);
+  width: 100%;
   gap: 80px;
   &::before {
     content: "";
@@ -23,20 +23,22 @@ section.product-card {
 
     &_info {
       flex-direction: column;
-      max-width: 506px;
     }
     &_cards {
       gap: 63px;
+      min-width: 0;
+      display: flex;
+      flex-shrink: 1;
+      width: 100%;
     }
   }
+  .slick-slide.slick-current.slick-active {
+    width: 100%;
+  }
   .slider-for.slick-initialized.slick-slider {
-    max-width: 506px;
-    max-height: 700px;
     width: 100%;
   }
   .slick-slide.slick-current.slick-active {
-    max-width: 506px;
-    width: 100% !important;
   }
   .product-property {
     margin-top: 64px;
@@ -55,22 +57,21 @@ section.product-card {
     }
   }
   .accordion {
-    margin-top: 215px;
+    margin-top: 249px;
   }
   .slider-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     img {
-      width: 84px;
-      height: 110px;
     }
+  }
+  .slider-box {
+    min-width: 0;
+    min-height: 0;
+    display: flex;
+    align-items: center;
   }
   .slider-for {
     position: relative;
     .slider-img {
-      max-width: 505px;
-      max-height: 700px;
       width: 100%;
     }
     .slider-arrows__left {
@@ -87,7 +88,23 @@ section.product-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 65px;
+    justify-content: center;
+    width: 100%;
+    max-width: 84px;
+    div {
+      width: fit-content;
+    }
+    img {
+      width: 100%;
+      max-width: 84px;
+    }
+    .slick-slide.slick-current.slick-active {
+      width: 100%;
+    }
+    .slick-slide.slick-active {
+      max-width: 84px;
+      width: 100%;
+    }
   }
 }
 //-----------tabs-----------
