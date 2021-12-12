@@ -1,0 +1,51 @@
+.hiro-bg_doc {
+  background: url(../img/doc/doc-bg.jpg);
+}
+.title-section_doc {
+  padding-bottom: 0;
+}
+.doc-catalog {
+  margin: 0;
+  background: $gray-light;
+  width: 100%;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    height: 2px;
+    background: rgba(34, 41, 51, 0.2);
+    left: 0;
+    width: 100%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    height: 2px;
+    background: rgba(34, 41, 51, 0.2);
+    left: 0;
+    width: 100%;
+  }
+  &__box {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 128px;
+  }
+  &__img {
+    background: white;
+    padding: 14px;
+    width: 100%;
+    img {
+      max-width: 264px;
+    }
+  }
+}
+.doc-text {
+  font-weight: bold;
+  padding-top: 64px;
+  margin-bottom: 32px;
+}
+.doc-link {
+  margin-top: 0;
+}

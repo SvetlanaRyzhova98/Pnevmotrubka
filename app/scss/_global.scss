@@ -445,21 +445,38 @@ a.show-more.active {
       border-bottom: 1px dashed $blue;
     }
   }
-  .link-img {
-    position: relative;
-    margin-right: 70px;
-    color: #c7c9cb;
-    &::after {
-      content: "";
-      position: absolute;
-      right: -54px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 34px;
-      height: 34px;
-      background: url(../img/icon/pdf.svg);
-      background-position: center center;
-    }
+}
+.link-img {
+  position: relative;
+  margin-right: 70px;
+  color: #c7c9cb;
+  &::after {
+    content: "";
+    position: absolute;
+    right: -54px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    background: url(../img/icon/pdf.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+.link-img_doc {
+  position: relative;
+  margin-right: 110px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 145px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    background: url(../img/doc/link.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 }
 ol.links-list {
