@@ -49,3 +49,24 @@
 .doc-link {
   margin-top: 0;
 }
+.wrapper-doc {
+  margin-top: 56px;
+}
+.certificate {
+  margin-top: 32px;
+  .doc-catalog__img {
+    background-color: $gray-light;
+  }
+  .doc-catalog__box {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -24px;
+      height: 4px;
+      background: $blue;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
