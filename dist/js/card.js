@@ -2,6 +2,7 @@ $(".slider-for").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
+  respondTo: "slider",
   prevArrow:
     '<img class="slider-arrows  slider-arrows__left" src="img/icon/arrow-left.png" alt="">',
   nextArrow:
@@ -45,4 +46,8 @@ $(function () {
     $("#tabs-nav a[href=" + window.location.hash + "]").click();
     window.scrollTo(0, $("#".window.location.hash).offset().top);
   }
+});
+//-----------горизонтальная прокрутка таблицы
+$(function () {
+  jQuery(".scrollbar-inner_tb").scrollbar();
 });

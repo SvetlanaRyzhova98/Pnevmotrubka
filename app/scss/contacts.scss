@@ -5,7 +5,8 @@ section.contacts-cards {
   margin-top: 50px;
 }
 .contacts-cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   position: relative;
   &::before {
     content: "";

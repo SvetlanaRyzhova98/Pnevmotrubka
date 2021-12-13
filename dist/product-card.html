@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Карточка товара</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -266,20 +265,20 @@
                 <div class="product-box product-box_cards">
                     <div class="slider-box slider-box_nav">
                         <div class="slider-nav">
-                            <div><img src="./img/fitting/card/1.jpg" alt="fitting"></div>
-                            <div><img src="./img/fitting/card/2.jpg" alt="fitting"></div> 
-                            <div><img src="./img/fitting/card/3.jpg" alt="fitting"></div>
-                            <div><img src="./img/fitting/card/4.jpg" alt="fitting"></div>
-                            <div><img src="./img/fitting/card/5.jpg" alt="fitting"></div>
+                            <div><img src="./img/fitting/card/product-image-n-l-sm.png" alt="fitting"></div>
+                            <div><img src="./img/fitting/card/product_image-top-sm.png" alt="fitting"></div> 
+                            <div><img src="./img/fitting/card/product_image_center-sm.png" alt="fitting"></div>
+                            <div><img src="./img/fitting/card/product-image-bottom-sm.png" alt="fitting"></div>
+                            <div><img src="./img/fitting/card/product-image-n-sm.png" alt="fitting"></div>
                         </div>
                     </div>
                     <div class="slider-box">
                         <div class="slider-for">
-                            <div><img class="slider-img"  src="./img/fitting/card/fitting3-v.jpg" alt=""></div>
-                            <div><img class="slider-img"  src="./img/fitting/card/2.jpg" alt=""></div>
-                            <div><img class="slider-img"  src="./img/fitting/card/3.jpg" alt=""></div>
-                            <div><img class="slider-img"  src="./img/fitting/card/4.jpg" alt=""></div>
-                            <div><img class="slider-img"  src="./img/fitting/card/fitting3.jpg" alt=""></div>
+                            <div><img class="slider-img"  src="./img/fitting/card/product-image-n-l.png" alt=""></div>
+                            <div><img class="slider-img"  src="./img/fitting/card/product_image-top.png" alt=""></div>
+                            <div><img class="slider-img"  src="./img/fitting/card/product_image_center.png" alt=""></div>
+                            <div><img class="slider-img"  src="./img/fitting/card/product-image-bottom.png" alt=""></div>
+                            <div><img class="slider-img"  src="./img/fitting/card/product-image-n.png" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -310,14 +309,14 @@
                     </div>
                 </div>
             </div>
-            <div id="tabs" class="tabs text-medium">
+            <div id="tabs" class="tabs text-medium ">
                 <div class="tabs-bg">
                     <ul class="tabs-nav">
-                        <li><a href="#tab-1">подробное описание</a></li>
-                        <li><a href="#tab-2">технические характеристики</a></li>
+                        <li><a href="#tab-1">подроб&shy;ное опи&shy;сание</a></li>
+                        <li><a href="#tab-2">техни&shy;ческие характе&shy;ристики</a></li>
                         <li><a href="#tab-3">состав</a></li>
-                        <li><a href="#tab-4">Габариты</a></li>
-                        <li><a href="#tab-5">Вся продукция серии</a></li>
+                        <li><a href="#tab-4">Габа&shy;риты</a></li>
+                        <li><a href="#tab-5">Вся продук&shy;ция серии</a></li>
                     </ul>
                 </div>	
                 <div class="tabs-items wrapper">
@@ -366,6 +365,7 @@
                             <div class="text-average size-desc">Пластиковый корпус, трубная цилиндрическая резьба</div>
                             <div class="size-box">
                               <img src="./img/fitting/size.jpg" alt="size">
+                              <div class="scrollbar-inner scrollbar-inner_tb ">
                               <table class="series link-medium series_size">
                                 <thead>
                                   <tr>
@@ -480,114 +480,36 @@
                                 
                               </table>
                             </div>
+                            </div>
                           </div>
                     </div>		
                     <div class="tabs-item" id="tab-5">
-                        <table class="series link-medium">
-                            <thead>
+                          <div class="scrollbar-inner scrollbar-inner_tb">
+                            <div class="table-box">
+                            <table class="series link-medium " style="min-width: 900px;">
+                              <thead>
+                                <tr>
+                                  <th class="th-series">Се&shy;рия</th>
+                                  <th class="th-name">Наи&shy;мено&shy;вание</th>
+                                  <th class="th-work-bar">Рабо&shy;чее <br> дав&shy;ление <br> (бар)</th>
+                                  <th class="th-optimal-temp" >Рабочая <br> темпе&shy;ратура <br> (°C)</th>
+                                  <th class="th-thread-ext" >Наружняя <br> резь&shy;ба <br></th>
+                                  <th class="th-thread-int" >Внут&shy;ренняя <br> резь&shy;ба <br></th>
+                                  <th class="th-thread-seal" >Уплот&shy;нение <br> резь&shy;бы <br></th>
+                                  <th class="th-material">Мате&shy;риал</th>
+                                </tr>
+                              </thead>
                               <tr>
-                                <th class="th-series">Се&shy;рия</th>
-                                <th class="th-name">Наи&shy;мено&shy;вание</th>
-                                <th class="th-work-bar">Рабо&shy;чее <br> дав&shy;ление <br> (бар)</th>
-                                <th class="th-optimal-temp" >Рабочая <br> темпе&shy;ратура <br> (°C)</th>
-                                <th class="th-thread-ext" >Наружняя <br> резь&shy;ба <br></th>
-                                <th class="th-thread-int" >Внут&shy;ренняя <br> резь&shy;ба <br></th>
-                                <th class="th-thread-seal" >Уплот&shy;нение <br> резь&shy;бы <br></th>
-                                <th class="th-material">Мате&shy;риал</th>
+                                <td>MV 38 08 38 /C</td>
+                                <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                                <td>10..20 </td>
+                                <td>-20…+70</td>
+                                <td>6мм x G 1/4"</td>
+                                <td> — </td>
+                                <td>NBR</td>
+                                <td>ни&shy;кел. ла&shy;тунь.</td>
                               </tr>
-                            </thead>
-                            <tr>
-                              <td>MV 38 08 38 /C</td>
-                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
-                              <td>10..20 </td>
-                              <td>-20…+70</td>
-                              <td>6мм x G 1/4"</td>
-                              <td> — </td>
-                              <td>NBR</td>
-                              <td>ни&shy;кел. ла&shy;тунь.</td>
-                            </tr>
-                            <tr>
-                              <td>MV 38 08 38 /C</td>
-                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
-                              <td>10..20 </td>
-                              <td>-20…+70</td>
-                              <td>6мм x G 1/4"</td>
-                              <td> — </td>
-                              <td>NBR</td>
-                              <td>ни&shy;кел. ла&shy;тунь.</td>
-                            </tr>
-                            <tr>
-                              <td>MV 38 08 38 /C</td>
-                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
-                              <td>10..20 </td>
-                              <td>-20…+70</td>
-                              <td>6мм x G 1/4"</td>
-                              <td> — </td>
-                              <td>NBR</td>
-                              <td>ни&shy;кел. ла&shy;тунь.</td>
-                            </tr>
-                            <tr>
-                              <td>MV 38 08 38 /C</td>
-                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
-                              <td>10..20 </td>
-                              <td>-20…+70</td>
-                              <td>6мм x G 1/4"</td>
-                              <td> — </td>
-                              <td>NBR</td>
-                              <td>ни&shy;кел. ла&shy;тунь.</td>
-                            </tr>
-                            <tr>
-                              <td>MV 38 08 38 /C</td>
-                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
-                              <td>10..20 </td>
-                              <td>-20…+70</td>
-                              <td>6мм x G 1/4"</td>
-                              <td> — </td>
-                              <td>NBR</td>
-                              <td>ни&shy;кел. ла&shy;тунь.</td>
-                            </tr>
-                            <tr>
-                              <td>MV 38 08 38 /C</td>
-                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
-                              <td>10..20 </td>
-                              <td>-20…+70</td>
-                              <td>6мм x G 1/4"</td>
-                              <td> — </td>
-                              <td>NBR</td>
-                              <td>ни&shy;кел. ла&shy;тунь.</td>
-                            </tr>
-                            <tr>
-                              <td>MV 38 08 38 /C</td>
-                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
-                              <td>10..20 </td>
-                              <td>-20…+70</td>
-                              <td>6мм x G 1/4"</td>
-                              <td> — </td>
-                              <td>NBR</td>
-                              <td>ни&shy;кел. ла&shy;тунь.</td>
-                            </tr>
-                            <tr>
-                              <td>MV 38 08 38 /C</td>
-                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
-                              <td>10..20 </td>
-                              <td>-20…+70</td>
-                              <td>6мм x G 1/4"</td>
-                              <td> — </td>
-                              <td>NBR</td>
-                              <td>ни&shy;кел. ла&shy;тунь.</td>
-                            </tr>
-                            <tr>
-                              <td>MV 38 08 38 /C</td>
-                              <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
-                              <td>10..20 </td>
-                              <td>-20…+70</td>
-                              <td>6мм x G 1/4"</td>
-                              <td> — </td>
-                              <td>NBR</td>
-                              <td>ни&shy;кел. ла&shy;тунь.</td>
-                            </tr>
-                            <!-- скрытые -->
-                            <tr class="tr-invisible">
+                              <tr>
                                 <td>MV 38 08 38 /C</td>
                                 <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
                                 <td>10..20 </td>
@@ -596,8 +518,8 @@
                                 <td> — </td>
                                 <td>NBR</td>
                                 <td>ни&shy;кел. ла&shy;тунь.</td>
-                            </tr>
-                            <tr class="tr-invisible">
+                              </tr>
+                              <tr>
                                 <td>MV 38 08 38 /C</td>
                                 <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
                                 <td>10..20 </td>
@@ -606,8 +528,8 @@
                                 <td> — </td>
                                 <td>NBR</td>
                                 <td>ни&shy;кел. ла&shy;тунь.</td>
-                            </tr>
-                            <tr class="tr-invisible">
+                              </tr>
+                              <tr>
                                 <td>MV 38 08 38 /C</td>
                                 <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
                                 <td>10..20 </td>
@@ -616,8 +538,8 @@
                                 <td> — </td>
                                 <td>NBR</td>
                                 <td>ни&shy;кел. ла&shy;тунь.</td>
-                            </tr>
-                            <tr class="tr-invisible">
+                              </tr>
+                              <tr>
                                 <td>MV 38 08 38 /C</td>
                                 <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
                                 <td>10..20 </td>
@@ -626,13 +548,94 @@
                                 <td> — </td>
                                 <td>NBR</td>
                                 <td>ни&shy;кел. ла&shy;тунь.</td>
-                            </tr>
-                            
-                            
-                          </table>
-                          <a class="show-more text-average" href="#!">Показать еще
-                            <img src="./img/icon/showmore-down.svg" alt="down">
-                          </a>
+                              </tr>
+                              <tr>
+                                <td>MV 38 08 38 /C</td>
+                                <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                                <td>10..20 </td>
+                                <td>-20…+70</td>
+                                <td>6мм x G 1/4"</td>
+                                <td> — </td>
+                                <td>NBR</td>
+                                <td>ни&shy;кел. ла&shy;тунь.</td>
+                              </tr>
+                              <tr>
+                                <td>MV 38 08 38 /C</td>
+                                <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                                <td>10..20 </td>
+                                <td>-20…+70</td>
+                                <td>6мм x G 1/4"</td>
+                                <td> — </td>
+                                <td>NBR</td>
+                                <td>ни&shy;кел. ла&shy;тунь.</td>
+                              </tr>
+                              <tr>
+                                <td>MV 38 08 38 /C</td>
+                                <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                                <td>10..20 </td>
+                                <td>-20…+70</td>
+                                <td>6мм x G 1/4"</td>
+                                <td> — </td>
+                                <td>NBR</td>
+                                <td>ни&shy;кел. ла&shy;тунь.</td>
+                              </tr>
+                              <tr>
+                                <td>MV 38 08 38 /C</td>
+                                <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                                <td>10..20 </td>
+                                <td>-20…+70</td>
+                                <td>6мм x G 1/4"</td>
+                                <td> — </td>
+                                <td>NBR</td>
+                                <td>ни&shy;кел. ла&shy;тунь.</td>
+                              </tr>
+                              <!-- скрытые -->
+                              <tr class="tr-invisible">
+                                  <td>MV 38 08 38 /C</td>
+                                  <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                                  <td>10..20 </td>
+                                  <td>-20…+70</td>
+                                  <td>6мм x G 1/4"</td>
+                                  <td> — </td>
+                                  <td>NBR</td>
+                                  <td>ни&shy;кел. ла&shy;тунь.</td>
+                              </tr>
+                              <tr class="tr-invisible">
+                                  <td>MV 38 08 38 /C</td>
+                                  <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                                  <td>10..20 </td>
+                                  <td>-20…+70</td>
+                                  <td>6мм x G 1/4"</td>
+                                  <td> — </td>
+                                  <td>NBR</td>
+                                  <td>ни&shy;кел. ла&shy;тунь.</td>
+                              </tr>
+                              <tr class="tr-invisible">
+                                  <td>MV 38 08 38 /C</td>
+                                  <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                                  <td>10..20 </td>
+                                  <td>-20…+70</td>
+                                  <td>6мм x G 1/4"</td>
+                                  <td> — </td>
+                                  <td>NBR</td>
+                                  <td>ни&shy;кел. ла&shy;тунь.</td>
+                              </tr>
+                              <tr class="tr-invisible">
+                                  <td>MV 38 08 38 /C</td>
+                                  <td class="td-name">Фитинг угловой с регули&shy;ровкой расхода (пневмо&shy;дроссель), однонап&shy;равленный для монтажа на цилиндр</td>
+                                  <td>10..20 </td>
+                                  <td>-20…+70</td>
+                                  <td>6мм x G 1/4"</td>
+                                  <td> — </td>
+                                  <td>NBR</td>
+                                  <td>ни&shy;кел. ла&shy;тунь.</td>
+                              </tr>
+                            </table>
+                            <a class="show-more text-average" href="#!">Показать еще
+                              <img src="./img/icon/showmore-down.svg" alt="down">
+                            </a>
+                        </div>
+                      </div>
                     </div>		
                 </div>
             </div>
@@ -794,9 +797,6 @@
       </div>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
-
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/card.js"></script>

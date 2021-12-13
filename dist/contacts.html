@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+    <div class="header__top">
+      <div class="header__wrapper header__wrapper_top">
+        <a href="./index.html" class="logo">
+          <img src="./img/Logo_Pnevmotrubka.svg" alt="logo" />
+        </a>
+        <div class="menu">
+          <div class="search">
+            <div class="search-btn">
+              <form action="/" onsubmit="return false;">
+                <input name="s" type="search" placeholder="Что будем искать?" />
+                <input class="search-btn__fake-submit" name="submit" type="submit" value="Поиск" /> 
+                <button type="button" class="search-close"></button>     
+              </form>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <div class="dropdown__box">
+              <div class="dropdown__selected dropdown__option">
+                <img
+                  class="dropdown__icon"
+                  src="./img/icon/ru.png"
+                  alt="Россия"
+                />
+                <span class="descr"> Россия</span>
+              </div>
+              <img
+                class="dropdown__arrow"
+                src="./img/icon/arrow-down.svg"
+                alt="arrow"
+              />
+            </div>
+
+            <div class="dropdown__options">
+              <div
+                class="dropdown__option dropdown__option_selected"
+                data-phone="8 (800) 775 46 82"
+              >
+                <img
+                  class="dropdown__icon"
+                  src="./img/icon/ru.png"
+                  alt="Россия"
+                />
+                <span class="descr"> Россия</span>
+              </div>
+
+              <div class="dropdown__option" data-phone="8 (880) 555 35 35">
+                <img
+                  class="dropdown__icon"
+                  src="./img/icon/blr.png"
+                  alt="Белоруссия"
+                />
+                <span class="descr">Белоруссия</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="phone">8 (800) 775 46 82</div>
+
+          <div class="menu-burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="header__wrapper header__wrapper_bottom">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item nav-link_hover">
+              <a href="./catalog.html" class="nav-link ">Каталог</a>
+              
+              <div class="hover-catalog">
+                <div class="wrapper wrapper_hover-catalog">
+                    <div class="hover-catalog__field">
+                      <div class="hover-catalog__box">
+                        <a href="#!" class="hover-catalog__title  text-average">
+                          Пневматическая трубка </a>
+                        <ul class="hover-catalog__list">
+                          <li class="hover-catalog__list-item  text-average">
+                            <a href="#!">Полиуретан</a> </li>
+                          <li class="hover-catalog__list-item  text-average">
+                            <a href="#!">Полиамид</a> </li>
+                          <li class="hover-catalog__list-item  text-average">
+                            <a href="#!">Фторопласт</a>
+                          </li>
+                          <li class="hover-catalog__list-item  text-average">
+                            <a href="#!">Полиэтилен</a></li>
+                        </ul>
+                      </div>
+                      <img src="./img/poliamid.png" alt="tube">
+                    </div>
+        
+                    <div class="hover-catalog__field">
+                      <div class="hover-catalog__box">
+                        <a href="#!" class="hover-catalog__title">
+                          Фитинги </a>
+                        <ul class="hover-catalog__list">
+                          <li class="hover-catalog__list-item text-average">
+                            <a href="./fitting-function.html">Функциональные</a> </li>
+                          <li class="hover-catalog__list-item  text-average">
+                            <a href="#!">Соединители</a> </li>
+                          <li class="hover-catalog__list-item  text-average">
+                            <a href="#!">Резьбовые переходники</a>
+                          </li>
+                          <li class="hover-catalog__list-item text-average">
+                            <a href="#!">Для систем туманообразования</a></li>
+                          <li class="hover-catalog__list-item  text-average">
+                            <a href="#!">Для транспорта</a></li>
+                        </ul>
+                      </div>
+                      <img src="./img/threaded-adapters.png" alt="tube">
+                    </div>
+                </div>
+              </div>
+
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Применение</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Документация</a>
+            </li>
+            <li class="nav-item">
+              <a href="#!" class="nav-link">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a href="./error404.html" class="nav-link">Hовости</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    
+
+    <div class="menu-mobile">
+      <div class="dropdown dropdown_mobile">
+        <div class="dropdown__box">
+          <div class="dropdown__selected dropdown__option">
+            <img
+              class="dropdown__icon"
+              src="./img/icon/ru.png"
+              alt="Россия"
+            />
+            <span class="descr"> Россия</span>
+          </div>
+          <img
+            class="dropdown__arrow"
+            src="./img/icon/arrow-down.svg"
+            alt="arrow"
+          />
+        </div>
+
+        <div class="dropdown__options">
+          <div
+            class="dropdown__option dropdown__option_selected"
+            data-phone="8 (800) 775 46 82"
+          >
+            <img
+              class="dropdown__icon"
+              src="./img/icon/ru.png"
+              alt="Россия"
+            />
+            <span class="descr"> Россия</span>
+          </div>
+
+          <div class="dropdown__option" data-phone="8 (880) 555 35 35">
+            <img
+              class="dropdown__icon"
+              src="./img/icon/blr.png"
+              alt="Белоруссия"
+            />
+            <span class="descr">Белоруссия</span>
+          </div>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#!" class="nav-link nav-link_click">Каталог
+              <div class=" hover-catalog_mobile">
+                <div class="wrapper wrapper_hover-catalog">
+                    <div class="hover-catalog__field">
+                      <div class="hover-catalog__box">
+                        <a href="#!" class="hover-catalog__title  text-average">
+                          Пневматическая трубка </a>
+                        <ul class="hover-catalog__list">
+                          <li class="hover-catalog__list-item  text-average">
+                            <a href="#!">Полиуретан</a> </li>
+                          <li class="hover-catalog__list-item  text-average">
+                            <a href="#!">Полиамид</a> </li>
+                          <li class="hover-catalog__list-item  text-average">
+                            <a href="#!">Фторопласт</a>
+                          </li>
+                          <li class="hover-catalog__list-item  text-average">
+                            <a href="#!">Полиэтилен</a></li>
+                        </ul>
+                      </div>
+                      
+                    </div>
+        
+                    <div class="hover-catalog__field">
+                      <div class="hover-catalog__box">
+                        <a href="#!" class="hover-catalog__title">
+                          Фитинги </a>
+                        <ul class="hover-catalog__list">
+                          <li class="hover-catalog__list-item text-average">
+                            <a href="./fitting-function.html">Функциональные</a> </li>
+                          <li class="hover-catalog__list-item  text-average">
+                            <a href="#!">Соединители</a> </li>
+                          <li class="hover-catalog__list-item  text-average">
+                            <a href="#!">Резьбовые переходники</a>
+                          </li>
+                          <li class="hover-catalog__list-item text-average">
+                            <a href="#!">Для систем туманообразования</a></li>
+                          <li class="hover-catalog__list-item  text-average">
+                            <a href="#!">Для транспорта</a></li>
+                        </ul>
+                      </div>
+                     
+                    </div>
+                </div>
+              </div>
+          </a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link">Применение</a>
+          </li>
+          <li class="nav-item">
+            <a href="error404.html" class="nav-link">Документация</a>
+          </li>
+          <li class="nav-item">
+            <a href="error404.html" class="nav-link">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a href="./error404.html" class="nav-link">Hовости</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+    <main>
+        <section class="hiro-catalog"> 
+            <div class="hiro-bg hiro-bg_contact">
+                <div class="wrapper">
+                    <h1 class="title-section title-section_contact">Контакты</h1>
+                </div>
+            </div>
+            <div class="wrapper">
+            <div class="bread-crumbs bread-crumbs_expense"> 
+               <a href="./index.html">Главная </a> <span> — </span><a href="./contacts.html">Контакты</a>
+            </div>
+            </div>
+        </section>
+        <section class="contacts-cards wrapper">
+                <div class="contacts-card">
+                    <img class="contacts-img" src="./img/contact/rus.jpg" alt="rus">
+                    <div class="contacts-info">
+                        <p class="contacts-title text-medium">Россия</p>
+                        <ul class="link-medium">
+                            <li><img src="./img/contact/phone.svg" alt="phone">
+                            Тел.: 8 800 775-46-82</li>
+                            <li><img src="./img/contact/mail.svg" alt="mail">
+                            E-mail: order@kipservis.ru</li>
+                            <li><img src="./img/contact/glob.svg" alt="site">
+                                Сайт: &nbsp;<a href="#!">pnevmotrubka.ru </a>&nbsp; <a href="https://kipservis.ru">  kipservis.ru</a></li>
+                            <li><img src="./img/contact/shop.svg" alt="shop">
+                                Интернет-магазин: &nbsp;<a href="https://totalkip.ru">  totalkip.ru</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts-card">
+                    <img class="contacts-img"  src="./img/contact/belrus.jpg" alt="rus">
+                    <div class="contacts-info">
+                        <p class="contacts-title text-medium">Белоруссия</p>
+                        <ul class="link-medium">
+                            <li><img src="./img/contact/phone.svg" alt="phone">
+                            Тел.: 375 (212) 64-17-00</li>
+                            <li><img src="./img/contact/mail.svg" alt="mail">
+                            E-mail: order@megakip.by</li>
+                            <li><img src="./img/contact/glob.svg" alt="site">
+                                Сайт: &nbsp;<a href="https://megakip.by">megakip.by </a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts-card">
+                    <img class="contacts-img contacts-img-last" src="./img/contact/kz.jpg" alt="rus">
+                    <div class="contacts-info">
+                        <p class="contacts-title text-medium">Казахстан</p>
+                        <ul class="link-medium">
+                            <li><img src="./img/contact/phone.svg" alt="phone">
+                            Тел.: 8 800 080-98-44</li>
+                            <li><img src="./img/contact/mail.svg" alt="mail">
+                            E-mail: order@megakip.kz</li>
+                            <li><img src="./img/contact/glob.svg" alt="site">
+                                Сайт: &nbsp;<a href="https://megakip.kz">megakip.kz </a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                    
+        </section>
+        <section class="wrapper">
+            <div class="map">
+                <svg width="1237" height="636" viewBox="0 0 1237 636" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M68.7898 270.427H66.222L60.5729 271.596H54.239L47.5627 270.427L40.8864 269.258L36.2644 265.752L33.183 264.583L30.6153 263.804L29.9305 263.414L29.5881 263.804L24.4525 268.739L19.317 271.596L16.7491 274.063L8.36101 275.492L1 278.869L7.33389 282.505L10.9288 285.622L14.0102 289.258L18.6322 295.103L21.7136 296.661L24.4525 303.284L28.0475 306.791L32.6695 311.077L37.2915 319.388L39.8593 326.791L44.9949 329.518L49.1034 327.57L55.2661 324.843L64.5102 325.233H64.6813L65.5373 322.765L71.8712 319.778L79.5746 321.336L84.7102 320.817V313.025L88.6475 310.038L89.8457 305.232V301.856L95.6661 296.921L100.117 293.025L102 288.219L97.5492 283.284L93.7831 277.96L94.9814 272.635V271.596L93.6119 271.206H89.8457H85.7373H83.1695L74.9525 270.817L68.7898 270.427Z" fill="#222933" fill-opacity="0.2" stroke="#222933" stroke-width="0.75"/>
+                    <path d="M197.42 431.68L186.671 434.534L181.212 438.686L173.876 442.709L170.293 438.686V434.534H161.25L154.085 437.259L146.748 439.984L143.166 446.861V452.44L146.748 457.89L148.625 462.042V466.194V471.643L145.042 475.795L143.166 478.52L142.313 483.97H148.625H157.668L172.169 482.672L177.629 486.824L190.254 494.998L188.377 500.578L182.918 504.73L177.629 510.179H172.169L164.833 506.027L159.374 504.73H148.625L145.042 510.179L139.583 514.331L136 519.781L137.706 526.658L139.583 532.237L148.625 534.962V541.839L142.313 548.975L146.748 548.716H157.668L164.833 555.592L166.71 562.469V570.773L172.169 572.071L179.335 570.773L186.671 555.592L193.837 548.716L195.714 540.411L206.462 532.237H217.381L231.883 533.535L240.926 536.259L249.968 545.991L257.134 552.868V562.469L260.716 567.919L269.759 576.223L277.095 573.498L282.555 577.65H289.72H296.886L302.345 584.527L307.805 594.129L305.928 602.303L302.345 606.455L307.805 612.034V618.911L316.847 621.636H322.307L333.226 627.086L342.268 624.361L354.893 621.636L372.978 614.759L380.144 610.607L391.063 612.034L401.811 621.636L403.688 613.332L411.024 610.607L423.65 614.759L429.109 620.209H439.858L452.483 621.636L466.985 624.361L476.027 631.238L483.534 635L485.069 632.665L490.529 629.94L497.865 624.361L495.989 614.759L494.112 609.18L492.406 602.303V601.006L510.49 596.854H521.239V589.977L526.698 580.375L534.035 574.796L541.2 573.498L552.119 576.223L562.868 574.796V567.919L564.745 563.897L571.91 558.317L577.37 552.868H583L575.664 547.288L573.787 541.839L566.621 543.136H561.162L555.702 537.687L546.66 530.81L541.2 522.506H530.281L521.239 525.36L514.073 522.506L510.49 515.629L505.031 519.781L501.448 522.506L499.571 515.629L494.112 508.752V501.875L490.529 496.426L488.823 489.549L479.61 483.97V479.947V475.795V473.07H468.861L463.402 475.795L457.942 479.947L456.236 482.672H447.194L443.44 478.52V471.643L436.275 468.918H429.109L427.232 462.042V456.462L418.19 452.44L412.731 446.861L407.271 445.563L401.811 451.013H394.646L387.48 449.585L378.438 448.288L374.684 446.861L363.936 445.563L347.557 446.861H342.268H336.809L331.349 442.709H325.89L324.013 445.563L322.307 448.288L325.89 455.165L322.307 457.89H316.847H311.388L307.805 460.614H302.345L307.805 463.339V468.918L311.388 477.093L307.805 481.245L302.345 482.672L296.886 481.245L291.597 477.093L284.261 474.368L282.555 470.216L273.512 466.194H269.759L260.716 464.766L249.968 460.614H246.214H242.632L240.926 456.462L239.049 452.44V448.288L237.172 445.563L228.13 438.686L224.547 434.534L222.841 433.107L219.087 431.68L213.798 433.107H204.756L197.42 431.68Z" fill="#222933" fill-opacity="0.2" stroke="#222933" stroke-width="0.75"/>
+                    <path d="M1105.85 1L1098.52 3.73202L1089.48 13.3592L1096.81 16.0912L1098.52 23.1164L1096.81 25.8485L1087.77 24.4174L1080.44 23.1164L1073.28 27.1495L1067.82 31.3125L1055.19 36.9067L1046.15 40.9397L1037.11 49.2659L1029.78 53.429L1020.74 61.6251L1013.58 65.7882L1009.99 72.6833L1013.58 78.2775L1022.62 81.0095L1028.07 89.3357H1022.62L1008.12 90.6367L1002.66 97.5318L993.618 107.159L990.036 114.054V120.949L993.618 126.543L982.872 127.844L971.956 122.38H964.792L951.999 126.543L946.541 133.438L941.253 137.602L937.5 145.798L923.172 144.497H908.674L901.339 145.798H894.175L890.593 149.961L883.259 154.124L870.636 159.588L861.596 162.45V169.345L865.178 173.378L872.513 176.24L874.218 181.704L872.513 185.867L868.76 190.031H861.596L856.138 191.332L854.432 194.064L848.974 195.495H845.392V202.39L847.098 209.285H839.934L829.017 207.984L821.853 205.122L816.395 192.763L807.355 185.867L794.732 187.168L783.816 190.031L781.94 199.658L780.234 205.122H763.859L753.113 201.089H747.655L744.073 206.553H729.574H720.534V210.716L715.075 217.611L706.035 220.343L698.871 218.912L700.577 212.017L706.035 205.122L713.199 198.227L722.41 192.763V185.867V180.273L718.657 177.541L711.494 167.914H700.577L696.995 169.345L691.537 176.24H684.373L682.496 170.646L678.914 166.483L673.456 161.019H666.292L664.416 166.483L662.71 172.077L658.958 181.704L648.212 184.436L640.877 187.168L633.713 188.6L624.673 191.332L613.756 195.495L601.134 201.089L597.552 206.553L601.134 212.017L597.552 220.343H588.512H577.595L564.973 217.611L563.097 224.506V229.97L566.849 236.865L574.013 246.493L568.555 252.087L561.391 250.656L555.933 239.597L546.892 238.296L543.31 242.46L545.016 254.819L537.852 257.551L530.518 250.656L528.812 245.192L526.936 238.296L517.895 241.029V246.493L521.477 250.656V256.25L519.772 261.714L514.313 268.609L512.437 276.935H519.772L526.936 279.667L535.976 287.993L532.394 294.889L528.812 293.458L521.477 290.725L516.19 285.131H510.731V290.725L512.437 300.353L499.815 308.679L485.316 311.411L467.236 304.516L469.112 300.353H472.694H483.61L494.356 293.458L501.691 286.562V281.098L498.109 276.935L499.815 271.341L505.273 268.609L508.855 261.714L503.397 250.656L501.691 243.761L516.19 238.296L521.477 231.401L514.313 224.506L505.273 221.774L501.691 225.807L494.356 231.401L485.316 238.296L478.152 241.029L472.694 245.192L470.818 250.656V258.982L474.57 263.145L479.858 270.04V276.935H472.694L461.777 271.341L456.49 263.145L451.031 256.25L447.449 252.087L440.115 249.355L429.369 253.388V261.714L423.91 264.446L418.452 263.145L416.576 254.819H407.536H394.913L387.749 250.656L382.291 246.493H374.957L356.876 245.192L344.254 246.493L329.755 252.087L324.297 249.355L322.591 243.761L326.173 238.296H333.508H338.796L342.548 231.401L335.214 217.611L324.297 223.075L317.133 238.296V242.46L309.969 246.493L306.216 249.355L302.634 246.493L300.929 242.46L297.176 236.865H286.43L282.848 243.761L273.808 247.924L266.473 250.656L262.891 246.493L259.309 241.029V236.865L257.433 232.702L253.851 231.401L250.269 235.564V239.597V246.493L244.811 249.355L237.476 246.493V242.46L235.77 236.865V227.238L239.353 224.506L248.393 218.912L253.851 214.879V209.285V198.227L259.309 196.926L264.768 210.716L268.35 217.611L270.055 224.506L277.39 229.97L286.43 231.401H293.594L299.052 224.506V216.18L302.634 207.984L299.052 201.089L297.176 195.495V187.168L291.888 176.24L284.554 169.345L275.514 163.751V163.361L274.661 163.491L271.42 165.442L268.691 166.873L263.403 168.304L256.58 172.728L253.851 178.972L252.998 182.745L244.299 183.396L239.864 186.518L236.623 190.681L233.041 194.844L228.095 198.227L222.125 204.081L216.325 205.512L215.814 210.326L212.232 213.838L206.773 216.57L202.68 218.912L199.609 222.815L198.586 228.669L197.392 232.442L185.623 233.483L172.489 234.524L161.572 233.483L149.803 234.133H148.097L148.95 238.296V246.493H139.91L137.692 244.801L135.134 246.232H130.016H124.899L121.147 248.704L117.224 253.128L113.471 254.559H109.036L106.478 257.03L101.872 261.844L96.755 263.795L94.8787 267.698V272.642L93.6847 277.976L97.4373 283.31L101.872 288.254L99.9959 293.067L95.561 296.97L89.7616 301.914V305.296L88.5676 310.11L84.6445 313.102V320.908L79.5273 321.428L71.8516 319.867L65.5405 322.859L63.4936 328.193L73.2162 333.137L76.9688 334.568L78.845 344.846C78.845 344.846 78.2473 347.741 74.4102 350.18C72.4916 351.399 72.0222 353.624 72.0222 355.514C72.0222 357.404 72.5339 358.896 72.5339 358.896L71.1693 364.751L75.0925 372.036L80.8919 375.549L84.6445 377.89L86.5207 382.834L88.5676 386.737L89.7616 390.64L94.1964 394.022V398.966L93.6847 402.869L89.0793 405.211L85.3267 409.634L76.9688 411.065L71.1693 412.106L66.0522 414.057L60.4233 416.009L57.0119 415.488L53.9417 418.22L43.7074 417.179L39.6136 419.261L36.8845 424.985L25.2857 424.465L19.8274 421.863C19.8274 421.863 18.8893 422.188 18.1217 422.904C17.3541 423.619 16.7571 424.725 17.0983 426.026C17.7805 428.628 17.7805 432.791 17.7805 432.791L19.8274 444.24L25.2857 447.882L23.2388 455.168L26.3091 462.453L30.0617 462.974L34.1554 466.616L39.6136 471.82L41.6605 477.024L49.8479 479.626L50.5302 483.789L54.6239 489.513L57.3531 494.197L65.5405 496.799L66.905 500.441L68.2696 503.043V508.247L73.0456 510.329V517.614L77.1393 521.257L80.5508 526.981V531.144L86.009 532.705L100.166 533.746V532.185V523.859V519.696V514.232L103.748 507.337L105.454 499.01L109.207 485.22L121.829 483.789H138.033H142.639L143.492 478.325L145.368 475.593L148.95 471.43V465.966V461.803L147.073 457.64L143.492 452.176V446.581L147.073 439.686L154.408 436.954L161.572 434.222H170.612V438.385L174.194 442.418L181.529 438.385L186.987 434.222L197.733 431.36L205.068 432.791H214.108L219.396 431.36L223.148 432.791L224.854 434.222L228.436 438.385L237.476 445.28L239.353 448.012V452.176L241.229 456.209L242.935 460.372H246.516H250.269L261.015 464.535L270.055 465.966H273.808L282.848 469.999L284.554 474.162L291.888 476.894L297.176 481.057L302.634 482.488L308.093 481.057L311.675 476.894L308.093 468.698V463.104L302.634 460.372H308.093L311.675 457.64H317.133H322.591L326.173 454.908L322.591 448.012L324.297 445.28L326.173 442.418H331.632L337.09 446.581H342.548H347.836L364.211 445.28L374.957 446.581L378.709 448.012L387.749 449.313L394.913 450.745H402.077L407.536 445.28L412.994 446.581L418.452 452.176L427.493 456.209V461.803L429.369 468.698H436.533L443.697 471.43V478.325L447.449 482.488H456.49L458.195 479.756L463.654 475.593L469.112 472.861H479.858V475.593V479.756V483.789L489.069 489.383L490.774 496.278L494.356 501.742V508.638L499.815 515.533L501.691 522.428L505.273 519.696L510.731 515.533L514.313 522.428L521.477 525.29L530.518 522.428H541.434L546.892 530.754L555.933 537.649L561.391 543.113H566.849L574.013 541.812L575.889 547.276L583.224 552.87H590.217L597.552 544.544L613.756 540.381L622.797 536.218L633.713 530.754L637.295 526.591H644.63L651.794 528.022L657.252 532.185L662.71 533.486L669.874 537.649L677.038 536.218H689.831H696.995L704.159 533.486V525.29L702.453 518.395V511.5L709.617 507.337H715.075L722.41 508.638L731.45 511.5H738.614L740.491 514.232L744.073 516.964L745.778 521.127L754.819 522.428L762.153 526.591H769.317L771.193 525.29L780.234 521.127L789.274 516.964L801.896 519.696L809.231 521.127L823.559 525.29H838.057L854.432 522.428L859.72 518.395L867.054 512.801L868.76 505.905L874.218 501.742L877.971 499.01L894.175 501.742L905.092 500.441H912.256L917.714 497.709L921.296 494.847L924.878 490.684V483.789L926.754 472.861L928.46 460.372L921.296 456.209L914.132 452.176L917.714 445.28L926.754 438.385L935.795 434.222H948.417L962.915 431.36L975.538 432.791L984.578 439.686L995.495 446.581L999.077 453.476L1013.58 459.071H1022.62L1029.78 456.209L1044.28 453.476L1049.74 459.071L1058.78 460.372L1065.94 464.535L1078.73 460.372L1080.44 454.908V449.313L1087.77 445.28L1093.06 441.117L1098.52 443.849L1102.1 452.176V457.64V464.535V469.999L1107.56 478.325V485.22L1102.1 486.651L1096.81 489.383L1089.48 496.278L1093.06 504.605L1102.1 510.069L1111.31 519.696L1115.41 521.127L1116.6 519.696L1118.48 514.232L1125.64 511.5L1132.98 510.069L1140.14 504.605L1149.18 501.742V490.684V481.057L1151.06 465.966L1149.18 449.313L1147.47 439.686L1145.6 435.523L1142.02 430.059V423.164L1136.56 410.675V402.479L1132.98 394.152L1122.06 391.42L1116.6 384.525L1113.02 373.467L1105.85 363.84L1094.94 354.213H1089.48H1080.44L1071.4 355.514L1065.94 366.572V370.735L1053.32 369.304L1046.15 365.141L1044.28 369.304L1033.53 368.003L1031.66 355.514L1035.24 351.351L1038.82 345.886L1037.11 337.56L1035.24 329.364L1038.82 322.469V312.712L1035.24 303.085L1037.11 292.026L1038.82 286.562L1047.86 282.399L1056.9 276.935L1058.78 267.308L1067.82 260.413V256.25L1074.98 252.087L1084.02 249.355L1096.81 250.656L1098.52 243.761L1103.98 238.296L1107.56 232.702V228.669L1096.81 227.238L1093.06 223.075L1089.48 214.879L1087.77 207.984V198.227L1094.94 181.704L1105.85 183.135L1114.89 188.6V180.273L1113.02 172.077L1107.56 165.182L1096.81 161.019L1100.4 155.555L1105.85 154.124L1111.31 156.856L1114.89 162.45L1122.06 167.914L1125.64 172.077L1127.52 178.972V187.168L1129.39 196.926L1136.56 205.122L1142.02 217.611L1145.6 232.702L1151.06 243.761L1163.68 253.388L1185.34 264.446L1207.17 272.772L1234.29 282.399L1236 276.935L1234.29 268.609V263.145L1228.84 260.413L1221.5 257.551L1214.34 254.819L1217.92 252.087L1221.5 243.761L1208.88 239.597L1205.3 232.702V227.238L1214.34 224.506L1212.46 218.912L1205.3 216.18L1192.67 213.448L1196.26 207.984L1198.13 202.39L1187.22 199.658L1179.88 196.926L1172.72 192.763L1161.8 196.926L1152.76 192.763L1149.18 188.6L1143.72 177.541L1142.02 169.345L1145.6 161.019L1156.51 159.588L1152.76 147.229L1158.22 141.765L1163.68 138.903L1165.55 134.739L1163.68 126.543L1158.22 119.648L1154.64 114.054L1152.76 108.59V100.264V92.0677L1140.14 82.4405L1156.51 79.5784V72.6833L1151.06 67.2192L1140.14 69.9513L1129.39 71.3823H1116.6L1111.31 65.7882L1109.44 60.3241V54.7299L1100.4 53.429L1089.48 51.9979L1093.06 47.8348L1100.4 45.1028L1105.85 43.8018L1107.56 38.2077L1116.6 34.0446L1129.39 31.3125L1125.64 17.5223H1116.6V13.3592V7.89513L1111.31 2.30095L1105.85 1Z" fill="#ECEEEF" stroke="#222933" stroke-width="0.75"/>
+                    <path d="M32.4681 251.394H37.9149L40.4681 250.596L42 247.802V243.413V239.422L39.9575 235.032L38.5958 237.161L29.5745 238.624L24.1277 234.367L18 238.092L20.7234 243.28L25.8298 247.802L32.2979 251.394H32.4681Z" fill="#ECEEEF" stroke="#222933" stroke-width="0.75"/>
+                    <path d="M425.636 232.366L414.727 228.259L407.455 224.153L402 210.464L405.636 206.358L411.091 198.145L420.182 195.407L427.455 191.301H431.091L442 198.145L434.727 202.251L427.455 207.727L425.636 213.202L423.818 220.046L425.636 232.366Z" fill="#ECEEEF" stroke="#222933" stroke-width="0.75"/>
+                    <path d="M523 162.254H504.961L499.549 164.978H477.902L465.275 169.065L456.255 173.151L447.235 177.238L441.824 182.686L432.804 184.048L431 188.135L441.824 194.945L447.235 196.308L456.255 186.773L470.686 181.324L481.51 179.962H492.333L504.961 177.238L515.784 175.875L521.196 173.151V169.065L523 162.254Z" fill="#ECEEEF" stroke="#222933" stroke-width="0.75"/>
+                    <path d="M825.345 145.586L820.517 142.94L815 140.295V136.591L820.517 132.887L826.034 130.241L827.414 126.008L831.552 124.95L837.759 124.421L842.586 121.246L845.345 120.188L850.173 121.775L855 126.537L854.31 129.712L850.862 133.945L845.345 137.12L841.897 140.295L838.448 143.47L835 147.173L832.241 148.232L825.345 145.586Z" fill="#ECEEEF" stroke="#222933" stroke-width="0.75"/>
+                    <path d="M858.576 113.818L871.121 110.172L876 114.338L873.909 120.067L868.333 122.672L859.273 123.192L853.697 121.109L853 116.422L858.576 113.818Z" fill="#ECEEEF" stroke="#222933" stroke-width="0.75"/>
+                    <path d="M866.333 155.07L871 150.925L867 145.227L860.333 145.745L851 147.817L851.667 155.07L853 158.696L860.333 160.25L866.333 155.07Z" fill="#ECEEEF" stroke="#222933" stroke-width="0.75"/>
+                    <path d="M1185.52 421.663L1183.71 414.747L1192.76 413.364H1200V409.215L1198.19 405.065L1189.14 402.299H1183.71L1176.47 399.533L1169.22 395.383L1163.79 389.851L1156.55 384.318L1167.41 380.169L1172.84 377.403L1167.41 373.253L1151.12 366.337L1145.69 363.571L1134.83 360.805L1131.21 356.656L1120.34 351.123L1114.91 346.974L1109.48 342.824L1100.43 338.675L1095 334.525L1096.81 341.441L1104.05 346.974V353.889L1113.1 366.337L1116.72 370.487L1127.59 373.253L1138.45 378.786L1143.88 387.085L1154.74 394L1158.36 399.533L1165.6 400.916L1180.09 414.747L1185.52 421.663Z" fill="#ECEEEF" stroke="#222933" stroke-width="0.75"/>
+                    <path d="M645.294 129.771L637.176 127.199L632.441 127.714L628.382 130.285L625 134.4V138.514L629.735 142.115L631.765 145.715L637.176 146.229H645.971L648 142.629V139.029L645.294 129.771Z" fill="#ECEEEF" stroke="#222933" stroke-width="0.75"/>
+                    <path d="M637 121.217L635.643 114.874L630.893 111.174L622.071 113.288L619.357 115.931L618.679 119.103L618 124.389V128.089L622.75 130.204L629.536 128.618L636.321 124.918L637 121.217Z" fill="#ECEEEF" stroke="#222933" stroke-width="0.75"/>
+                    <path d="M667.64 144.886L660.84 141.295L658.12 138.217L654.04 139.756L652 142.834V148.477V153.607V159.25L658.8 156.685L663.56 152.581L665.6 150.529L669 147.964L667.64 144.886Z" fill="#ECEEEF" stroke="#222933" stroke-width="0.75"/>
+                    <path d="M1008.67 43.0668L1004 38.8496L1000 36.2138L998 30.9424L1000.67 26.198L1006.67 23.0352H1012L1013.33 26.198L1014 31.9967L1013.33 37.2681L1008.67 43.0668Z" fill="#ECEEEF" stroke="#222933" stroke-width="0.75"/>
+                    </svg>
+            </div>
+        </section>
+        <section class="feedback feedback_line">
+          <div class="wrapper wrapper_feedback">
+            <div class="form">
+              <div class="group">
+                <input class="input" type="text" placeholder="Ваше имя*">
+              </div>
+              <div class="group">
+                <input class="input" type="text" placeholder="E-mail*">
+              </div>
+              <div class="group">
+                <input class="input" type="text" placeholder="Ваш вопрос*">
+              </div>
+            </div>
+            <div class="send">
+              <p class="text-normal send-text">Если у вас возникли вопросы, пожалуйста, напишите нам</p>
+              <button type="submit" class="send__button">Отправить <img src="./img/icon/arrow-left.svg" alt=""></button>
+              <div class="send__result">
+                <p class="send__result-successfully text-average"><img src="./img/doc/successfule.svg" alt=""> Ваше сообщение успешно отправлено</p>
+                <p class="send__result-unsuccessful  text-average"><img src="./img/doc/unsuccessful.svg" alt=""> Сообщение не отправлено, попробуйте снова</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__menu">
+          <div class="wrapper">
+          <ul class="footer__nav">
+            <li class="footer__item">
+              <p>Главная</p>
+              <a href="#!">Применение</a>
+              <a href="#!">Документация</a>
+              <a href="#!">Новости</a>
+            </li>
+            <li class="footer__item">
+              <p>Каталог</p>
+              <a href="#!">Фитинги</a>
+              <a href="#!"
+                >Пневматическая <br />
+                трубка</a
+              >
+            </li>
+            <li class="footer__item">
+              <p>Ссылки</p>
+              <a href="https://kipservis.ru/"
+                >Корпоративный <br />
+                сайт</a
+              >
+              <a href="#!"
+                >Пользовательское <br />
+                Соглашение</a
+              >
+            </li>
+            <li class="footer__item">
+              <p>Контакты</p>
+              <a class="phone-footer" href="tel:88007754682">
+                <img src="./img/icon/icon-phone.svg" alt="phone" />
+                8 (800) 775 46 82</a
+              >
+              <a href="#!">
+                <img src="./img/icon/icon-mail.svg" alt="mail" />
+                order@kipservis.ru</a
+              >
+              <a href="#!">
+                <img src="./img/icon/icon-map.png" alt="map" /> г.
+                Краснодар</a
+              >
+            </li>
+          </ul>
+          <div class="footer__info">
+            <div class="footer__copyrights">
+              <img src="./img/icon/icon-quote.svg" alt="quote" />
+              <span>2021</span>
+              <span>Pnevmotrubka.ru</span>
+              <a href="#!">Политика конфиденциальности</a>
+            </div>
+            <a href="#!" class="link">
+              Все филиалы <img src="./img/icon/arrow-left.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+        <div class="footer-mobile">
+          <div class="footer-mobile__contact">
+            <div class="wrapper">
+              <p>Вы можете связаться с нами</p>
+              <a class="phone-footer phone-footer_mobile" href="tel:88007754682">
+                <img src="./img/icon/icon-phone.svg" alt="phone" />
+                8 (800) 775 46 82</a
+              >
+              <a class="footer-mobile__mail" href="#!">
+                <img src="./img/icon/icon-mail.svg" alt="mail" />
+                order@kipservis.ru</a
+              >
+              <a class="footer-mobile__link" href="#!" class="link">
+                Все филиалы
+              </a>
+            </div>
+          </div>
+  
+          <div class="footer-mobile__document">
+            <div class="wrapper">
+              <div class="footer-mobile__link-item">
+                <a class="footer-mobile__link" href="#!"
+                  >Политика конфиденциальности </a
+                ><img src="./img/icon/arrow-left.svg" alt="icon" />
+              </div>
+              <div class="footer-mobile__link-item">
+                <a class="footer-mobile__link" href="#!"
+                  >Пользовательское Соглашение </a
+                ><img src="./img/icon/arrow-left.svg" alt="icon" />
+              </div>
+              <div class="footer-mobile__link-item">
+                <a class="footer-mobile__link" href="https://kipservis.ru/"
+                  >Корпоративный сайт </a
+                ><img src="./img/icon/arrow-left.svg" alt="icon" />
+              </div>
+              <div class="footer-mobile__link-up">
+                <a class="footer-mobile__link footer-mobile__link_up"
+                  href="#!"
+                  class="link-scroll-up">              
+                <img src="./img/icon/arrow_up.svg" alt="icon" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-mobile-bottom">
+            <div class="wrapper">
+              <p>Главная</p>
+              <div class="footer-mobile-bottom__list">
+                <div>
+                  <a href="./catalog.html">Каталог</a>
+                  <a href="#!">Применение</a>
+                </div>
+                <div>
+                  <a href="#!">Документация</a> <a href="#!">Новости</a>
+                </div>
+              </div>
+            </div>
+          
+          <div class="footer__copyrights footer__copyrights_mobile">
+            <div class="wrapper">
+            <img src="./img/icon/icon-quote.svg" alt="quote" />
+            <span>2021</span>
+            <span>Pnevmotrubka.ru</span>
+          </div>
+        </div>
+        </div>
+      </footer>
+      <script src="https://yastatic.net/share2/share.js"></script>
+      <script src="js/libs.min.js"></script>
+      <script src="js/doc.js" ></script>
+      <script src="js/main.js"></script>
+    </body>
+  </html>
