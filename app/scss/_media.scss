@@ -567,6 +567,11 @@
     text-transform: uppercase;
     font-size: 10px;
   }
+  .ya-share2__container_size_m .ya-share2__badge .ya-share2__icon {
+    height: 21px !important;
+    width: 21px !important;
+    background-size: 17px 17px !important;
+  }
 }
 @media (max-width: 450px) {
   section {

@@ -70,3 +70,27 @@
     }
   }
 }
+.link-img_doc {
+  margin-right: 70px;
+}
+/*-----------перебивание стилей плагина---------*/
+.ya-share2__container_size_m
+  .ya-share2__item_more.ya-share2__item_has-pretty-view
+  .ya-share2__link_more.ya-share2__link_more-button-type_short {
+  padding: 4px;
+  border: none;
+  background: transparent !important;
+}
+.ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__link_more {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0px !important;
+}
+.ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__icon_more {
+  background-image: url(../img/doc/link.svg) !important;
+}
+.ya-share2__container_size_m .ya-share2__badge .ya-share2__icon {
+  height: 28px !important;
+  width: 28px !important;
+  background-size: 28px 28px !important;
+}
