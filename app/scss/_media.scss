@@ -274,6 +274,9 @@
     gap: 24px;
     padding-bottom: 80px;
   }
+  div.wrapper_feedback {
+    gap: 70px;
+  }
 }
 
 @media (max-width: 730px) {
@@ -571,6 +574,19 @@
     height: 21px !important;
     width: 21px !important;
     background-size: 17px 17px !important;
+  }
+  div.wrapper_feedback {
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    .send__button {
+      margin: 0 auto;
+    }
+    .send-text {
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-align: center;
+    }
   }
 }
 @media (max-width: 450px) {
