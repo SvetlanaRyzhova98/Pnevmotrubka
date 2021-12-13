@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Процесс верстки</title>
+    <title>Контакты</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <header class="header">
+  <body>
+    <header class="header">
     <div class="header__top">
       <div class="header__wrapper header__wrapper_top">
         <a href="./index.html" class="logo">
@@ -249,152 +250,172 @@
         </ul>
       </nav>
     </div>
-  </header>
-  <main>
-    <section class="link-section">
-        <div class=" wrapper wrapper_link-section">
-            <a class="control active" href="./index.html">Главная</a>
-            <a class="control active" href="./catalog.html">Каталог</a>
-            <a class="control active" href="./search-results.html">Результаты поиска</a>
-            <a class="control active" href="./error404.html">Ошибка 404</a>
-            <a class="control active" href="./fitting.html">Фитинги (категория)</a>
-            <a class="control active" href="./fitting-function.html">Функциональные фитинги (подкатегория)</a>
-            <a class="control active" href="./fitting-expense.html">Фитинги c регулировкой расхода (подкатегория подкатегории)</a>
-            <a class="control active" href="./product-card.html">Карточка товара</a>
-            <a class="control" href="#!">Применение</a>
-            <a class="control  active" href="./document.html">Документация</a>
-            <a class="control" href="#!">Новости</a>
-            <a class="control active" href="./contacts.html">Контакты</a>
-            <a class="control" href="#!">Форма обратной связи</a>
-
-        </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__menu">
-      <div class="wrapper">
-      <ul class="footer__nav">
-        <li class="footer__item">
-          <p>Главная</p>
-          <a href="#!">Применение</a>
-          <a href="#!">Документация</a>
-          <a href="#!">Новости</a>
-        </li>
-        <li class="footer__item">
-          <p>Каталог</p>
-          <a href="#!">Фитинги</a>
-          <a href="#!"
-            >Пневматическая <br />
-            трубка</a
-          >
-        </li>
-        <li class="footer__item">
-          <p>Ссылки</p>
-          <a href="https://kipservis.ru/"
-            >Корпоративный <br />
-            сайт</a
-          >
-          <a href="#!"
-            >Пользовательское <br />
-            Соглашение</a
-          >
-        </li>
-        <li class="footer__item">
-          <p>Контакты</p>
-          <a class="phone-footer" href="tel:88007754682">
-            <img src="./img/icon/icon-phone.svg" alt="phone" />
-            8 (800) 775 46 82</a
-          >
-          <a href="#!">
-            <img src="./img/icon/icon-mail.svg" alt="mail" />
-            order@kipservis.ru</a
-          >
-          <a href="#!">
-            <img src="./img/icon/icon-map.png" alt="map" /> г.
-            Краснодар</a
-          >
-        </li>
-      </ul>
-      <div class="footer__info">
-        <div class="footer__copyrights">
-          <img src="./img/icon/icon-quote.svg" alt="quote" />
-          <span>2021</span>
-          <span>Pnevmotrubka.ru</span>
-          <a href="#!">Политика конфиденциальности</a>
-        </div>
-        <a href="#!" class="link">
-          Все филиалы <img src="./img/icon/arrow-left.svg" alt="" />
-        </a>
-      </div>
-    </div>
-  </div>
-    <div class="footer-mobile">
-      <div class="footer-mobile__contact">
-        <div class="wrapper">
-          <p>Вы можете связаться с нами</p>
-          <a class="phone-footer phone-footer_mobile" href="tel:88007754682">
-            <img src="./img/icon/icon-phone.svg" alt="phone" />
-            8 (800) 775 46 82</a
-          >
-          <a class="footer-mobile__mail" href="#!">
-            <img src="./img/icon/icon-mail.svg" alt="mail" />
-            order@kipservis.ru</a
-          >
-          <a class="footer-mobile__link" href="#!" class="link">
-            Все филиалы
-          </a>
-        </div>
-      </div>
-
-      <div class="footer-mobile__document">
-        <div class="wrapper">
-          <div class="footer-mobile__link-item">
-            <a class="footer-mobile__link" href="#!"
-              >Политика конфиденциальности </a
-            ><img src="./img/icon/arrow-left.svg" alt="icon" />
+    </header>
+    <main>
+        <section class="hiro-catalog"> 
+            <div class="hiro-bg hiro-bg_contact">
+                <div class="wrapper">
+                    <h1 class="title-section title-section_contact">Контакты</h1>
+                </div>
+            </div>
+            <div class="wrapper">
+            <div class="bread-crumbs bread-crumbs_expense"> 
+               <a href="./index.html">Главная </a> <span> — </span><a href="./document.html">Документация </a>
+            </div>
+            </div>
+        </section>
+        
+        <section class="feedback">
+          <div class="wrapper wrapper_feedback">
+            <div class="form">
+              <div class="group">
+                <input class="input" type="text" placeholder="Ваше имя*">
+              </div>
+              <div class="group">
+                <input class="input" type="text" placeholder="E-mail*">
+              </div>
+              <div class="group">
+                <input class="input" type="text" placeholder="Ваш вопрос*">
+              </div>
+            </div>
+            <div class="send">
+              <p class="text-normal send-text">Если у вас возникли вопросы, пожалуйста, напишите нам</p>
+              <button type="submit" class="send__button">Отправить <img src="./img/icon/arrow-left.svg" alt=""></button>
+              <div class="send__result">
+                <p class="send__result-successfully text-average"><img src="./img/doc/successfule.svg" alt=""> Ваше сообщение успешно отправлено</p>
+                <p class="send__result-unsuccessful  text-average"><img src="./img/doc/unsuccessful.svg" alt=""> Сообщение не отправлено, попробуйте снова</p>
+              </div>
+            </div>
           </div>
-          <div class="footer-mobile__link-item">
-            <a class="footer-mobile__link" href="#!"
-              >Пользовательское Соглашение </a
-            ><img src="./img/icon/arrow-left.svg" alt="icon" />
-          </div>
-          <div class="footer-mobile__link-item">
-            <a class="footer-mobile__link" href="https://kipservis.ru/"
-              >Корпоративный сайт </a
-            ><img src="./img/icon/arrow-left.svg" alt="icon" />
-          </div>
-          <div class="footer-mobile__link-up">
-            <a class="footer-mobile__link footer-mobile__link_up"
-              href="#!"
-              class="link-scroll-up">              
-            <img src="./img/icon/arrow_up.svg" alt="icon" /></a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-mobile-bottom">
-        <div class="wrapper">
-          <p>Главная</p>
-          <div class="footer-mobile-bottom__list">
-            <div>
-              <a href="./catalog.html">Каталог</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__menu">
+          <div class="wrapper">
+          <ul class="footer__nav">
+            <li class="footer__item">
+              <p>Главная</p>
               <a href="#!">Применение</a>
+              <a href="#!">Документация</a>
+              <a href="#!">Новости</a>
+            </li>
+            <li class="footer__item">
+              <p>Каталог</p>
+              <a href="#!">Фитинги</a>
+              <a href="#!"
+                >Пневматическая <br />
+                трубка</a
+              >
+            </li>
+            <li class="footer__item">
+              <p>Ссылки</p>
+              <a href="https://kipservis.ru/"
+                >Корпоративный <br />
+                сайт</a
+              >
+              <a href="#!"
+                >Пользовательское <br />
+                Соглашение</a
+              >
+            </li>
+            <li class="footer__item">
+              <p>Контакты</p>
+              <a class="phone-footer" href="tel:88007754682">
+                <img src="./img/icon/icon-phone.svg" alt="phone" />
+                8 (800) 775 46 82</a
+              >
+              <a href="#!">
+                <img src="./img/icon/icon-mail.svg" alt="mail" />
+                order@kipservis.ru</a
+              >
+              <a href="#!">
+                <img src="./img/icon/icon-map.png" alt="map" /> г.
+                Краснодар</a
+              >
+            </li>
+          </ul>
+          <div class="footer__info">
+            <div class="footer__copyrights">
+              <img src="./img/icon/icon-quote.svg" alt="quote" />
+              <span>2021</span>
+              <span>Pnevmotrubka.ru</span>
+              <a href="#!">Политика конфиденциальности</a>
             </div>
-            <div>
-              <a href="#!">Документация</a> <a href="#!">Новости</a>
-            </div>
+            <a href="#!" class="link">
+              Все филиалы <img src="./img/icon/arrow-left.svg" alt="" />
+            </a>
           </div>
         </div>
-      
-      <div class="footer__copyrights footer__copyrights_mobile">
-        <div class="wrapper">
-        <img src="./img/icon/icon-quote.svg" alt="quote" />
-        <span>2021</span>
-        <span>Pnevmotrubka.ru</span>
       </div>
-    </div>
-    </div>
-  </footer>
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+        <div class="footer-mobile">
+          <div class="footer-mobile__contact">
+            <div class="wrapper">
+              <p>Вы можете связаться с нами</p>
+              <a class="phone-footer phone-footer_mobile" href="tel:88007754682">
+                <img src="./img/icon/icon-phone.svg" alt="phone" />
+                8 (800) 775 46 82</a
+              >
+              <a class="footer-mobile__mail" href="#!">
+                <img src="./img/icon/icon-mail.svg" alt="mail" />
+                order@kipservis.ru</a
+              >
+              <a class="footer-mobile__link" href="#!" class="link">
+                Все филиалы
+              </a>
+            </div>
+          </div>
+  
+          <div class="footer-mobile__document">
+            <div class="wrapper">
+              <div class="footer-mobile__link-item">
+                <a class="footer-mobile__link" href="#!"
+                  >Политика конфиденциальности </a
+                ><img src="./img/icon/arrow-left.svg" alt="icon" />
+              </div>
+              <div class="footer-mobile__link-item">
+                <a class="footer-mobile__link" href="#!"
+                  >Пользовательское Соглашение </a
+                ><img src="./img/icon/arrow-left.svg" alt="icon" />
+              </div>
+              <div class="footer-mobile__link-item">
+                <a class="footer-mobile__link" href="https://kipservis.ru/"
+                  >Корпоративный сайт </a
+                ><img src="./img/icon/arrow-left.svg" alt="icon" />
+              </div>
+              <div class="footer-mobile__link-up">
+                <a class="footer-mobile__link footer-mobile__link_up"
+                  href="#!"
+                  class="link-scroll-up">              
+                <img src="./img/icon/arrow_up.svg" alt="icon" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-mobile-bottom">
+            <div class="wrapper">
+              <p>Главная</p>
+              <div class="footer-mobile-bottom__list">
+                <div>
+                  <a href="./catalog.html">Каталог</a>
+                  <a href="#!">Применение</a>
+                </div>
+                <div>
+                  <a href="#!">Документация</a> <a href="#!">Новости</a>
+                </div>
+              </div>
+            </div>
+          
+          <div class="footer__copyrights footer__copyrights_mobile">
+            <div class="wrapper">
+            <img src="./img/icon/icon-quote.svg" alt="quote" />
+            <span>2021</span>
+            <span>Pnevmotrubka.ru</span>
+          </div>
+        </div>
+        </div>
+      </footer>
+      <script src="https://yastatic.net/share2/share.js"></script>
+      <script src="js/libs.min.js"></script>
+      <script src="js/doc.js" ></script>
+      <script src="js/main.js"></script>
+    </body>
+  </html>
