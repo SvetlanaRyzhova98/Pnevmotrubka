@@ -266,6 +266,14 @@
   div.hiro-bg {
     height: 200px;
   }
+  /*--------document-----*/
+  .doc-text {
+    padding-top: 28px;
+  }
+  .doc-catalog__box {
+    gap: 24px;
+    padding-bottom: 80px;
+  }
 }
 
 @media (max-width: 730px) {
@@ -292,7 +300,12 @@
       display: none;
     }
   }
-  /*-----наполнение аккордионов--таблицы------*/
+  /*-----doc------*/
+  .doc-catalog__box {
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+    justify-content: center;
+  }
 }
 @media (max-width: 660px) {
   h1.title {
